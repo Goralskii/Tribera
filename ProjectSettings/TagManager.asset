@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Casillero
+  - Tapete
+  - Laguna
+  - Ficha
   layers:
   - Default
   - TransparentFX
