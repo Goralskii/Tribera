@@ -38,7 +38,7 @@ public class ControlTablero : MonoBehaviour
         }
 
         // Verificar la asignación de los casilleros (para fines de depuración)
-        for (int i = 0; i < arrayTablero.Length; i++)
+        /*for (int i = 0; i < arrayTablero.Length; i++)
         {
             if (arrayTablero[i] != null)
             {
@@ -48,11 +48,7 @@ public class ControlTablero : MonoBehaviour
             {
                 Debug.LogWarning("Casillero " + i + " no asignado.");
             }
-        }
-    }
-    void Update()
-    {
-
+        }*/
     }
     public void AsignarFichas()
     {
@@ -62,7 +58,7 @@ public class ControlTablero : MonoBehaviour
     {
         for (int i = 0; i <= count; i++)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.5f);//delay
             arrayFichas[Ficha].transform.position = arrayTablero[i].transform.position;
             
         }

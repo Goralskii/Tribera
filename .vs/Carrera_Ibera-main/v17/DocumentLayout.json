@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|C:\\Program Files\\Unity\\Carrera_Ibera-main\\assets\\scripts\\dicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|c:\\program files\\unity\\carrera_ibera-main\\assets\\scripts\\controlpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controlpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|c:\\program files\\unity\\carrera_ibera-main\\assets\\scripts\\menucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|C:\\Program Files\\Unity\\Carrera_Ibera-main\\assets\\scripts\\controlcara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controlcara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|c:\\program files\\unity\\carrera_ibera-main\\assets\\scripts\\movimientofichas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movimientofichas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|C:\\Program Files\\Unity\\Carrera_Ibera-main\\assets\\scripts\\controltablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controltablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|C:\\Program Files\\Unity\\Carrera_Ibera-main\\assets\\scripts\\menucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|C:\\Program Files\\Unity\\Carrera_Ibera-main\\assets\\scripts\\dicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|C:\\Program Files\\Unity\\Carrera_Ibera-main\\assets\\scripts\\controlcara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E2A2A97-2FC7-C4AE-9A18-78CA71750B0F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controlcara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +34,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "ControlPanel.cs",
+              "DocumentMoniker": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\ControlPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ControlPanel.cs",
+              "ToolTip": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\ControlPanel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ControlPanel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T12:54:34.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MovimientoFichas.cs",
+              "DocumentMoniker": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\MovimientoFichas.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MovimientoFichas.cs",
+              "ToolTip": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\MovimientoFichas.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MovimientoFichas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T12:22:18.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ControlTablero.cs",
               "DocumentMoniker": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\ControlTablero.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ControlTablero.cs",
               "ToolTip": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\ControlTablero.cs",
               "RelativeToolTip": "Assets\\Scripts\\ControlTablero.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAkAAAAVAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwCkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T11:14:19.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T11:14:19.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "DiceControl.cs",
               "DocumentMoniker": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\DiceControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DiceControl.cs",
@@ -51,25 +84,23 @@
               "RelativeToolTip": "Assets\\Scripts\\DiceControl.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAAwwEIAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T14:43:02.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T14:43:02.116Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MenuControl.cs",
               "DocumentMoniker": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\MenuControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuControl.cs",
               "ToolTip": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\MenuControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\MenuControl.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAnwC0AAAAwAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T13:15:20.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-12T13:15:20.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ControlCara.cs",
               "DocumentMoniker": "C:\\Program Files\\Unity\\Carrera_Ibera-main\\Assets\\Scripts\\ControlCara.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ControlCara.cs",
@@ -77,8 +108,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ControlCara.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T13:57:54.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T13:57:54.867Z"
             }
           ]
         }

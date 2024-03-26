@@ -382,6 +382,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/GameManager.cs"
 "Assets/Scripts/ControlCara.cs"
+"Assets/Scripts/ControlPanel.cs"
 "Assets/Scripts/ControlTablero.cs"
 "Assets/Scripts/DiceControl.cs"
 "Assets/Scripts/MenuControl.cs"
