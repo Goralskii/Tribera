@@ -1611,7 +1611,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3093466922496789388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f967fe26a5b13be46a030e8d81ae40a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a32a02cf8e3f454a976146f722f3695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dadoEnMovimiento: 1
@@ -1622,7 +1622,10 @@ MonoBehaviour:
   - {fileID: 6769482364079760142}
   - {fileID: 9073239516930912483}
   - {fileID: 7341869589676493357}
+  _controlTablero: {fileID: 0}
+  _menuControl: {fileID: 0}
   valorDado: 0
+  espacioPressed: 0
 --- !u!1 &3467766295058272235
 GameObject:
   m_ObjectHideFlags: 0

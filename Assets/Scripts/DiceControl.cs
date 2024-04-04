@@ -19,6 +19,7 @@ public class DiceControl : MonoBehaviour
     public int valorDado = 0;
     public bool espacioPressed;
     private int ladoOculto;
+    int valor;
     private void Awake()
     {
         _controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
@@ -99,7 +100,7 @@ public class DiceControl : MonoBehaviour
 
     int ComprobarLados()
     {
-        int valor = 0;
+        valor = 0;
         foreach (ControlCara cara in lados)
         {
             valor++;
