@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 51696522}
   - component: {fileID: 51696521}
   m_Layer: 0
-  m_Name: Laguna 2
+  m_Name: Laguna
   m_TagString: Casillero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,6 +591,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e42947d56816dae47b433ab05ba3e818, type: 3}
       insertIndex: -1
       addedObject: {fileID: 113808068}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e42947d56816dae47b433ab05ba3e818, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 113808071}
   m_SourcePrefab: {fileID: 100100000, guid: e42947d56816dae47b433ab05ba3e818, type: 3}
 --- !u!4 &113808066 stripped
 Transform:
@@ -629,6 +632,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &113808071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113808067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c9324f30399347a952f9211d2ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  casillaActual: {fileID: 0}
+  posActual: 0
 --- !u!1001 &115817459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -795,7 +812,7 @@ GameObject:
   - component: {fileID: 272948990}
   - component: {fileID: 272948989}
   m_Layer: 0
-  m_Name: Laguna 1
+  m_Name: Laguna
   m_TagString: Casillero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1033,6 +1050,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93f34d0b1bcaaf64db9bceeba192ad97, type: 3}
       insertIndex: -1
       addedObject: {fileID: 320234124}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93f34d0b1bcaaf64db9bceeba192ad97, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 320234127}
   m_SourcePrefab: {fileID: 100100000, guid: 93f34d0b1bcaaf64db9bceeba192ad97, type: 3}
 --- !u!4 &320234122 stripped
 Transform:
@@ -1071,6 +1091,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &320234127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320234123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c9324f30399347a952f9211d2ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  casillaActual: {fileID: 0}
+  posActual: 0
 --- !u!1 &328963260 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
@@ -1794,6 +1828,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b38d35bcda323a4db334ace0ad39cd7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 625413125}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b38d35bcda323a4db334ace0ad39cd7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 625413128}
   m_SourcePrefab: {fileID: 100100000, guid: 7b38d35bcda323a4db334ace0ad39cd7, type: 3}
 --- !u!4 &625413123 stripped
 Transform:
@@ -1832,6 +1869,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &625413128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625413124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c9324f30399347a952f9211d2ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  casillaActual: {fileID: 0}
+  posActual: 0
 --- !u!1001 &647978036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1977,6 +2028,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 744adde586cd04d46bce77e466c8bf8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 652918466}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 744adde586cd04d46bce77e466c8bf8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 652918469}
   m_SourcePrefab: {fileID: 100100000, guid: 744adde586cd04d46bce77e466c8bf8c, type: 3}
 --- !u!4 &652918464 stripped
 Transform:
@@ -2015,6 +2069,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &652918469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652918465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c9324f30399347a952f9211d2ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  casillaActual: {fileID: 0}
+  posActual: 0
 --- !u!1 &659273812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
@@ -2398,6 +2466,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a93edc9ba401dcc4695a3ac09046b9e3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 817373758}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a93edc9ba401dcc4695a3ac09046b9e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 817373761}
   m_SourcePrefab: {fileID: 100100000, guid: a93edc9ba401dcc4695a3ac09046b9e3, type: 3}
 --- !u!4 &817373756 stripped
 Transform:
@@ -2436,6 +2507,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &817373761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817373757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c9324f30399347a952f9211d2ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  casillaActual: {fileID: 0}
+  posActual: 0
 --- !u!1001 &822836355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2532,7 +2617,7 @@ GameObject:
   - component: {fileID: 831649102}
   - component: {fileID: 831649101}
   m_Layer: 0
-  m_Name: Laguna 4
+  m_Name: Laguna
   m_TagString: Casillero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3077,7 +3162,7 @@ GameObject:
   - component: {fileID: 1050500237}
   - component: {fileID: 1050500236}
   m_Layer: 0
-  m_Name: Laguna 3
+  m_Name: Laguna
   m_TagString: Casillero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6281,6 +6366,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f4fed28dd9457954e8cea1d28e559a49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2005975516}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f4fed28dd9457954e8cea1d28e559a49, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2005975519}
   m_SourcePrefab: {fileID: 100100000, guid: f4fed28dd9457954e8cea1d28e559a49, type: 3}
 --- !u!4 &2005975514 stripped
 Transform:
@@ -6319,6 +6407,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &2005975519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005975515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c9324f30399347a952f9211d2ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  casillaActual: {fileID: 0}
+  posActual: 0
 --- !u!1 &2030508878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
