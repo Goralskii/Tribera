@@ -13,7 +13,7 @@ public class MenuControl : MonoBehaviour
     public DiceControl dice1;
     public DiceControl dice2;
     public int valorTotalSend;
-    public ControlTablero _controlTablero;
+    //public ControlTablero _controlTablero;
     public bool actualizado;
     private int valorD1 = 0;
     private int valorD2 = 0;//inicializa las variables
@@ -26,7 +26,7 @@ public class MenuControl : MonoBehaviour
     }
     private void Awake()
     {
-        _controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
+        //_controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
     }
     public IEnumerator ActualizarValor()
     {
@@ -42,10 +42,19 @@ public class MenuControl : MonoBehaviour
             Dado2.text = "Dado 2: " + valorD2.ToString();
             valorTotalSend = valorD1 + valorD2;
             ValorTotal.text = "Valor Total: " + (valorTotalSend).ToString();
-            _controlTablero.dadoCount = valorTotalSend;
-            _controlTablero.sePuedeMover = true;
+            ControlTablero.instance.dadoCount = valorTotalSend;
+            ControlTablero.instance.sePuedeMover = true;
             actualizado = true;
             Debug.Log("Ya actualice valor dado");
+            yield return new WaitForSeconds(1f);
+            if (dice1.espacioPressed && ControlTablero.instance.sePuedeMover)
+            {
+
+                dice1.espacioPressed = false;
+                dice2.espacioPressed = false;
+                Debug.Log("Moviendo ficha...");
+                StartCoroutine(ControlTablero.instance.MoverFicha(ControlTablero.instance.dadoCount, 1));
+            }
 
         }
         Debug.Log("Volviendo...");

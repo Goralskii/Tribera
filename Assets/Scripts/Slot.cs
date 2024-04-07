@@ -5,6 +5,7 @@ using UnityEngine;
 public class Slot : MonoBehaviour
 {
     public bool isOccupied;
+    public int fichaOcupante;
     // Start is called before the first frame update
     void Start()
     {

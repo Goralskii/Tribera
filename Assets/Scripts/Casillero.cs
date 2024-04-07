@@ -31,9 +31,26 @@ public class Casillero : MonoBehaviour
             if (!slot.GetComponent<Slot>().isOccupied)
             {
                 Debug.Log("Acomodando ficha en slot: " +  slot.name);
+                slot.GetComponent<Slot>().isOccupied = true;
+                slot.GetComponent<Slot>().fichaOcupante = ficha;
+                _controlTablero.arrayFichas[ficha].GetComponent<Ficha>().slotActual = slot;
                 _controlTablero.arrayFichas[ficha].transform.position = slot.transform.position;
                 return;
             }
         }
-    }   
+    }
+    
+    public void LiberarFicha(int ficha)
+    {
+        foreach (GameObject slot in arraySlots)
+        {
+            if (slot.GetComponent<Slot>().fichaOcupante == ficha)
+            {
+                slot.GetComponent<Slot>().isOccupied = false;
+                slot.GetComponent<Slot>().fichaOcupante = 404;
+                _controlTablero.arrayFichas[ficha].GetComponent<Ficha>().slotActual = null;                
+                return;
+            }
+        }
+    }
 }

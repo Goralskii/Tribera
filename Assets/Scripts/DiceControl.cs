@@ -14,16 +14,16 @@ public class DiceControl : MonoBehaviour
 
     public bool dadoEnMovimiento = true;
     public ControlCara[] lados = new ControlCara[6];
-    public ControlTablero _controlTablero;
-    public MenuControl _menuControl;
+    //public ControlTablero _controlTablero;
+    //public MenuControl _menuControl;
     public int valorDado = 0;
     public bool espacioPressed;
     private int ladoOculto;
     int valor;
     private void Awake()
     {
-        _controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
-        _menuControl = GameObject.Find("Canvas").GetComponent<MenuControl>();
+        //_controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
+        //_menuControl = GameObject.Find("Canvas").GetComponent<MenuControl>();
     }
 
 
@@ -39,8 +39,8 @@ public class DiceControl : MonoBehaviour
         {
             PrepararDado();
             espacioPressed = true;
-            _menuControl.actualizado = false;
-            _controlTablero.sePuedeMover = false;
+            MenuControl.Instancia.actualizado = false;
+            ControlTablero.instance.sePuedeMover = false;
 
         }
         
@@ -60,16 +60,11 @@ public class DiceControl : MonoBehaviour
             
         }
         //Debug.Log("valor actualizado:" + valorDado);//pasa bien los valores
-        
         StartCoroutine(MenuControl.Instancia.ActualizarValor());
-   
+
+
         Debug.Log("Esperando para mover ficha...");
-        if (espacioPressed && _controlTablero.sePuedeMover)
-        { 
-            espacioPressed = false;
-            Debug.Log("Moviendo ficha...");
-            StartCoroutine(_controlTablero.MoverFicha(_controlTablero.dadoCount, 1));
-        }
+        
     }
     public IEnumerator ThrowAndWait()
     {
