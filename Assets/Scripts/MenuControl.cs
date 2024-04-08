@@ -21,6 +21,9 @@ public class MenuControl : MonoBehaviour
     public bool actualizado;
     private int valorD1 = 0;
     private int valorD2 = 0;//inicializa las variables
+    bool InGame = false;
+    public GameObject canvasMenuMain;
+    public TMP_Dropdown dropdown;
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
@@ -39,6 +42,18 @@ public class MenuControl : MonoBehaviour
         {
             turno = 0;
         }
+    }
+    void Start()
+    {
+        // Obtener la referencia al Dropdown        
+
+        // Agregar opciones al Dropdown
+        //ActualizarOpcionesDropdown();
+
+        // Suscribirse al evento onValueChanged
+        dropdown.onValueChanged.AddListener(delegate {
+            DropdownValueChanged(dropdown);
+        });
     }
     public IEnumerator ActualizarValor()
     {
@@ -87,8 +102,7 @@ public class MenuControl : MonoBehaviour
 
    
     
-    bool InGame = false;
-    public GameObject canvasMenuMain;
+    
 
     public void Jugar()
     {
@@ -98,6 +112,7 @@ public class MenuControl : MonoBehaviour
         {
             // Desactivar el canvas MenuMain
             canvasMenuMain.SetActive(false);
+            turnoCount = int.Parse(dropdown.options[dropdown.value].text)-1;
         }
 
     }
@@ -112,19 +127,12 @@ public class MenuControl : MonoBehaviour
         Debug.Log("Aquí se cierra el juego");
     }
 
-    public Dropdown dropdown;
-    void Start()
+    
+    
+
+    void DropdownValueChanged(TMP_Dropdown dropdown)
     {
-        // Obtener la referencia al Dropdown
-        dropdown = GameObject.Find("NumberOfPlayers").GetComponent<Dropdown>();
-
-        // Agregar opciones al Dropdown
-        ActualizarOpcionesDropdown();
-
-        // Suscribirse al evento onValueChanged
-        dropdown.onValueChanged.AddListener(delegate {
-            ActualizarNumeroDeJugadores();
-        });
+        Debug.Log("Opción seleccionada: " + dropdown.options[dropdown.value].text);
     }
 
 }

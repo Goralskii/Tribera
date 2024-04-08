@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ControlTablero : MonoBehaviour
 {
-    public  static ControlTablero instance;
+    public static ControlTablero instance;
     public GameObject[] arrayTablero;
     public GameObject[] arrayFichas;
     public MenuControl _menuControl;
+    public MovementAnimation _movementAnimation;
     public bool sePuedeMover;
     public int dadoCount;
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
@@ -21,6 +22,7 @@ public class ControlTablero : MonoBehaviour
     {        
         AsignarFichas();
         //_menuControl = GameObject.Find("Canvas").GetComponent<MenuControl>();
+        _movementAnimation = GameObject.Find("Script").GetComponent<MovementAnimation>();
     }    
     public void AsignarFichas()
     {
@@ -32,19 +34,22 @@ public class ControlTablero : MonoBehaviour
         for (int i = 0; i <= count; i++)
         {
             yield return new WaitForSeconds(0.5f);//delay
-            arrayFichas[Ficha].transform.position = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual+i].transform.position;
+            
+            //arrayFichas[Ficha].transform.position = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual+i].transform.position;
             if (i != 0)
             {
-                if (arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual + i].name == "Laguna")
+                if (arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].name == "Laguna")
                 {
                     Debug.Log("Laguna rotando");
                     arrayFichas[Ficha].transform.Rotate(0, 90, 0);
                 }
+                yield return StartCoroutine(_movementAnimation.Move(arrayFichas[Ficha], arrayFichas[Ficha].transform.position, arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].transform.position));
             }
-            
+            arrayFichas[Ficha].GetComponent<Ficha>().posActual++;
         }
+        arrayFichas[Ficha].GetComponent<Ficha>().posActual--;
         Debug.Log("Count: " + count);
-        arrayFichas[Ficha].GetComponent<Ficha>().posActual += count;        
+        //arrayFichas[Ficha].GetComponent<Ficha>().posActual += count;        
         Debug.Log("Ya movi ficha, ahora voy a acomodar");
         Debug.Log("Accediendo al casillero: " + arrayTablero[count].name);
         yield return new WaitForSeconds(0.5f);        
