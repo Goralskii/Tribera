@@ -24,7 +24,7 @@ public class MenuControl : MonoBehaviour
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
-        if (Instancia == null)//compruebo que esta accion no se realizó con anterioridad
+        if (Instancia == null)//compruebo que esta accion no se realizÃ³ con anterioridad
         {
             Instancia = this;
         }
@@ -66,8 +66,9 @@ public class MenuControl : MonoBehaviour
                 dice2.espacioPressed = false;
                 Debug.Log("Moviendo ficha...");
                 StartCoroutine(ControlTablero.instance.MoverFicha(valorTotalSend, turno));
-		yield return new WaitForSeconds(1f);
-        	turno++;
+                yield return new WaitForSeconds(1f);
+                //Mostra pregunta
+                turno++;
             }
 
         }
@@ -108,7 +109,7 @@ public class MenuControl : MonoBehaviour
     public void Salir()
     {
         Application.Quit();
-        Debug.Log("Aquí se cierra el juego");
+        Debug.Log("AquÃ­ se cierra el juego");
     }
 
     public Dropdown dropdown;
