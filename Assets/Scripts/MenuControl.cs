@@ -13,7 +13,7 @@ public class MenuControl : MonoBehaviour
     public DiceControl dice1;
     public DiceControl dice2;
     public int valorTotalSend;
-    public int turnoCount;
+    public int turnoCount = 5;
     public int turno = 0;
     //public ControlTablero _controlTablero;
     public bool actualizado;
@@ -64,13 +64,15 @@ public class MenuControl : MonoBehaviour
                 dice2.espacioPressed = false;
                 Debug.Log("Moviendo ficha...");
                 StartCoroutine(ControlTablero.instance.MoverFicha(valorTotalSend, turno));
+                yield return new WaitForSeconds(1f);
+                //Mostra pregunta
+                turno++;
 
             }
 
         }
         Debug.Log("Volviendo...");
-        yield return new WaitForSeconds(1f);
-        turno++;
+        
     }
 
     public void LimpiarValores()
