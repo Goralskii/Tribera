@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuControl : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class MenuControl : MonoBehaviour
     public DiceControl dice1;
     public DiceControl dice2;
     public int valorTotalSend;
-    public int turnoCount = 5;
+    public int turnoCount;//esta variable conrola la cantidad de jugadores
     public int turno = 0;
     //public ControlTablero _controlTablero;
     public bool actualizado;
@@ -22,7 +24,7 @@ public class MenuControl : MonoBehaviour
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
-        if (Instancia == null)//compruebo que esta accion no se realiz� con anterioridad
+        if (Instancia == null)//compruebo que esta accion no se realizó con anterioridad
         {
             Instancia = this;
         }
@@ -67,7 +69,6 @@ public class MenuControl : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 //Mostra pregunta
                 turno++;
-
             }
 
         }
@@ -83,4 +84,47 @@ public class MenuControl : MonoBehaviour
         Dado2.text = "Dado 2: " + valorD2.ToString();
         ValorTotal.text = "Valor Total: " + (valorD1 + valorD2).ToString();   
     }
+
+   
+    
+    bool InGame = false;
+    public GameObject canvasMenuMain;
+
+    public void Jugar()
+    {
+        InGame = true;
+
+        if (InGame == true)
+        {
+            // Desactivar el canvas MenuMain
+            canvasMenuMain.SetActive(false);
+        }
+
+    }
+
+    public void NumberOfPlayers()
+    {
+
+    }
+    public void Salir()
+    {
+        Application.Quit();
+        Debug.Log("Aquí se cierra el juego");
+    }
+
+    public Dropdown dropdown;
+    void Start()
+    {
+        // Obtener la referencia al Dropdown
+        dropdown = GameObject.Find("NumberOfPlayers").GetComponent<Dropdown>();
+
+        // Agregar opciones al Dropdown
+        ActualizarOpcionesDropdown();
+
+        // Suscribirse al evento onValueChanged
+        dropdown.onValueChanged.AddListener(delegate {
+            ActualizarNumeroDeJugadores();
+        });
+    }
+
 }

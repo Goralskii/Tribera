@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1446,8 +1446,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1649637490}
   - {fileID: 1282109377}
+  - {fileID: 1649637490}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1473,9 +1473,10 @@ MonoBehaviour:
   dice1: {fileID: 1394409589}
   dice2: {fileID: 185323269}
   valorTotalSend: 0
-  turnoCount: 5
+  turnoCount: 0
   turno: 0
   actualizado: 0
+  canvasMenuMain: {fileID: 1649637489}
 --- !u!1 &526971590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
@@ -2928,9 +2929,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1649637493}
-        m_TargetAssemblyTypeName: ControlPanel, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuControl, Assembly-CSharp
         m_MethodName: Jugar
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4034,7 +4035,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 50, y: -86}
+  m_AnchoredPosition: {x: 21, y: -86}
   m_SizeDelta: {x: 340.391, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1306977425
@@ -4060,14 +4061,14 @@ MonoBehaviour:
   m_text: "CARRERA IBER\xC1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 8b29aaa3eec7468097ff07adfcf29ac9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4090,7 +4091,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -4766,7 +4767,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1649637493}
-        m_TargetAssemblyTypeName: ControlPanel, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuControl, Assembly-CSharp
         m_MethodName: Salir
         m_Mode: 1
         m_Arguments:
@@ -5464,7 +5465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1649637490
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5535,9 +5536,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1649637489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5181178f9ad5904e8f0639f8aff1d3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3141457627af7724d9e7eeeb8107b15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dado1: {fileID: 0}
+  Dado2: {fileID: 0}
+  ValorTotal: {fileID: 0}
+  dice1: {fileID: 0}
+  dice2: {fileID: 0}
+  valorTotalSend: 0
+  turnoCount: 0
+  turno: 0
+  actualizado: 0
+  canvasMenuMain: {fileID: 1649637489}
 --- !u!1 &1699571662
 GameObject:
   m_ObjectHideFlags: 0
