@@ -645,6 +645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   casillaActual: {fileID: 0}
+  slotActual: {fileID: 0}
   posActual: 0
 --- !u!1001 &115817459
 PrefabInstance:
@@ -1104,6 +1105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   casillaActual: {fileID: 0}
+  slotActual: {fileID: 0}
   posActual: 0
 --- !u!1 &328963260 stripped
 GameObject:
@@ -1471,7 +1473,8 @@ MonoBehaviour:
   dice1: {fileID: 1394409589}
   dice2: {fileID: 185323269}
   valorTotalSend: 0
-  _controlTablero: {fileID: 0}
+  turnoCount: 5
+  turno: 0
   actualizado: 0
 --- !u!1 &526971590 stripped
 GameObject:
@@ -1882,6 +1885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   casillaActual: {fileID: 0}
+  slotActual: {fileID: 0}
   posActual: 0
 --- !u!1001 &647978036
 PrefabInstance:
@@ -2082,6 +2086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   casillaActual: {fileID: 0}
+  slotActual: {fileID: 0}
   posActual: 0
 --- !u!1 &659273812 stripped
 GameObject:
@@ -2520,6 +2525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   casillaActual: {fileID: 0}
+  slotActual: {fileID: 0}
   posActual: 0
 --- !u!1001 &822836355
 PrefabInstance:
@@ -6420,6 +6426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   casillaActual: {fileID: 0}
+  slotActual: {fileID: 0}
   posActual: 0
 --- !u!1 &2030508878 stripped
 GameObject:
