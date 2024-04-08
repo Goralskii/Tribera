@@ -13,10 +13,13 @@ public class MenuControl : MonoBehaviour
     public DiceControl dice1;
     public DiceControl dice2;
     public int valorTotalSend;
+    public int turnoCount;
+    public int turno = 0;
     //public ControlTablero _controlTablero;
     public bool actualizado;
     private int valorD1 = 0;
     private int valorD2 = 0;//inicializa las variables
+
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
         if (Instancia == null)//compruebo que esta accion no se realizó con anterioridad
@@ -27,6 +30,13 @@ public class MenuControl : MonoBehaviour
     private void Awake()
     {
         //_controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
+    }
+    private void Update()
+    {
+        if ( turno > turnoCount)
+        {
+            turno = 0;
+        }
     }
     public IEnumerator ActualizarValor()
     {
@@ -53,12 +63,14 @@ public class MenuControl : MonoBehaviour
                 dice1.espacioPressed = false;
                 dice2.espacioPressed = false;
                 Debug.Log("Moviendo ficha...");
-                StartCoroutine(ControlTablero.instance.MoverFicha(ControlTablero.instance.dadoCount, 1));
+                StartCoroutine(ControlTablero.instance.MoverFicha(valorTotalSend, turno));
+
             }
 
         }
         Debug.Log("Volviendo...");
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(1f);
+        turno++;
     }
 
     public void LimpiarValores()
