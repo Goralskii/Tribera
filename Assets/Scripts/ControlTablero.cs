@@ -47,11 +47,8 @@ public class ControlTablero : MonoBehaviour
         arrayFichas[Ficha].GetComponent<Ficha>().posActual += count;        
         Debug.Log("Ya movi ficha, ahora voy a acomodar");
         Debug.Log("Accediendo al casillero: " + arrayTablero[count].name);
-        yield return new WaitForSeconds(0.5f);
-        if (arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].name != "Laguna")
-        {
-            arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().AcomodarFicha(Ficha);
-        }
+        yield return new WaitForSeconds(0.5f);        
+        arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().AcomodarFicha(Ficha);        
         arrayFichas[Ficha].GetComponent<Ficha>().casillaActual = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual];
     }
 }
