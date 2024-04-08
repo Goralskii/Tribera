@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovimientoFichas : MonoBehaviour
+public class Slot : MonoBehaviour
 {
+    public bool isOccupied;
+    public int fichaOcupante;
     // Start is called before the first frame update
     void Start()
     {

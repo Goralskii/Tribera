@@ -13,10 +13,13 @@ public class MenuControl : MonoBehaviour
     public DiceControl dice1;
     public DiceControl dice2;
     public int valorTotalSend;
-    public ControlTablero _controlTablero;
+    public int turnoCount;
+    public int turno = 0;
+    //public ControlTablero _controlTablero;
     public bool actualizado;
     private int valorD1 = 0;
     private int valorD2 = 0;//inicializa las variables
+
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
         if (Instancia == null)//compruebo que esta accion no se realizó con anterioridad
@@ -26,7 +29,14 @@ public class MenuControl : MonoBehaviour
     }
     private void Awake()
     {
-        _controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
+        //_controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
+    }
+    private void Update()
+    {
+        if ( turno > turnoCount)
+        {
+            turno = 0;
+        }
     }
     public IEnumerator ActualizarValor()
     {
@@ -42,14 +52,25 @@ public class MenuControl : MonoBehaviour
             Dado2.text = "Dado 2: " + valorD2.ToString();
             valorTotalSend = valorD1 + valorD2;
             ValorTotal.text = "Valor Total: " + (valorTotalSend).ToString();
-            _controlTablero.dadoCount = valorTotalSend;
-            _controlTablero.sePuedeMover = true;
+            ControlTablero.instance.dadoCount = valorTotalSend;
+            ControlTablero.instance.sePuedeMover = true;
             actualizado = true;
             Debug.Log("Ya actualice valor dado");
+            yield return new WaitForSeconds(1f);
+            if (dice1.espacioPressed && ControlTablero.instance.sePuedeMover)
+            {
+
+                dice1.espacioPressed = false;
+                dice2.espacioPressed = false;
+                Debug.Log("Moviendo ficha...");
+                StartCoroutine(ControlTablero.instance.MoverFicha(valorTotalSend, turno));
+
+            }
 
         }
         Debug.Log("Volviendo...");
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(1f);
+        turno++;
     }
 
     public void LimpiarValores()

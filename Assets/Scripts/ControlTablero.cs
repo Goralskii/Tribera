@@ -4,64 +4,55 @@ using UnityEngine;
 
 public class ControlTablero : MonoBehaviour
 {
-    [SerializeField] GameObject[] arrayTablero = new GameObject[36];
-    [SerializeField] GameObject[] arrayFichas;
+    public  static ControlTablero instance;
+    public GameObject[] arrayTablero;
+    public GameObject[] arrayFichas;
     public MenuControl _menuControl;
     public bool sePuedeMover;
     public int dadoCount;
-    void Awake()
+    private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
-        AsignarCasilleros();
-        AsignarFichas();
-        _menuControl = GameObject.Find("Canvas").GetComponent<MenuControl>();
-    }
-
-    public void AsignarCasilleros()
-    {
-
-        //asignar casillero de salida
-        arrayTablero[0] = GameObject.Find("Salida");
-
-        //Asignar Lagunas
-        arrayTablero[6] = GameObject.Find("Laguna 1");
-        arrayTablero[15] = GameObject.Find("Laguna 2");
-        arrayTablero[24] = GameObject.Find("Laguna 3");
-        arrayTablero[33] = GameObject.Find("Laguna 4");
-        
-        // Asignar los casilleros normales
-        for (int i = 1; i < arrayTablero.Length; i++)
+        if (instance == null)//compruebo que esta accion no se realizó con anterioridad
         {
-            if (arrayTablero[i] == null) // Si no se ha asignado ya como Laguna
-            {
-                arrayTablero[i] = GameObject.Find("Casillero " + i);
-            }
+            instance = this;
         }
-
-        // Verificar la asignación de los casilleros (para fines de depuración)
-        /*for (int i = 0; i < arrayTablero.Length; i++)
-        {
-            if (arrayTablero[i] != null)
-            {
-                Debug.Log("Casillero " + i + " asignado: " + arrayTablero[i].name);
-            }
-            else
-            {
-                Debug.LogWarning("Casillero " + i + " no asignado.");
-            }
-        }*/
     }
+    void Awake()
+    {        
+        AsignarFichas();
+        //_menuControl = GameObject.Find("Canvas").GetComponent<MenuControl>();
+    }    
     public void AsignarFichas()
     {
         arrayFichas = GameObject.FindGameObjectsWithTag("Ficha");
     }
     public IEnumerator MoverFicha(int count, int Ficha)
     {
+        arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().LiberarFicha(Ficha);
         for (int i = 0; i <= count; i++)
         {
             yield return new WaitForSeconds(0.5f);//delay
-            arrayFichas[Ficha].transform.position = arrayTablero[i].transform.position;
+            arrayFichas[Ficha].transform.position = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual+i].transform.position;
+            if (i != 0)
+            {
+                if (arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual + i].name == "Laguna")
+                {
+                    Debug.Log("Laguna rotando");
+                    arrayFichas[Ficha].transform.Rotate(0, 90, 0);
+                }
+            }
             
         }
+        Debug.Log("Count: " + count);
+        arrayFichas[Ficha].GetComponent<Ficha>().posActual += count;        
+        Debug.Log("Ya movi ficha, ahora voy a acomodar");
+        Debug.Log("Accediendo al casillero: " + arrayTablero[count].name);
+        yield return new WaitForSeconds(0.5f);
+        if (arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].name != "Laguna")
+        {
+            arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().AcomodarFicha(Ficha);
+        }
+        arrayFichas[Ficha].GetComponent<Ficha>().casillaActual = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual];
     }
 }
 
