@@ -102,29 +102,11 @@ public class MenuControl : MonoBehaviour
 
     }
 
-    public void NumberOfPlayers()
-    {
-
-    }
     public void Salir()
     {
         Application.Quit();
         Debug.Log("Aquí se cierra el juego");
     }
 
-    public Dropdown dropdown;
-    void Start()
-    {
-        // Obtener la referencia al Dropdown
-        dropdown = GameObject.Find("NumberOfPlayers").GetComponent<Dropdown>();
 
-        // Agregar opciones al Dropdown
-        ActualizarOpcionesDropdown();
-
-        // Suscribirse al evento onValueChanged
-        dropdown.onValueChanged.AddListener(delegate {
-            ActualizarNumeroDeJugadores();
-        });
-    }
-
-}
+ }
