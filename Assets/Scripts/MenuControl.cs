@@ -117,10 +117,6 @@ public class MenuControl : MonoBehaviour
 
     }
 
-    public void NumberOfPlayers()
-    {
-
-    }
     public void Salir()
     {
         Application.Quit();
