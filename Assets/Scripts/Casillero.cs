@@ -7,6 +7,7 @@ public class Casillero : MonoBehaviour
     [SerializeField] GameObject[] arraySlots;
     [SerializeField] bool isOcupado;
     public ControlTablero _controlTablero;
+    public string categoria;
     // Start is called before the first frame update
 
     void Awake()

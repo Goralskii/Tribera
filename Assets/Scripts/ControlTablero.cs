@@ -7,8 +7,10 @@ public class ControlTablero : MonoBehaviour
     public static ControlTablero instance;
     public GameObject[] arrayTablero;
     public GameObject[] arrayFichas;
-    public MenuControl _menuControl;
+    //public MenuControl _menuControl;
     public MovementAnimation _movementAnimation;
+    public AnsManager _ansManager;
+    public GameObject questionPanel;
     public bool sePuedeMover;
     public int dadoCount;
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
@@ -19,11 +21,12 @@ public class ControlTablero : MonoBehaviour
         }
     }
     void Awake()
-    {        
+    {
         AsignarFichas();
         //_menuControl = GameObject.Find("Canvas").GetComponent<MenuControl>();
         _movementAnimation = GameObject.Find("Script").GetComponent<MovementAnimation>();
-    }    
+        //_ansManager = GameObject.Find("QuestionPanel").GetComponent<AnsManager>();
+    }
     public void AsignarFichas()
     {
         arrayFichas = GameObject.FindGameObjectsWithTag("Ficha");
@@ -34,7 +37,7 @@ public class ControlTablero : MonoBehaviour
         for (int i = 0; i <= count; i++)
         {
             yield return new WaitForSeconds(0.5f);//delay
-            
+
             //arrayFichas[Ficha].transform.position = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual+i].transform.position;
             if (i != 0)
             {
@@ -52,9 +55,22 @@ public class ControlTablero : MonoBehaviour
         //arrayFichas[Ficha].GetComponent<Ficha>().posActual += count;        
         Debug.Log("Ya movi ficha, ahora voy a acomodar");
         Debug.Log("Accediendo al casillero: " + arrayTablero[count].name);
-        yield return new WaitForSeconds(0.5f);        
-        arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().AcomodarFicha(Ficha);        
+        yield return new WaitForSeconds(0.5f);
+        arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().AcomodarFicha(Ficha);
         arrayFichas[Ficha].GetComponent<Ficha>().casillaActual = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual];
+        if (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Laguna")
+        {
+            Debug.Log("Mostrar pregunta");
+            StartCoroutine(MostrarPregunta(Ficha));
+        }
+        
+    }
+
+    public IEnumerator MostrarPregunta(int ficha)
+    {
+        questionPanel.SetActive(true);
+        _ansManager.StartTrivia(arrayFichas[ficha].GetComponent<Ficha>().casillaActual.GetComponent<Casillero>());
+        yield return new WaitForSeconds(10f);
     }
 }
 

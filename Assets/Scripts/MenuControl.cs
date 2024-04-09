@@ -83,6 +83,7 @@ public class MenuControl : MonoBehaviour
                 StartCoroutine(ControlTablero.instance.MoverFicha(valorTotalSend, turno));
                 yield return new WaitForSeconds(1f);
                 //Mostra pregunta
+                
                 turno++;
             }
 
