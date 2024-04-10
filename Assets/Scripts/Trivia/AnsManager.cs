@@ -19,6 +19,7 @@ public class AnsManager : MonoBehaviour
     //private string selectedCategories;
     public int m_score = 0;
     public int? scoreLimit = 1;
+    public string cate;
     //public Text textoContador;
     public AudioSource m_audioSource;
     //public GameObject blockOption;
@@ -52,7 +53,7 @@ public class AnsManager : MonoBehaviour
         //StartTimer();
         Debug.Log("Entrando a trivia");
         Debug.Log("Casilla: " + casillaActual.name + " - Categoria: " + casillaActual.categoria);
-        string cate = casillaActual.categoria;
+        cate = casillaActual.categoria;
         m_triviaManager.StartTrivia(cate); // Inicia la secuencia de preguntas
     }
     void Update()
@@ -132,10 +133,12 @@ public class AnsManager : MonoBehaviour
     {
         //yield return new WaitForSeconds(m_waitTime);        
         //m_controlTablero.questionPanel.SetActive(false);
+
         m_score = 0;
         foreach (GameObject ficha in m_controlTablero.arrayFichas) {
             if (ficha.GetComponent<Ficha>().fichaActiva)
             {
+                ficha.GetComponent<Ficha>().categoriasCompletas.Add(cate);
                 yield return StartCoroutine(m_controlTablero.MoverFicha(2, ficha.GetComponent<Ficha>().ID));
             }
         }
@@ -152,6 +155,7 @@ public class AnsManager : MonoBehaviour
         yield return new WaitForSeconds(m_waitTime);
         m_score = 0;
         m_controlTablero.questionPanel.SetActive(false);
+        
         foreach (GameObject ficha in m_controlTablero.arrayFichas)
         {
             if (ficha.GetComponent<Ficha>().fichaActiva)
@@ -159,6 +163,7 @@ public class AnsManager : MonoBehaviour
                 ficha.GetComponent<Ficha>().fichaActiva = false;
             }
         }
+        MenuControl.Instancia.sePuedeTirar = true;
         //blockOption.SetActive(false);
     }
     public void GameOver()

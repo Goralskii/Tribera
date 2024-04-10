@@ -24,6 +24,7 @@ public class MenuControl : MonoBehaviour
     bool InGame = false;
     public GameObject canvasMenuMain;
     public TMP_Dropdown dropdown;
+    public bool sePuedeTirar;
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
@@ -63,7 +64,7 @@ public class MenuControl : MonoBehaviour
         
         if (!dice1.dadoEnMovimiento && !dice2.dadoEnMovimiento && !actualizado) //si entra al if ambos valores de los dados fueron asignados y ahora hay que mostrarlos por pantalla
         {
-            ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
+            sePuedeTirar = false;
             // Debug.Log("Valor mostrado d1: " + valorD1);
             // Debug.Log("Valor mostrado d2 : " + valorD2);
             Dado1.text = "Dado 1: " + valorD1.ToString();
@@ -86,10 +87,12 @@ public class MenuControl : MonoBehaviour
                 //Mostra pregunta
                 
                 turno++;
-                if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno)
+                while (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno)
                 {
-                    ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno = false;
+                    int turnoPrevio = turno;
                     turno++;
+                    ControlTablero.instance.arrayFichas[turnoPrevio].GetComponent<Ficha>().pierdeTurno = false;
+                    
                 }
                 
 
@@ -122,6 +125,7 @@ public class MenuControl : MonoBehaviour
             // Desactivar el canvas MenuMain
             canvasMenuMain.SetActive(false);
             turnoCount = int.Parse(dropdown.options[dropdown.value].text)-1;
+            sePuedeTirar = true;
         }
 
     }

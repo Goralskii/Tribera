@@ -7,6 +7,7 @@ public class Ficha : MonoBehaviour
     public GameObject casillaActual;
     public GameObject slotActual;
     public GameObject activeArrow;
+    public List<string> categoriasCompletas = new List<string>();
     public int ID;
     public int posActual = 0;
     public int vueltasCompletas = 0;
