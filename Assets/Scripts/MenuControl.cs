@@ -59,12 +59,13 @@ public class MenuControl : MonoBehaviour
     {
          valorD1 = dice1.valorDado;
          valorD2 = dice2.valorDado;
-      
 
+        
         if (!dice1.dadoEnMovimiento && !dice2.dadoEnMovimiento && !actualizado) //si entra al if ambos valores de los dados fueron asignados y ahora hay que mostrarlos por pantalla
         {
-           // Debug.Log("Valor mostrado d1: " + valorD1);
-           // Debug.Log("Valor mostrado d2 : " + valorD2);
+            ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
+            // Debug.Log("Valor mostrado d1: " + valorD1);
+            // Debug.Log("Valor mostrado d2 : " + valorD2);
             Dado1.text = "Dado 1: " + valorD1.ToString();
             Dado2.text = "Dado 2: " + valorD2.ToString();
             valorTotalSend = valorD1 + valorD2;
@@ -85,6 +86,13 @@ public class MenuControl : MonoBehaviour
                 //Mostra pregunta
                 
                 turno++;
+                if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno)
+                {
+                    ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno = false;
+                    turno++;
+                }
+                
+
             }
 
         }

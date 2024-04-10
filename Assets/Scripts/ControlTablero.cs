@@ -33,7 +33,7 @@ public class ControlTablero : MonoBehaviour
     }
     public IEnumerator MoverFicha(int count, int Ficha)
     {        
-        arrayFichas[Ficha].GetComponent<Ficha>().fichaActiva = true;
+        
         arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().LiberarFicha(Ficha);
         if (questionPanel.activeSelf)
         {
@@ -68,6 +68,12 @@ public class ControlTablero : MonoBehaviour
         {
             Debug.Log("Mostrar pregunta");
             StartCoroutine(MostrarPregunta(Ficha));
+        }
+        else
+        {
+            arrayFichas[Ficha].GetComponent<Ficha>().pierdeTurno = true;
+            arrayFichas[Ficha].GetComponent<Ficha>().fichaActiva = false;
+
         }
         
     }
