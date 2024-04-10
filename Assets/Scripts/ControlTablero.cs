@@ -22,7 +22,7 @@ public class ControlTablero : MonoBehaviour
     }
     void Awake()
     {
-        AsignarFichas();
+        //AsignarFichas();
         //_menuControl = GameObject.Find("Canvas").GetComponent<MenuControl>();
         _movementAnimation = GameObject.Find("Script").GetComponent<MovementAnimation>();
         //_ansManager = GameObject.Find("QuestionPanel").GetComponent<AnsManager>();
@@ -32,8 +32,13 @@ public class ControlTablero : MonoBehaviour
         arrayFichas = GameObject.FindGameObjectsWithTag("Ficha");
     }
     public IEnumerator MoverFicha(int count, int Ficha)
-    {
+    {        
+        arrayFichas[Ficha].GetComponent<Ficha>().fichaActiva = true;
         arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().LiberarFicha(Ficha);
+        if (questionPanel.activeSelf)
+        {
+            questionPanel.SetActive(false);
+        }
         for (int i = 0; i <= count; i++)
         {
             yield return new WaitForSeconds(0.5f);//delay
@@ -50,6 +55,7 @@ public class ControlTablero : MonoBehaviour
             }
             arrayFichas[Ficha].GetComponent<Ficha>().posActual++;
         }
+        
         arrayFichas[Ficha].GetComponent<Ficha>().posActual--;
         Debug.Log("Count: " + count);
         //arrayFichas[Ficha].GetComponent<Ficha>().posActual += count;        

@@ -13,6 +13,7 @@ public class AnsManager : MonoBehaviour
     [SerializeField] private Color m_incorrectColor = Color.black;
     [SerializeField] private float m_waitTime = 0.0f;
     [SerializeField] private TriviaManager m_triviaManager;
+    [SerializeField] private ControlTablero m_controlTablero;
     // Añadir una variable para almacenar las categorías seleccionadas
     public static AnsManager instance;
     //private string selectedCategories;
@@ -56,12 +57,12 @@ public class AnsManager : MonoBehaviour
     }
     void Update()
     {                    
-            if (checkScore())
-            {
+            //if (checkScore())
+            //{
                 //timerStarted = false;
-                showWinnerScreen(false);
-                StartCoroutine(WaitAndEnd(5f));
-            }
+              //  showWinnerScreen(false);
+                //StartCoroutine(WaitAndEnd(5f));
+            //}
     }
     public bool checkScore()
     {
@@ -103,18 +104,23 @@ public class AnsManager : MonoBehaviour
         optionButton.GetComponent<Image>().color = answer ? m_correctColor : m_incorrectColor;       
         //blockOption.SetActive(true);
         m_audioSource.Play();
+        Debug.Log("Respuesta:  " + answer);
         if (answer)
         {
             m_score++;
             //textoContador.text = m_score.ToString();
             //m_anim.enabled = false;
             //timeLeft = 17.5f;
-            yield return StartCoroutine(WaitAndNextQuestion());
+            //yield return StartCoroutine(WaitAndNextQuestion());
+
+            //Ocultar panel, resetear score y avanzar 2
+            yield return StartCoroutine(CloseResetAndGo());
         }
         else
         {
+            m_score++;
             //m_anim.enabled = false;
-            yield return StartCoroutine(WaitAndGameOver());
+            yield return StartCoroutine(CloseAndNext());
         }
     }
     public void ShowCorrectOnFail(Button optionButton)
@@ -122,20 +128,37 @@ public class AnsManager : MonoBehaviour
         optionButton.GetComponent<Image>().color = m_correctColor;
     }
     // Corutina para esperar y luego mostrar la siguiente pregunta
-    private IEnumerator WaitAndNextQuestion()
+    private IEnumerator CloseResetAndGo()
     {
-        yield return new WaitForSeconds(m_waitTime);
-        if (false) m_triviaManager.ShowNextQuestion();
+        //yield return new WaitForSeconds(m_waitTime);        
+        //m_controlTablero.questionPanel.SetActive(false);
+        m_score = 0;
+        foreach (GameObject ficha in m_controlTablero.arrayFichas) {
+            if (ficha.GetComponent<Ficha>().fichaActiva)
+            {
+                yield return StartCoroutine(m_controlTablero.MoverFicha(2, ficha.GetComponent<Ficha>().ID));
+            }
+        }
+
+        //m_controlTablero
         //blockOption.SetActive(false);
         //m_anim.Rebind();
         //m_anim.Update(0f);
         //m_anim.enabled = true;
     }
     // Corutina para esperar y luego mostrar el juego terminado
-    private IEnumerator WaitAndGameOver()
+    private IEnumerator CloseAndNext()
     {
         yield return new WaitForSeconds(m_waitTime);
-        m_triviaManager.GameOver();
+        m_score = 0;
+        m_controlTablero.questionPanel.SetActive(false);
+        foreach (GameObject ficha in m_controlTablero.arrayFichas)
+        {
+            if (ficha.GetComponent<Ficha>().fichaActiva)
+            {
+                ficha.GetComponent<Ficha>().fichaActiva = false;
+            }
+        }
         //blockOption.SetActive(false);
     }
     public void GameOver()

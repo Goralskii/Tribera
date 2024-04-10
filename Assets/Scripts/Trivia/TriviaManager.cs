@@ -30,8 +30,11 @@ public class TriviaManager : MonoBehaviour
     public void StartTrivia(string selectedCategories)
     {
         Debug.Log("trivia empezando");
+        Debug.Log("Cargando preguntas...");
         LoadQuestionsFromFile("questions.txt", selectedCategories);
+        Debug.Log("Mezclando preguntas...");
         ShuffleQuestions();
+        Debug.Log("Se muestra la pregunta...");
         ShowNextQuestion();
     }
     void LoadQuestionsFromFile(string fileName, string selectedCategories)
@@ -112,6 +115,7 @@ public class TriviaManager : MonoBehaviour
                     int buttonIndex = i;
                     answerButtons[i].onClick.AddListener(() => OnAnswerSelected(answerButtons[buttonIndex], answerIndex, currentQuestion.correctAnswerIndex));
                 }
+            Debug.Log("Esperando respuesta...");
             }
             else
             {
@@ -122,6 +126,7 @@ public class TriviaManager : MonoBehaviour
     }
     void OnAnswerSelected(Button selectedButton, int answerIndex, int correctAnswerIndex)
     {
+        Debug.Log("Respuesta seleccionada...");
         Debug.Log(selectedButton);
         int selectedAnswerIndex = 0;
         for (int i = 0; i < answerButtons.Length; i++)
@@ -138,7 +143,7 @@ public class TriviaManager : MonoBehaviour
         }
         else
         {   
-            StartCoroutine(m_gameManager.GiveAnswerRoutine(selectedButton.GetComponent<Button>(), false));
+            StartCoroutine(m_gameManager.GiveAnswerRoutine(selectedButton, false));
         }
     }
     public void GameOver()
