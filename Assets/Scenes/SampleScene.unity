@@ -773,6 +773,7 @@ MonoBehaviour:
   posActual: 0
   vueltasCompletas: 0
   fichaActiva: 0
+  pierdeTurno: 0
 --- !u!1001 &115817459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1477,6 +1478,7 @@ MonoBehaviour:
   posActual: 0
   vueltasCompletas: 0
   fichaActiva: 0
+  pierdeTurno: 0
 --- !u!1 &328963260 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
@@ -2333,6 +2335,7 @@ MonoBehaviour:
   posActual: 0
   vueltasCompletas: 0
   fichaActiva: 0
+  pierdeTurno: 0
 --- !u!1001 &647978036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2541,6 +2544,7 @@ MonoBehaviour:
   posActual: 0
   vueltasCompletas: 0
   fichaActiva: 0
+  pierdeTurno: 0
 --- !u!1 &659273812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
@@ -2999,6 +3003,7 @@ MonoBehaviour:
   posActual: 0
   vueltasCompletas: 0
   fichaActiva: 0
+  pierdeTurno: 0
 --- !u!1001 &822836355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7191,7 +7196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1649637490
 RectTransform:
   m_ObjectHideFlags: 0
