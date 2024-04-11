@@ -3329,7 +3329,7 @@ GameObject:
   - component: {fileID: 871729123}
   - component: {fileID: 871729124}
   m_Layer: 0
-  m_Name: Music
+  m_Name: Ambient Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
