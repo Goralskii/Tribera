@@ -7,6 +7,7 @@ public class Ficha : MonoBehaviour
     public GameObject casillaActual;
     public GameObject slotActual;
     public GameObject activeArrow;
+    public GameObject uiModel;
     public List<string> categoriasCompletas = new List<string>();
     public int ID;
     public int posActual = 0;
@@ -28,11 +29,13 @@ public class Ficha : MonoBehaviour
             if (!activeArrow.activeSelf)
             {
                 activeArrow.SetActive(true);
+                uiModel.SetActive(true);
             }
         }
         else
         {
             activeArrow.SetActive(false);
+            uiModel.SetActive(false);
         }
 
         if (posActual >= 36)
