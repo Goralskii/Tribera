@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ControlTablero : MonoBehaviour
@@ -66,13 +67,22 @@ public class ControlTablero : MonoBehaviour
         arrayFichas[Ficha].GetComponent<Ficha>().casillaActual = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual];
         if (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Laguna")
         {
-            Debug.Log("Mostrar pregunta");
-            StartCoroutine(MostrarPregunta(Ficha));
+            if (!(arrayFichas[Ficha].GetComponent<Ficha>().categoriasCompletas.Contains(arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.GetComponent<Casillero>().categoria)))
+            {
+                Debug.Log("Mostrar pregunta");
+                StartCoroutine(MostrarPregunta(Ficha));
+            } else
+            {
+                arrayFichas[Ficha].GetComponent<Ficha>().fichaActiva = false;
+                MenuControl.Instancia.sePuedeTirar = true;
+            }
+            
         }
         else
         {
             arrayFichas[Ficha].GetComponent<Ficha>().pierdeTurno = true;
             arrayFichas[Ficha].GetComponent<Ficha>().fichaActiva = false;
+            MenuControl.Instancia.sePuedeTirar = true;
 
         }
         

@@ -29,6 +29,11 @@ public class TriviaManager : MonoBehaviour
     }
     public void StartTrivia(string selectedCategories)
     {
+        questions.Clear();
+        questions = new List<Question>();        
+        questionIndexes.Clear();
+        questionIndexes = new List<int>();
+        currentQuestionIndex = -1;
         Debug.Log("trivia empezando");
         Debug.Log("Cargando preguntas...");
         LoadQuestionsFromFile("questions.txt", selectedCategories);
@@ -49,7 +54,7 @@ public class TriviaManager : MonoBehaviour
                 if (parts.Length == 7)
                 {
                     string category = parts[0];
-                    if (selectedCategories.Contains(category))
+                    if (selectedCategories == category)
                     {
                         Question question = new Question();
                         question.question = parts[1];

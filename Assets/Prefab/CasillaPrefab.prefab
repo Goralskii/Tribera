@@ -130,6 +130,8 @@ MonoBehaviour:
   - {fileID: 8993509762645968343}
   - {fileID: 7309620515401173198}
   isOcupado: 0
+  _controlTablero: {fileID: 0}
+  categoria: 
 --- !u!1 &3872101738208710661
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +161,7 @@ Transform:
   m_GameObject: {fileID: 3872101738208710661}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4009, y: 0.48, z: -0.002}
+  m_LocalPosition: {x: -0.4009, y: 0.499, z: -0.002}
   m_LocalScale: {x: 0.02, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -250,6 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
+  fichaOcupante: 0
 --- !u!1 &5473325216725513981
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +282,7 @@ Transform:
   m_GameObject: {fileID: 5473325216725513981}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.397, y: 0.48, z: -0.002}
+  m_LocalPosition: {x: 0.397, y: 0.499, z: -0.002}
   m_LocalScale: {x: 0.02, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -370,6 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
+  fichaOcupante: 0
 --- !u!1 &7309620515401173198
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +403,7 @@ Transform:
   m_GameObject: {fileID: 7309620515401173198}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0008, y: 0.48, z: -0.002}
+  m_LocalPosition: {x: -0.0008, y: 0.499, z: -0.002}
   m_LocalScale: {x: 0.02, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -490,6 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
+  fichaOcupante: 0
 --- !u!1 &8993509762645968343
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +524,7 @@ Transform:
   m_GameObject: {fileID: 8993509762645968343}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2008, y: 0.48, z: -0.002}
+  m_LocalPosition: {x: -0.2008, y: 0.499, z: -0.002}
   m_LocalScale: {x: 0.02, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -610,6 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
+  fichaOcupante: 0
 --- !u!1 &9132016138926275721
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +645,7 @@ Transform:
   m_GameObject: {fileID: 9132016138926275721}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1994, y: 0.48, z: -0.002}
+  m_LocalPosition: {x: 0.1994, y: 0.499, z: -0.002}
   m_LocalScale: {x: 0.02, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -730,3 +736,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
+  fichaOcupante: 0

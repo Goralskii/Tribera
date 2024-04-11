@@ -769,6 +769,7 @@ MonoBehaviour:
   casillaActual: {fileID: 0}
   slotActual: {fileID: 0}
   activeArrow: {fileID: 2079650016}
+  categoriasCompletas: []
   ID: 0
   posActual: 0
   vueltasCompletas: 0
@@ -932,6 +933,7 @@ MonoBehaviour:
   m_triviaManager: {fileID: 204593628}
   m_controlTablero: {fileID: 1072943044}
   m_score: 0
+  cate: 
   m_audioSource: {fileID: 1225547111}
 --- !u!114 &204593628
 MonoBehaviour:
@@ -1474,6 +1476,7 @@ MonoBehaviour:
   casillaActual: {fileID: 0}
   slotActual: {fileID: 0}
   activeArrow: {fileID: 1129108415}
+  categoriasCompletas: []
   ID: 1
   posActual: 0
   vueltasCompletas: 0
@@ -1856,6 +1859,7 @@ MonoBehaviour:
   actualizado: 0
   canvasMenuMain: {fileID: 1649637489}
   dropdown: {fileID: 1484440372}
+  sePuedeTirar: 0
 --- !u!1 &526971590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
@@ -2331,6 +2335,7 @@ MonoBehaviour:
   casillaActual: {fileID: 0}
   slotActual: {fileID: 0}
   activeArrow: {fileID: 1031928060}
+  categoriasCompletas: []
   ID: 3
   posActual: 0
   vueltasCompletas: 0
@@ -2540,6 +2545,7 @@ MonoBehaviour:
   casillaActual: {fileID: 0}
   slotActual: {fileID: 0}
   activeArrow: {fileID: 1589007863}
+  categoriasCompletas: []
   ID: 4
   posActual: 0
   vueltasCompletas: 0
@@ -2999,6 +3005,7 @@ MonoBehaviour:
   casillaActual: {fileID: 0}
   slotActual: {fileID: 0}
   activeArrow: {fileID: 1407536666}
+  categoriasCompletas: []
   ID: 2
   posActual: 0
   vueltasCompletas: 0

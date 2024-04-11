@@ -35,14 +35,19 @@ public class DiceControl : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (MenuControl.Instancia.sePuedeTirar)
         {
-            PrepararDado();
-            espacioPressed = true;
-            MenuControl.Instancia.actualizado = false;
-            ControlTablero.instance.sePuedeMover = false;
+            ControlTablero.instance.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().fichaActiva = true;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                PrepararDado();
+                espacioPressed = true;
+                MenuControl.Instancia.actualizado = false;
+                ControlTablero.instance.sePuedeMover = false;
 
+            }
         }
+            
         
 
         if (rbdado.IsSleeping() && dadoEnMovimiento)
