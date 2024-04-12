@@ -37,7 +37,10 @@ public class Ficha : MonoBehaviour
             activeArrow.SetActive(false);
             uiModel.SetActive(false);
         }
-
+        if (posActual == 0)
+        {
+            categoriasCompletas.Clear();
+        }
         if (posActual >= 36)
         {
             posActual = 0;
