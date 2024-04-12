@@ -37,7 +37,7 @@ public class DiceControl : MonoBehaviour
     {
         if (MenuControl.Instancia.sePuedeTirar)
         {
-            ControlTablero.instance.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().fichaActiva = true;
+            //ControlTablero.instance.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().fichaActiva = true;
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 PrepararDado();

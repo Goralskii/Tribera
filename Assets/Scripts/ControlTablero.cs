@@ -65,8 +65,9 @@ public class ControlTablero : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().AcomodarFicha(Ficha);
         arrayFichas[Ficha].GetComponent<Ficha>().casillaActual = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual];
-        if (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Laguna")
+        if (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Laguna" && arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Salida")
         {
+            Debug.Log("entre al if para mostrar pregunta");
             if (!(arrayFichas[Ficha].GetComponent<Ficha>().categoriasCompletas.Contains(arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.GetComponent<Casillero>().categoria)))
             {
                 Debug.Log("Mostrar pregunta");
@@ -74,14 +75,17 @@ public class ControlTablero : MonoBehaviour
             } else
             {
                 arrayFichas[Ficha].GetComponent<Ficha>().fichaActiva = false;
+                MenuControl.Instancia.avanzarTurno = true;
                 MenuControl.Instancia.sePuedeTirar = true;
             }
             
         }
         else
         {
-            arrayFichas[Ficha].GetComponent<Ficha>().pierdeTurno = true;
+            Debug.Log("No entre al if para mostrar pregunta - Q: " + (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Laguna") + " P: " + (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Salida"));
+            if (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name == "Laguna") arrayFichas[Ficha].GetComponent<Ficha>().pierdeTurno = true;
             arrayFichas[Ficha].GetComponent<Ficha>().fichaActiva = false;
+            MenuControl.Instancia.avanzarTurno = true;
             MenuControl.Instancia.sePuedeTirar = true;
 
         }

@@ -12,10 +12,13 @@ public class MenuControl : MonoBehaviour
     [SerializeField] private TMP_Text Dado1;
     [SerializeField] private TMP_Text Dado2;
     [SerializeField] private TMP_Text ValorTotal; //es el valor total de la suma de los lados
+    public Text categorias;
+    public Text currentPlayer;
+    public Text vueltas;
     public DiceControl dice1;
     public DiceControl dice2;
     public int valorTotalSend;
-    public int turnoCount;//esta variable conrola la cantidad de jugadores
+    public int cantidadPlayers;//esta variable conrola la cantidad de jugadores
     public int turno = 0;
     //public ControlTablero _controlTablero;
     public bool actualizado;
@@ -25,6 +28,8 @@ public class MenuControl : MonoBehaviour
     public GameObject canvasMenuMain;
     public TMP_Dropdown dropdown;
     public bool sePuedeTirar;
+    public bool avanzarTurno;
+    public bool iniciado = false;
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
@@ -39,10 +44,14 @@ public class MenuControl : MonoBehaviour
     }
     private void Update()
     {
-        if ( turno > turnoCount)
+        if (iniciado)
         {
-            turno = 0;
+            ActualizarUI();
         }
+        ControlarWin();
+        ControlarTurno();
+        
+
     }
     void Start()
     {
@@ -60,7 +69,12 @@ public class MenuControl : MonoBehaviour
     {
          valorD1 = dice1.valorDado;
          valorD2 = dice2.valorDado;
-
+        if (InGame)
+        {
+            currentPlayer.text = "Jugador actual - P" + (turno+1);
+            ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
+            InGame = false;
+        }
         
         if (!dice1.dadoEnMovimiento && !dice2.dadoEnMovimiento && !actualizado) //si entra al if ambos valores de los dados fueron asignados y ahora hay que mostrarlos por pantalla
         {
@@ -74,6 +88,7 @@ public class MenuControl : MonoBehaviour
             ControlTablero.instance.dadoCount = valorTotalSend;
             ControlTablero.instance.sePuedeMover = true;
             actualizado = true;
+            avanzarTurno = false;
             Debug.Log("Ya actualice valor dado");
             yield return new WaitForSeconds(1f);
             if (dice1.espacioPressed && ControlTablero.instance.sePuedeMover)
@@ -82,19 +97,26 @@ public class MenuControl : MonoBehaviour
                 dice1.espacioPressed = false;
                 dice2.espacioPressed = false;
                 Debug.Log("Moviendo ficha...");
+                
                 StartCoroutine(ControlTablero.instance.MoverFicha(valorTotalSend, turno));
                 yield return new WaitForSeconds(1f);
-                //Mostra pregunta
-                
+                yield return new WaitUntil(() => avanzarTurno);
+
+                ControlarWin();
                 turno++;
+                ControlarTurno();
                 while (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno)
                 {
-                    int turnoPrevio = turno;
-                    turno++;
+                    int turnoPrevio = turno;                    
                     ControlTablero.instance.arrayFichas[turnoPrevio].GetComponent<Ficha>().pierdeTurno = false;
-                    
+                    turno++;
+                    ControlarTurno();
+                    yield return new WaitForSeconds(1f);
+
                 }
-                
+                currentPlayer.text = "Jugador actual - P" + (turno+1);
+                ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
+
 
             }
 
@@ -111,33 +133,59 @@ public class MenuControl : MonoBehaviour
         Dado2.text = "Dado 2: " + valorD2.ToString();
         ValorTotal.text = "Valor Total: " + (valorD1 + valorD2).ToString();   
     }
+    public void ControlarTurno()
+    {
+        if (turno > cantidadPlayers)
+        {
+            turno = 0;
+        }
+    }
+   public void ControlarWin()
+    {
+        Debug.Log("catCount: " + ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count);
+        Debug.Log("vueltasCount: " + ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas);
+        if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == 4 || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 4)
+        {
+            Salir();
+        }
+    }
+    public void ActualizarUI()
+    {
+        vueltas.text = "Vueltas completas: " + ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas.ToString();
+        string textoLista = string.Join("\n -", ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas);
 
-   
-    
+        // Asigna el texto generado al componente de texto UI
+        categorias.text = "Categorias Completadas: \n -" + textoLista;
+    }
     
 
     public void Jugar()
     {
         InGame = true;
-
-        if (InGame == true)
-        {
-            // Desactivar el canvas MenuMain
-            canvasMenuMain.SetActive(false);
-            turnoCount = int.Parse(dropdown.options[dropdown.value].text)-1;
-            sePuedeTirar = true;
-        }
-
+        canvasMenuMain.SetActive(false);
+        cantidadPlayers = int.Parse(dropdown.options[dropdown.value].text)-1;
+        sePuedeTirar = true;
+        iniciado = true;
+        MostrarFichas();
     }
-
+    public void MostrarFichas()
+    {
+        for (int i = 0; i <= cantidadPlayers; i++)
+        {
+            ControlTablero.instance.arrayFichas[i].SetActive(true);
+        }
+    }
     public void Salir()
     {
-        Application.Quit();
-        Debug.Log("Aquí se cierra el juego");
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
-    
-    
+
+
 
     void DropdownValueChanged(TMP_Dropdown dropdown)
     {

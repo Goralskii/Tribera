@@ -135,14 +135,15 @@ public class AnsManager : MonoBehaviour
         //m_controlTablero.questionPanel.SetActive(false);
 
         m_score = 0;
-        foreach (GameObject ficha in m_controlTablero.arrayFichas) {
-            if (ficha.GetComponent<Ficha>().fichaActiva)
-            {
-                ficha.GetComponent<Ficha>().categoriasCompletas.Add(cate);
-                yield return StartCoroutine(m_controlTablero.MoverFicha(2, ficha.GetComponent<Ficha>().ID));
-            }
-        }
-
+        //foreach (GameObject ficha in m_controlTablero.arrayFichas) {
+        //    if (ficha.GetComponent<Ficha>().fichaActiva)
+        //    {
+        //        ficha.GetComponent<Ficha>().categoriasCompletas.Add(cate);
+        //        yield return StartCoroutine(m_controlTablero.MoverFicha(2, ficha.GetComponent<Ficha>().ID));
+        //    }
+        //}
+        m_controlTablero.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().categoriasCompletas.Add(cate);
+        yield return StartCoroutine(m_controlTablero.MoverFicha(2, m_controlTablero.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().ID));
         //m_controlTablero
         //blockOption.SetActive(false);
         //m_anim.Rebind();
@@ -155,14 +156,16 @@ public class AnsManager : MonoBehaviour
         yield return new WaitForSeconds(m_waitTime);
         m_score = 0;
         m_controlTablero.questionPanel.SetActive(false);
-        
-        foreach (GameObject ficha in m_controlTablero.arrayFichas)
-        {
-            if (ficha.GetComponent<Ficha>().fichaActiva)
-            {
-                ficha.GetComponent<Ficha>().fichaActiva = false;
-            }
-        }
+
+        //foreach (GameObject ficha in m_controlTablero.arrayFichas)
+        //{
+        //    if (ficha.GetComponent<Ficha>().fichaActiva)
+        //    {
+        //        ficha.GetComponent<Ficha>().fichaActiva = false;
+        //    }
+        //}
+        m_controlTablero.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().fichaActiva = false;
+        MenuControl.Instancia.avanzarTurno = true;
         MenuControl.Instancia.sePuedeTirar = true;
         //blockOption.SetActive(false);
     }
