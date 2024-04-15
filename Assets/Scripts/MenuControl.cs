@@ -30,7 +30,7 @@ public class MenuControl : MonoBehaviour
     public bool sePuedeTirar;
     public bool avanzarTurno;
     public bool iniciado = false;
-
+    public GameObject panelui;
     public GameObject buttonPrefab;
     public Transform parentTransform;
     public List<Button> buttonList;
@@ -167,6 +167,7 @@ public class MenuControl : MonoBehaviour
     {
         if (actualizado)
         {
+            panelui.SetActive(true);
             InGame = true;
             canvasMenuMain.SetActive(false);
             cantidadPlayers = int.Parse(dropdown.options[dropdown.value].text) - 1;
