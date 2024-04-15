@@ -5,6 +5,7 @@ using System;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class TriviaManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class TriviaManager : MonoBehaviour
     private List<Question> questions = new List<Question>();
     private List<int> questionIndexes = new List<int>(); // Índices de las preguntas que se han mostrado
     private int currentQuestionIndex = -1; // Índice de la pregunta actual
+    private int totalQuestions = 0;
+    private List<string> usedQuestions = new List<string>();
     [Serializable]
     public class Question
     {
@@ -20,6 +23,13 @@ public class TriviaManager : MonoBehaviour
         public string[] answers;
         public int correctAnswerIndex;
         public string catName;
+    }
+    private void Update()
+    {
+        if(usedQuestions.Count == totalQuestions)
+        {
+            usedQuestions.Clear();
+        }
     }
     [SerializeField] private AnsManager m_gameManager = null; // Referencia al GameManager
     void Start()
@@ -34,6 +44,7 @@ public class TriviaManager : MonoBehaviour
         questionIndexes.Clear();
         questionIndexes = new List<int>();
         currentQuestionIndex = -1;
+        totalQuestions = 0;
         Debug.Log("trivia empezando");
         Debug.Log("Cargando preguntas...");
         LoadQuestionsFromFile("questions.txt", selectedCategories);
@@ -50,6 +61,7 @@ public class TriviaManager : MonoBehaviour
             string[] lines = File.ReadAllLines(filePath);
             foreach (string line in lines)
             {
+                totalQuestions++;
                 string[] parts = line.Split(';');
                 if (parts.Length == 7)
                 {
@@ -70,6 +82,7 @@ public class TriviaManager : MonoBehaviour
                     Debug.LogWarning("Invalid question format: " + line);
                 }
             }
+            Debug.Log("TotalQuestions: " + totalQuestions);
         }
         else
         {
@@ -105,8 +118,14 @@ public class TriviaManager : MonoBehaviour
             if (questionIndexes.Count > 0)
             {
                 int questionIndex = questionIndexes[currentQuestionIndex];
+                while (usedQuestions.Contains(questions[questionIndex].question))
+                {
+                    currentQuestionIndex++;
+                    questionIndex++;
+                }
                 Question currentQuestion = questions[questionIndex];
                 questionText.text = currentQuestion.question;
+                usedQuestions.Add(currentQuestion.question);
                 //currentCat.text = currentQuestion.catName;
                 // Mezclar el orden de las respuestas
                 List<int> answerIndexes = new List<int>() { 0, 1, 2, 3 };
@@ -158,7 +177,7 @@ public class TriviaManager : MonoBehaviour
     public bool AllQuestions()
     {
         currentQuestionIndex++;
-        return currentQuestionIndex >= questionIndexes.Count;
+        return false;
     }
 }
 // Método de extensión para mezclar una lista genérica

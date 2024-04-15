@@ -165,12 +165,16 @@ public class MenuControl : MonoBehaviour
     }
     public void Jugar()
     {
-        InGame = true;
-        canvasMenuMain.SetActive(false);
-        cantidadPlayers = int.Parse(dropdown.options[dropdown.value].text)-1;
-        sePuedeTirar = true;
-        iniciado = true;
-        MostrarFichas();
+        if (actualizado)
+        {
+            InGame = true;
+            canvasMenuMain.SetActive(false);
+            cantidadPlayers = int.Parse(dropdown.options[dropdown.value].text) - 1;
+            sePuedeTirar = true;
+            iniciado = true;
+            MostrarFichas();
+        }
+        
     }
     public void MostrarFichas()
     {

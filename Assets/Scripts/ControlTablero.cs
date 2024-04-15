@@ -40,6 +40,7 @@ public class ControlTablero : MonoBehaviour
         arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().LiberarFicha(Ficha);
         if (questionPanel.activeSelf)
         {
+            yield return new WaitForSeconds(1.5f);
             questionPanel.SetActive(false);
         }
         for (int i = 0; i <= count; i++)

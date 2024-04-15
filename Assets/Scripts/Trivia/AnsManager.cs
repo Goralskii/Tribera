@@ -131,7 +131,7 @@ public class AnsManager : MonoBehaviour
     // Corutina para esperar y luego mostrar la siguiente pregunta
     private IEnumerator CloseResetAndGo()
     {
-        //yield return new WaitForSeconds(m_waitTime);        
+        //yield return new WaitForSeconds(1.5f);        
         //m_controlTablero.questionPanel.SetActive(false);
 
         m_score = 0;
@@ -153,7 +153,7 @@ public class AnsManager : MonoBehaviour
     // Corutina para esperar y luego mostrar el juego terminado
     private IEnumerator CloseAndNext()
     {
-        yield return new WaitForSeconds(m_waitTime);
+        yield return new WaitForSeconds(1.5f);
         m_score = 0;
         m_controlTablero.questionPanel.SetActive(false);
 
