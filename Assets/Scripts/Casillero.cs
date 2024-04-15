@@ -13,6 +13,8 @@ public class Casillero : MonoBehaviour
     void Awake()
     {
         _controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
+        categoria = GetComponent<MeshRenderer>().material.name;
+        categoria = categoria.Substring(0, categoria.Length - 11);
     }
     void Start()
     {

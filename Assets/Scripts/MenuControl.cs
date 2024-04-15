@@ -31,6 +31,12 @@ public class MenuControl : MonoBehaviour
     public bool avanzarTurno;
     public bool iniciado = false;
 
+    public GameObject buttonPrefab;
+    public Transform parentTransform;
+    public List<Button> buttonList;
+    public GameObject especialPanel;
+    public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTAL", "CULTURA"};
+
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
         if (Instancia == null)//compruebo que esta accion no se realizó con anterioridad
@@ -157,8 +163,6 @@ public class MenuControl : MonoBehaviour
         // Asigna el texto generado al componente de texto UI
         categorias.text = "Categorias Completadas: \n -" + textoLista;
     }
-    
-
     public void Jugar()
     {
         InGame = true;
@@ -183,9 +187,36 @@ public class MenuControl : MonoBehaviour
             Application.Quit();
         #endif
     }
-
-
-
+    public void CasillaEspecial(Ficha ficha)
+    {
+        especialPanel.SetActive(true);
+        for (int i = 0;i < totalCategorias.Count; i++)
+        {
+            if (!ficha.categoriasCompletas.Contains(totalCategorias[i]))
+            {
+                GameObject buttonTemp = Instantiate(buttonPrefab, parentTransform);
+                Button button = buttonTemp.GetComponent<Button>();
+                buttonTemp.GetComponentInChildren<TMP_Text>().text = totalCategorias[i];
+                buttonList.Add(button);
+                button.onClick.AddListener(() => ButtonClicked(button));
+            }
+        }
+    }
+    public void ButtonClicked(Button clickedButton)
+    {
+        ControlTablero.instance.cateSend = clickedButton.GetComponentInChildren<TMP_Text>().text;
+        especialPanel.SetActive(false);
+        ClearButtons();
+        ControlTablero.instance.especial = false;
+    }
+    public void ClearButtons()
+    {
+        foreach (Button button in buttonList)
+        {
+            Destroy(button.gameObject);
+        }
+        buttonList.Clear();
+    }
 
     void DropdownValueChanged(TMP_Dropdown dropdown)
     {

@@ -14,6 +14,8 @@ public class ControlTablero : MonoBehaviour
     public GameObject questionPanel;
     public bool sePuedeMover;
     public int dadoCount;
+    public string cateSend;
+    public bool especial = false;
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
         if (instance == null)//compruebo que esta accion no se realizó con anterioridad
@@ -71,7 +73,16 @@ public class ControlTablero : MonoBehaviour
             if (!(arrayFichas[Ficha].GetComponent<Ficha>().categoriasCompletas.Contains(arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.GetComponent<Casillero>().categoria)))
             {
                 Debug.Log("Mostrar pregunta");
-                StartCoroutine(MostrarPregunta(Ficha));
+                cateSend = arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.GetComponent<Casillero>().categoria;
+                if (cateSend == "ESPECIAL")
+                {
+                    especial = true;
+                    //Mostrar panel de categorias
+                    MenuControl.Instancia.CasillaEspecial(arrayFichas[Ficha].GetComponent<Ficha>());
+
+                }
+                yield return new WaitUntil(() => !especial);
+                StartCoroutine(MostrarPregunta(cateSend));
             } else
             {
                 arrayFichas[Ficha].GetComponent<Ficha>().fichaActiva = false;
@@ -92,10 +103,10 @@ public class ControlTablero : MonoBehaviour
         
     }
 
-    public IEnumerator MostrarPregunta(int ficha)
+    public IEnumerator MostrarPregunta(string cat)
     {
         questionPanel.SetActive(true);
-        _ansManager.StartTrivia(arrayFichas[ficha].GetComponent<Ficha>().casillaActual.GetComponent<Casillero>());
+        _ansManager.StartTrivia(cat);
         yield return new WaitForSeconds(10f);
     }
 }

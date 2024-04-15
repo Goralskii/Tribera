@@ -48,12 +48,12 @@ public class AnsManager : MonoBehaviour
         // Convertir el array de strings en una lista de strings
         //selectedCategories = new List<string>(categoriesArray);
     }
-    public void StartTrivia(Casillero casillaActual)
+    public void StartTrivia(string categoria)
     {
         //StartTimer();
         Debug.Log("Entrando a trivia");
-        Debug.Log("Casilla: " + casillaActual.name + " - Categoria: " + casillaActual.categoria);
-        cate = casillaActual.categoria;
+        //Debug.Log("Casilla: " + casillaActual.name + " - Categoria: " + casillaActual.categoria);
+        cate = categoria;
         m_triviaManager.StartTrivia(cate); // Inicia la secuencia de preguntas
     }
     void Update()
