@@ -39,6 +39,7 @@ public class MenuControl : MonoBehaviour
     public Texture2D[] texturasDados;
     public RawImage dado1UI;
     public RawImage dado2UI;
+    public bool randomizer = false;
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
@@ -87,6 +88,7 @@ public class MenuControl : MonoBehaviour
         
         if (!dice1.dadoEnMovimiento && !dice2.dadoEnMovimiento && !actualizado) //si entra al if ambos valores de los dados fueron asignados y ahora hay que mostrarlos por pantalla
         {
+            randomizer = false;
             sePuedeTirar = false;
             // Debug.Log("Valor mostrado d1: " + valorD1);
             // Debug.Log("Valor mostrado d2 : " + valorD2);
@@ -188,6 +190,15 @@ public class MenuControl : MonoBehaviour
         {
             ControlTablero.instance.arrayFichas[i].SetActive(true);
         }
+    }
+    public IEnumerator RandomSprite(){
+        if (randomizer){
+            dado1UI.texture = texturasDados[Random.Range(0, texturasDados.Length)];
+            dado2UI.texture = texturasDados[Random.Range(0, texturasDados.Length)];
+            yield return new WaitForSeconds(0.01f);
+            yield return StartCoroutine(RandomSprite());
+        }
+        yield break;
     }
     public void Salir()
     {

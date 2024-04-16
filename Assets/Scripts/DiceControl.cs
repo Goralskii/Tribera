@@ -43,7 +43,11 @@ public class DiceControl : MonoBehaviour
                 PrepararDado();
                 espacioPressed = true;
                 MenuControl.Instancia.actualizado = false;
+                MenuControl.Instancia.randomizer = true;
+                StartCoroutine(MenuControl.Instancia.RandomSprite());
                 ControlTablero.instance.sePuedeMover = false;
+                
+                
 
             }
         }
