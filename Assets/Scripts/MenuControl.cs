@@ -36,6 +36,9 @@ public class MenuControl : MonoBehaviour
     public List<Button> buttonList;
     public GameObject especialPanel;
     public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTAL", "CULTURA"};
+    public Texture2D[] texturasDados;
+    public RawImage dado1UI;
+    public RawImage dado2UI;
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
@@ -87,10 +90,12 @@ public class MenuControl : MonoBehaviour
             sePuedeTirar = false;
             // Debug.Log("Valor mostrado d1: " + valorD1);
             // Debug.Log("Valor mostrado d2 : " + valorD2);
-            Dado1.text = "Dado 1: " + valorD1.ToString();
-            Dado2.text = "Dado 2: " + valorD2.ToString();
+            //Dado1.text = "Dado 1: " + valorD1.ToString();
+            dado1UI.texture = texturasDados[valorD1-1];
+            //Dado2.text = "Dado 2: " + valorD2.ToString();
+            dado2UI.texture = texturasDados[valorD2-1];
             valorTotalSend = valorD1 + valorD2;
-            ValorTotal.text = "Valor Total: " + (valorTotalSend).ToString();
+            //ValorTotal.text = "Valor Total: " + (valorTotalSend).ToString();
             ControlTablero.instance.dadoCount = valorTotalSend;
             ControlTablero.instance.sePuedeMover = true;
             actualizado = true;

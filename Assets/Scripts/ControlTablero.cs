@@ -55,7 +55,9 @@ public class ControlTablero : MonoBehaviour
                     Debug.Log("Laguna rotando");
                     arrayFichas[Ficha].transform.Rotate(0, 90, 0);
                 }
-                yield return StartCoroutine(_movementAnimation.Move(arrayFichas[Ficha], arrayFichas[Ficha].transform.position, arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].transform.position));
+                Vector3 posDestino = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].transform.position;
+                posDestino.y += 0.05f;
+                yield return StartCoroutine(_movementAnimation.Move(arrayFichas[Ficha], arrayFichas[Ficha].transform.position, posDestino));
             }
             arrayFichas[Ficha].GetComponent<Ficha>().posActual++;
         }
