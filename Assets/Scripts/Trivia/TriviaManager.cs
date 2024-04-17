@@ -6,16 +6,16 @@ using TMPro;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System.Linq;
-
 public class TriviaManager : MonoBehaviour
 {
     public TMP_Text questionText;    
-    public Button[] answerButtons; // Suponiendo que tienes 4 botones para las respuestas
+    public Button[] answerButtons; // Suponiendo que tienes 4 botones para las respuestas    
     private List<Question> questions = new List<Question>();
     private List<int> questionIndexes = new List<int>(); // Índices de las preguntas que se han mostrado
     private int currentQuestionIndex = -1; // Índice de la pregunta actual
     private int totalQuestions = 0;
-    private List<string> usedQuestions = new List<string>();
+    private List<string> usedQuestions = new List<string>();    
+    [SerializeField] private AnsManager m_gameManager = null; // Referencia al GameManager
     [Serializable]
     public class Question
     {
@@ -31,11 +31,9 @@ public class TriviaManager : MonoBehaviour
             usedQuestions.Clear();
         }
     }
-    [SerializeField] private AnsManager m_gameManager = null; // Referencia al GameManager
     void Start()
     {
         m_gameManager = FindObjectOfType<AnsManager>();
-        
     }
     public void StartTrivia(string selectedCategories)
     {
@@ -45,12 +43,8 @@ public class TriviaManager : MonoBehaviour
         questionIndexes = new List<int>();
         currentQuestionIndex = -1;
         totalQuestions = 0;
-        Debug.Log("trivia empezando");
-        Debug.Log("Cargando preguntas...");
         LoadQuestionsFromFile("questions.txt", selectedCategories);
-        Debug.Log("Mezclando preguntas...");
         ShuffleQuestions();
-        Debug.Log("Se muestra la pregunta...");
         ShowNextQuestion();
     }
     void LoadQuestionsFromFile(string fileName, string selectedCategories)
@@ -79,10 +73,8 @@ public class TriviaManager : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogWarning("Invalid question format: " + line);
                 }
             }
-            Debug.Log("TotalQuestions: " + totalQuestions);
         }
         else
         {
@@ -108,13 +100,12 @@ public class TriviaManager : MonoBehaviour
         if (AllQuestions())
         {
             Debug.Log("Todas las respuestas respondidas");
-            m_gameManager.showWinnerScreen(true);
+            m_gameManager.ShowWinnerScreen(true);
             StartCoroutine(m_gameManager.WaitAndEnd(5f));
             return;
         }
         else
         {
-            //if (!m_gameManager.checkScore()) currentQuestion.text = ("Pregunta " + (currentQuestionIndex + 1).ToString() + " / " + questionIndexes.Count.ToString());
             if (questionIndexes.Count > 0)
             {
                 int questionIndex = questionIndexes[currentQuestionIndex];
@@ -126,11 +117,9 @@ public class TriviaManager : MonoBehaviour
                 Question currentQuestion = questions[questionIndex];
                 questionText.text = currentQuestion.question;
                 usedQuestions.Add(currentQuestion.question);
-                //currentCat.text = currentQuestion.catName;
                 // Mezclar el orden de las respuestas
                 List<int> answerIndexes = new List<int>() { 0, 1, 2, 3 };
                 answerIndexes.Shuffle();
-                Debug.Log("AnswerButton lenght: " + answerButtons.Length);
                 for (int i = 0; i < answerButtons.Length; i++)
                 {
                     int answerIndex = answerIndexes[i];
@@ -139,7 +128,6 @@ public class TriviaManager : MonoBehaviour
                     int buttonIndex = i;
                     answerButtons[i].onClick.AddListener(() => OnAnswerSelected(answerButtons[buttonIndex], answerIndex, currentQuestion.correctAnswerIndex));
                 }
-            Debug.Log("Esperando respuesta...");
             }
             else
             {
@@ -150,17 +138,6 @@ public class TriviaManager : MonoBehaviour
     }
     void OnAnswerSelected(Button selectedButton, int answerIndex, int correctAnswerIndex)
     {
-        Debug.Log("Respuesta seleccionada...");
-        Debug.Log(selectedButton);
-        int selectedAnswerIndex = 0;
-        for (int i = 0; i < answerButtons.Length; i++)
-        {
-            if (answerButtons[i] == selectedButton)
-            {
-                selectedAnswerIndex = i;
-                break;
-            }
-        }
         if (answerIndex == correctAnswerIndex)
         {
             StartCoroutine(m_gameManager.GiveAnswerRoutine(selectedButton, true));
@@ -184,7 +161,6 @@ public class TriviaManager : MonoBehaviour
 public static class ListExtensions
 {
     private static System.Random rng = new System.Random();
-
     public static void Shuffle<T>(this IList<T> list)
     {
         int n = list.Count;

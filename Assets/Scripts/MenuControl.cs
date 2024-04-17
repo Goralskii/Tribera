@@ -48,10 +48,6 @@ public class MenuControl : MonoBehaviour
             Instancia = this;
         }
     }
-    private void Awake()
-    {
-        //_controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
-    }
     private void Update()
     {
         if (iniciado)
@@ -60,16 +56,9 @@ public class MenuControl : MonoBehaviour
         }
         ControlarWin();
         ControlarTurno();
-        
-
     }
     void Start()
     {
-        // Obtener la referencia al Dropdown        
-
-        // Agregar opciones al Dropdown
-        //ActualizarOpcionesDropdown();
-
         // Suscribirse al evento onValueChanged
         dropdown.onValueChanged.AddListener(delegate {
             DropdownValueChanged(dropdown);
@@ -85,36 +74,25 @@ public class MenuControl : MonoBehaviour
             ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
             InGame = false;
         }
-        
         if (!dice1.dadoEnMovimiento && !dice2.dadoEnMovimiento && !actualizado) //si entra al if ambos valores de los dados fueron asignados y ahora hay que mostrarlos por pantalla
         {
             randomizer = false;
             sePuedeTirar = false;
-            // Debug.Log("Valor mostrado d1: " + valorD1);
-            // Debug.Log("Valor mostrado d2 : " + valorD2);
-            //Dado1.text = "Dado 1: " + valorD1.ToString();
             dado1UI.texture = texturasDados[valorD1-1];
-            //Dado2.text = "Dado 2: " + valorD2.ToString();
             dado2UI.texture = texturasDados[valorD2-1];
             valorTotalSend = valorD1 + valorD2;
-            //ValorTotal.text = "Valor Total: " + (valorTotalSend).ToString();
             ControlTablero.instance.dadoCount = valorTotalSend;
             ControlTablero.instance.sePuedeMover = true;
             actualizado = true;
             avanzarTurno = false;
-            Debug.Log("Ya actualice valor dado");
             yield return new WaitForSeconds(1f);
             if (dice1.espacioPressed && ControlTablero.instance.sePuedeMover)
             {
-
                 dice1.espacioPressed = false;
                 dice2.espacioPressed = false;
-                Debug.Log("Moviendo ficha...");
-                
                 StartCoroutine(ControlTablero.instance.MoverFicha(valorTotalSend, turno));
                 yield return new WaitForSeconds(1f);
                 yield return new WaitUntil(() => avanzarTurno);
-
                 ControlarWin();
                 turno++;
                 ControlarTurno();
@@ -125,26 +103,18 @@ public class MenuControl : MonoBehaviour
                     turno++;
                     ControlarTurno();
                     yield return new WaitForSeconds(1f);
-
                 }
                 currentPlayer.text = "Jugador actual - P" + (turno+1);
                 ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
-
-
             }
-
         }
-        Debug.Log("Volviendo...");
-        
     }
-
     public void LimpiarValores()
     {
         valorD1 = 0;
         valorD2 = 0;
-        Dado1.text = "Dado 1: " + valorD1.ToString();
-        Dado2.text = "Dado 2: " + valorD2.ToString();
-        ValorTotal.text = "Valor Total: " + (valorD1 + valorD2).ToString();   
+        dado1UI.texture = texturasDados[0];
+        dado2UI.texture = texturasDados[0];
     }
     public void ControlarTurno()
     {
@@ -155,8 +125,6 @@ public class MenuControl : MonoBehaviour
     }
    public void ControlarWin()
     {
-        Debug.Log("catCount: " + ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count);
-        Debug.Log("vueltasCount: " + ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas);
         if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == 4 || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 4)
         {
             Salir();
@@ -166,7 +134,6 @@ public class MenuControl : MonoBehaviour
     {
         vueltas.text = "Vueltas completas: " + ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas.ToString();
         string textoLista = string.Join("\n -", ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas);
-
         // Asigna el texto generado al componente de texto UI
         categorias.text = "Categorias Completadas: \n -" + textoLista;
     }
@@ -182,7 +149,6 @@ public class MenuControl : MonoBehaviour
             iniciado = true;
             MostrarFichas();
         }
-        
     }
     public void MostrarFichas()
     {
@@ -238,10 +204,8 @@ public class MenuControl : MonoBehaviour
         }
         buttonList.Clear();
     }
-
     void DropdownValueChanged(TMP_Dropdown dropdown)
     {
         Debug.Log("Opción seleccionada: " + dropdown.options[dropdown.value].text);
     }
-
 }

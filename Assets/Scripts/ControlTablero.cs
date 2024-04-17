@@ -8,7 +8,6 @@ public class ControlTablero : MonoBehaviour
     public static ControlTablero instance;
     public GameObject[] arrayTablero;
     public GameObject[] arrayFichas;
-    //public MenuControl _menuControl;
     public MovementAnimation _movementAnimation;
     public AnsManager _ansManager;
     public GameObject questionPanel;
@@ -25,10 +24,7 @@ public class ControlTablero : MonoBehaviour
     }
     void Awake()
     {
-        //AsignarFichas();
-        //_menuControl = GameObject.Find("Canvas").GetComponent<MenuControl>();
         _movementAnimation = GameObject.Find("Script").GetComponent<MovementAnimation>();
-        //_ansManager = GameObject.Find("QuestionPanel").GetComponent<AnsManager>();
     }
     public void AsignarFichas()
     {
@@ -36,7 +32,6 @@ public class ControlTablero : MonoBehaviour
     }
     public IEnumerator MoverFicha(int count, int Ficha)
     {        
-        
         arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().LiberarFicha(Ficha);
         if (questionPanel.activeSelf)
         {
@@ -45,14 +40,11 @@ public class ControlTablero : MonoBehaviour
         }
         for (int i = 0; i <= count; i++)
         {
-            yield return new WaitForSeconds(0.5f);//delay
-
-            //arrayFichas[Ficha].transform.position = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual+i].transform.position;
+            yield return new WaitForSeconds(0.5f);
             if (i != 0)
             {
                 if (arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].name == "Laguna")
                 {
-                    Debug.Log("Laguna rotando");
                     arrayFichas[Ficha].transform.Rotate(0, 90, 0);
                 }
                 Vector3 posDestino = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].transform.position;
@@ -61,21 +53,14 @@ public class ControlTablero : MonoBehaviour
             }
             arrayFichas[Ficha].GetComponent<Ficha>().posActual++;
         }
-        
         arrayFichas[Ficha].GetComponent<Ficha>().posActual--;
-        Debug.Log("Count: " + count);
-        //arrayFichas[Ficha].GetComponent<Ficha>().posActual += count;        
-        Debug.Log("Ya movi ficha, ahora voy a acomodar");
-        Debug.Log("Accediendo al casillero: " + arrayTablero[count].name);
         yield return new WaitForSeconds(0.5f);
         arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().AcomodarFicha(Ficha);
         arrayFichas[Ficha].GetComponent<Ficha>().casillaActual = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual];
         if (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Laguna" && arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Salida")
         {
-            Debug.Log("entre al if para mostrar pregunta");
             if (!(arrayFichas[Ficha].GetComponent<Ficha>().categoriasCompletas.Contains(arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.GetComponent<Casillero>().categoria)))
             {
-                Debug.Log("Mostrar pregunta");
                 cateSend = arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.GetComponent<Casillero>().categoria;
                 if (cateSend == "ESPECIAL")
                 {
@@ -92,20 +77,15 @@ public class ControlTablero : MonoBehaviour
                 MenuControl.Instancia.avanzarTurno = true;
                 MenuControl.Instancia.sePuedeTirar = true;
             }
-            
         }
         else
         {
-            Debug.Log("No entre al if para mostrar pregunta - Q: " + (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Laguna") + " P: " + (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Salida"));
             if (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name == "Laguna") arrayFichas[Ficha].GetComponent<Ficha>().pierdeTurno = true;
             arrayFichas[Ficha].GetComponent<Ficha>().fichaActiva = false;
             MenuControl.Instancia.avanzarTurno = true;
             MenuControl.Instancia.sePuedeTirar = true;
-
         }
-        
     }
-
     public IEnumerator MostrarPregunta(string cat)
     {
         questionPanel.SetActive(true);
@@ -113,9 +93,3 @@ public class ControlTablero : MonoBehaviour
         yield return new WaitForSeconds(10f);
     }
 }
-
-
-
-
-
-

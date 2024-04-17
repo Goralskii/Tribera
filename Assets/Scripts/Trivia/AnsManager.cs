@@ -7,68 +7,23 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class AnsManager : MonoBehaviour
 {
-    [SerializeField] public AudioClip m_correctSound = null;
-    [SerializeField] public AudioClip m_incorrectSound = null;
+    public AudioClip m_correctSound = null;
+    public AudioClip m_incorrectSound = null;
     [SerializeField] private Color m_correctColor = Color.black;
     [SerializeField] private Color m_incorrectColor = Color.black;
-    [SerializeField] private float m_waitTime = 0.0f;
     [SerializeField] private TriviaManager m_triviaManager;
     [SerializeField] private ControlTablero m_controlTablero;
     // Añadir una variable para almacenar las categorías seleccionadas
     public static AnsManager instance;
-    //private string selectedCategories;
     public int m_score = 0;
     public int? scoreLimit = 1;
     public string cate;
-    //public Text textoContador;
     public AudioSource m_audioSource;
-    //public GameObject blockOption;
-    //public GameObject timerBar;
-    //public GameObject winnerScreen;
-    //private Animator m_anim;
-    //public float totalTime = 0.0f; // Total time for the quiz
-    //private float timeLeft; // Time left for the quiz
-    //private bool timerStarted; // Flag to check if the timer has started
-    void Start()
-    {
-        //SetSelectedCategories();
-        //m_triviaManager = FindObjectOfType<TriviaManager>();
-        //m_score = 0;
-        //timeLeft = totalTime;
-        //timerStarted = false;
-        //m_anim = timerBar.GetComponent<Animator>();
-        //StartTrivia(); Inicia la secuencia de preguntas
-    }
-    public void SetSelectedCategories()
-    {
-        // Recuperar las categorías seleccionadas desde PlayerPrefs
-        string categoriesString = PlayerPrefs.GetString("SelectedCategories");
-        string[] categoriesArray = categoriesString.Split(',');
-
-        // Convertir el array de strings en una lista de strings
-        //selectedCategories = new List<string>(categoriesArray);
-    }
     public void StartTrivia(string categoria)
     {
-        //StartTimer();
-        Debug.Log("Entrando a trivia");
-        //Debug.Log("Casilla: " + casillaActual.name + " - Categoria: " + casillaActual.categoria);
         cate = categoria;
         m_triviaManager.StartTrivia(cate); // Inicia la secuencia de preguntas
-    }
-    void Update()
-    {                    
-            //if (checkScore())
-            //{
-                //timerStarted = false;
-              //  showWinnerScreen(false);
-                //StartCoroutine(WaitAndEnd(5f));
-            //}
-    }
-    public bool checkScore()
-    {
-        return m_score >= scoreLimit;
-    }
+    }        
     public IEnumerator WaitAndEnd(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
@@ -80,13 +35,12 @@ public class AnsManager : MonoBehaviour
     }
     public void EndTimer()   // Do something when the timer ends, such as show the quiz results
     {
-        //timerStarted = false;
         if (m_audioSource.isPlaying) m_audioSource.Stop();
         m_audioSource.clip = m_incorrectSound;
         m_audioSource.Play();
         GameOver();
     }
-    public void showWinnerScreen(bool val)
+    public void ShowWinnerScreen(bool val)
     {
         if (val)
         {
@@ -109,46 +63,21 @@ public class AnsManager : MonoBehaviour
         if (answer)
         {
             m_score++;
-            //textoContador.text = m_score.ToString();
-            //m_anim.enabled = false;
-            //timeLeft = 17.5f;
-            //yield return StartCoroutine(WaitAndNextQuestion());
-
             //Ocultar panel, resetear score y avanzar 2
             yield return StartCoroutine(CloseResetAndGo());
         }
         else
         {
             m_score++;
-            //m_anim.enabled = false;
             yield return StartCoroutine(CloseAndNext());
         }
-    }
-    public void ShowCorrectOnFail(Button optionButton)
-    {
-        optionButton.GetComponent<Image>().color = m_correctColor;
-    }
-    // Corutina para esperar y luego mostrar la siguiente pregunta
+    }    
     private IEnumerator CloseResetAndGo()
     {
-        //yield return new WaitForSeconds(1.5f);        
-        //m_controlTablero.questionPanel.SetActive(false);
-
         m_score = 0;
-        //foreach (GameObject ficha in m_controlTablero.arrayFichas) {
-        //    if (ficha.GetComponent<Ficha>().fichaActiva)
-        //    {
-        //        ficha.GetComponent<Ficha>().categoriasCompletas.Add(cate);
-        //        yield return StartCoroutine(m_controlTablero.MoverFicha(2, ficha.GetComponent<Ficha>().ID));
-        //    }
-        //}
         m_controlTablero.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().categoriasCompletas.Add(cate);
         yield return StartCoroutine(m_controlTablero.MoverFicha(2, m_controlTablero.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().ID));
-        //m_controlTablero
         //blockOption.SetActive(false);
-        //m_anim.Rebind();
-        //m_anim.Update(0f);
-        //m_anim.enabled = true;
     }
     // Corutina para esperar y luego mostrar el juego terminado
     private IEnumerator CloseAndNext()
@@ -156,14 +85,6 @@ public class AnsManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         m_score = 0;
         m_controlTablero.questionPanel.SetActive(false);
-
-        //foreach (GameObject ficha in m_controlTablero.arrayFichas)
-        //{
-        //    if (ficha.GetComponent<Ficha>().fichaActiva)
-        //    {
-        //        ficha.GetComponent<Ficha>().fichaActiva = false;
-        //    }
-        //}
         m_controlTablero.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().fichaActiva = false;
         MenuControl.Instancia.avanzarTurno = true;
         MenuControl.Instancia.sePuedeTirar = true;

@@ -12,14 +12,8 @@ public class Cleaner : MonoBehaviour
         else
         {
             instance = this;
-            Debug.LogWarning("Se limpiaron las prefs");
             PlayerPrefs.DeleteAll();
             DontDestroyOnLoad(gameObject);
         }
-        // No destruir este objeto al cargar una nueva escena
-        
     }
-
-    
-
 }
