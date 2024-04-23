@@ -80,4 +80,22 @@ HISTORIA;¿En qué año se inició el carnaval correntino?;1961;1981;1971;1991;0
 HISTORIA;¿En qué localidad nació San Martin?;Curuzú Cuatiá;Paso de los Libres;Goya;Yapeyú;3
 HISTORIA;¿Quién fundó la Ciudad de Corrientes?;José Hernández;Fernando Saavedra;Juan Torres de Vera y Aragón;Juan José Cabral;2
 HISTORIA;¿Qué día se celebra Karaí Octubre?;30 de Septiembre;10 de Octubre;1 de Octubre;30 de Octubre;2
-HISTORIA;¿Qué presidente de la nación nació en Paso de los Libres, Corrientes?;Alfonsín;Hipólito;Menem;Frondizi;3
+HISTORIA;¿Qué presidente de la Nación nació en Paso de los Libres, Corrientes?;Alfonsín;Hipólito;Menem;Frondizi;3
+DEPORTES;¿En qué año dirigió Diego Armando Maradona al Club Deportivo Mandiyú?;1993;1994;1995;1996;1
+DEPORTES;¿De qué ciudad es oriundo el medallista olímpico Federico Kammerichs?;Esquina;Corrientes;Goya;Ituziangó;2
+DEPORTES;¿Qué 2 equipos correntinos fueron los únicos en llegar a la Primera Division del fútbol argentino?;Huracán Corrientes y Boca Unidos;Boca Unidos y Mandiyú;Mandiyú y Huracán Corrientes;Talleres y Ferroviario;2
+DEPORTES;¿Donde debutó deportivamente Francisco "Pancho" Sá?;Boca Unidos;Deportivo Mandiyu;Huracán Corrientes;Sarmiento(Rcia);2
+DEPORTES;¿Cuál es el apodo del Club Deportivo Mandiyu?;Gauchos;Albo;Textiles;Guaraníes;1
+DEPORTES;¿Cuál es el apodo del Club Atletico Huracán Corrientes?;Carpinchos;Canalla;Globo;Yaguaretes;2
+DEPORTES;¿Cuál es el apodo de Boca Unidos?;El club de la Ribera;Rojos;El club de la Costa;El Club del puente;0
+DEPORTES;¿Cuál es considerado el mayor Clásico de la Region?;Huracan Corrientes vs Mandiyú;Mandiyú vs Boca Unidos;Mandiyú vs Chaco for ever;Sarmiento(Rcia) vs Boca Unidos;2
+DEPORTES;¿Cuál es club de futbol más antigüo de Corrientes?;Boca Unidos;Deportivo Mandiyu;Huracan FC(Goya);Huracan de Corrientes;3
+DEPORTES;¿En qué año se fundó Huracán Corrientes?;1925;1918;1923;1952;1
+DEPORTES;¿En qué año se fundó el Club Deportivo Mandiyú?;1925;1918;1923;1952;3
+DEPORTES;Actualmente, ¿Quiénes representan a Corrientes en la Liga Nacional de Basquet?;Regatas y San Martin;San Martin y Hercules;Regatas y Juventus;Pingüinos y Hercules;0
+DEPORTES;¿Cuántas Ligas Nacionales tiene el Club Regatas Corrientes?;1;2;3;4;0
+DEPORTES;¿En qué año se fundó Regatas corrientes?;1925;1918;1923;1952;2
+DEPORTES;¿Cuál es el apodo del club San Martin?;Yacarés;Gallos;Carpincho;Dorados;1
+DEPORTES;¿Dónde está ubicado el estadio de regatas corrientes?;La Rosada;Costanera sur;Parque Mitre;Libertad;2
+DEPORTES;¿Cómo se llama el estadio del club San Martin también conocido como "El Fortín"?;Raúl Argentino Ortiz;Mariano Moreno;Raul Alfonsín;J. Torres de Vera;0
+DEPORTES;¿En cuál Temporada fue por única vez Campeón de la LNB Regatas Corrientes?;2010-2011;2011-2012;2012-2013;2013-2014;2
