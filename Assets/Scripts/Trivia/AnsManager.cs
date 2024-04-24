@@ -13,6 +13,7 @@ public class AnsManager : MonoBehaviour
     [SerializeField] private Color m_incorrectColor = Color.black;
     [SerializeField] private TriviaManager m_triviaManager;
     [SerializeField] private ControlTablero m_controlTablero;
+    public GameObject blockOption;
     // Añadir una variable para almacenar las categorías seleccionadas
     public static AnsManager instance;
     public int m_score = 0;
@@ -57,7 +58,7 @@ public class AnsManager : MonoBehaviour
         if (m_audioSource.isPlaying) m_audioSource.Stop();        
         m_audioSource.clip = answer ? m_correctSound : m_incorrectSound;
         optionButton.GetComponent<Image>().color = answer ? m_correctColor : m_incorrectColor;       
-        //blockOption.SetActive(true);
+        blockOption.SetActive(true);
         m_audioSource.Play();
         Debug.Log("Respuesta:  " + answer);
         if (answer)
@@ -77,7 +78,7 @@ public class AnsManager : MonoBehaviour
         m_score = 0;
         m_controlTablero.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().categoriasCompletas.Add(cate);
         yield return StartCoroutine(m_controlTablero.MoverFicha(2, m_controlTablero.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().ID));
-        //blockOption.SetActive(false);
+        blockOption.SetActive(false);
     }
     // Corutina para esperar y luego mostrar el juego terminado
     private IEnumerator CloseAndNext()
@@ -88,7 +89,7 @@ public class AnsManager : MonoBehaviour
         m_controlTablero.arrayFichas[MenuControl.Instancia.turno].GetComponent<Ficha>().fichaActiva = false;
         MenuControl.Instancia.avanzarTurno = true;
         MenuControl.Instancia.sePuedeTirar = true;
-        //blockOption.SetActive(false);
+        blockOption.SetActive(false);
     }
     public void GameOver()
     {

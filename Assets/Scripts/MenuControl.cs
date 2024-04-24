@@ -35,7 +35,7 @@ public class MenuControl : MonoBehaviour
     public Transform parentTransform;
     public List<Button> buttonList;
     public GameObject especialPanel;
-    public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTAL", "CULTURA"};
+    public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTAL", "CULTURA", "BIOLOGIA", "DEPORTES" };
     public Texture2D[] texturasDados;
     public RawImage dado1UI;
     public RawImage dado2UI;
@@ -181,6 +181,7 @@ public class MenuControl : MonoBehaviour
         {
             if (!ficha.categoriasCompletas.Contains(totalCategorias[i]))
             {
+                Debug.Log("Creando botón: " + totalCategorias[i]);
                 GameObject buttonTemp = Instantiate(buttonPrefab, parentTransform);
                 Button button = buttonTemp.GetComponent<Button>();
                 buttonTemp.GetComponentInChildren<TMP_Text>().text = totalCategorias[i];
