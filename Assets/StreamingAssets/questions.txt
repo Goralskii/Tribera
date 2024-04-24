@@ -65,6 +65,7 @@ GEOGRAFIA;¿Cuántos parques industriales provinciales hay activos en la provinc
 GEOGRAFIA;¿Donde se encuentran Las Marias?;Santa Rosa;Mercedes;Virasoro;Saladas;2
 GEOGRAFIA;¿Dónde se encuentra la represa Yacyreta en Corrientes?;Esquina;Santo Tome;Goya;Ituzaingó;3
 GEOGRAFIA;¿Paso de los libres con qué localidad Brasilera limita?;Itapema;Uruguayana;Meia Praia;Dionisio Cerqueira;1
+GEOGRAFIA;¿En qué región se encuentra la provincia de Corrientes?;Cuyo;Patagonia;Noroeste;Noreste;3
 HISTORIA;¿Cuándo se celebra el día del Chamamé en Argentina?;10 de junio;20 de febrero;19 de septiembre;15 de enero;2
 HISTORIA;¿Cuándo se celebra el día del niño correntino?;7 de agosto;20 de marzo;9 de marzo;20 de agosto;2
 HISTORIA;¿Cuándo se inauguró el Puente Interprovincial Gral. Manuel Belgrano (Chaco-Ctes)?;1970;1973;1968;1982;1
@@ -99,3 +100,10 @@ DEPORTES;¿Cuál es el apodo del club San Martin?;Yacarés;Gallos;Carpincho;Dora
 DEPORTES;¿Dónde está ubicado el estadio de regatas corrientes?;La Rosada;Costanera sur;Parque Mitre;Libertad;2
 DEPORTES;¿Cómo se llama el estadio del club San Martin también conocido como "El Fortín"?;Raúl Argentino Ortiz;Mariano Moreno;Raul Alfonsín;J. Torres de Vera;0
 DEPORTES;¿En cuál Temporada fue por única vez Campeón de la LNB Regatas Corrientes?;2010-2011;2011-2012;2012-2013;2013-2014;2
+BIOLOGIA;¿Qué especie de felino se puede encontrar con mayor frecuencia en la selva de la provincia de Corrientes?;Tigre;León;Yaguareté;Puma;2
+BIOLOGIA;¿Cuál es el nombre de la planta acuática común en los ríos y lagunas de Corrientes?;Mburucuyá;Camalote;Calas;Loto;1
+BIOLOGIA;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Oso hormiguero gigante;Todas son correctas;3
+BIOLOGIA;¿Qué tipo de mono se encuentra en la selva de la provincia de Corrientes y en algunos casos se observan en árboles de la ciudad de Corrientes?;Chimpancé;Macaco;Mandril;Carayá;3
+BIOLOGIA;¿Cuál de estas plantas florece una sola vez y muere?;Lapacho;Tacuara;Ceibo;Camalote;1
+BIOLOGIA;¿Cuál de estos nombres de ciudades correntinas coincide con el nombre de una flor?;Mburucuyá;Tatacuá;Itá Baté;Itatí;0
+BIOLOGIA;¿Cuál es el nombre del pez de agua dulce que es muy apreciado en la gastronomía local de Corrientes?;Dorado;Surubí;Pacú;Todas son correctas;3
