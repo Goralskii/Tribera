@@ -93,7 +93,7 @@ DEPORTES;¿Cuál es considerado el mayor Clásico de la Region?;Huracan Corrient
 DEPORTES;¿Cuál es club de futbol más antigüo de Corrientes?;Boca Unidos;Deportivo Mandiyu;Huracan FC(Goya);Huracan de Corrientes;3
 DEPORTES;¿En qué año se fundó Huracán Corrientes?;1925;1918;1923;1952;1
 DEPORTES;¿En qué año se fundó el Club Deportivo Mandiyú?;1925;1918;1923;1952;3
-DEPORTES;Actualmente, ¿Quiénes representan a Corrientes en la Liga Nacional de Basquet?;Regatas y San Martin;San Martin y Hercules;Regatas y Juventus;Pingüinos y Hercules;0
+DEPORTES;Actualmente, ¿Quiénes representan a Corrientes en la Liga Nacional de Basquet?;Regatas, San Martin y Comunicaciones;San Martin y Regatas;Regatas;San Martin;0
 DEPORTES;¿Cuántas Ligas Nacionales tiene el Club Regatas Corrientes?;1;2;3;4;0
 DEPORTES;¿En qué año se fundó Regatas corrientes?;1925;1918;1923;1952;2
 DEPORTES;¿Cuál es el apodo del club San Martin?;Yacarés;Gallos;Carpincho;Dorados;1

@@ -40,6 +40,8 @@ public class MenuControl : MonoBehaviour
     public RawImage dado1UI;
     public RawImage dado2UI;
     public bool randomizer = false;
+    public GameObject winPanel;
+
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
@@ -127,7 +129,7 @@ public class MenuControl : MonoBehaviour
     {
         if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == 4 || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 4)
         {
-            Salir();
+            winPanel.SetActive(true);
         }
     }
     public void ActualizarUI()
