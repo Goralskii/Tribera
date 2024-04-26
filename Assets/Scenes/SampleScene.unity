@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.726
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44045183, g: 0.49090505, b: 0.5400353, a: 0.726}
+  m_IndirectSpecularColor: {r: 0.4404354, g: 0.49089336, b: 0.5400273, a: 0.726}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10019,7 +10019,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 496013744}
         m_TargetAssemblyTypeName: MenuControl, Assembly-CSharp
-        m_MethodName: Salir
+        m_MethodName: ReloadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12299,7 +12299,6 @@ GameObject:
   - component: {fileID: 2136431189}
   - component: {fileID: 2136431191}
   - component: {fileID: 2136431190}
-  - component: {fileID: 2136431192}
   - component: {fileID: 2136431193}
   m_Layer: 5
   m_Name: winPanel
@@ -12368,52 +12367,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136431188}
   m_CullTransparentMesh: 1
---- !u!114 &2136431192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136431188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3141457627af7724d9e7eeeb8107b15a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dado1: {fileID: 0}
-  Dado2: {fileID: 0}
-  ValorTotal: {fileID: 0}
-  categorias: {fileID: 0}
-  currentPlayer: {fileID: 0}
-  vueltas: {fileID: 0}
-  dice1: {fileID: 0}
-  dice2: {fileID: 0}
-  valorTotalSend: 0
-  cantidadPlayers: 0
-  turno: 0
-  actualizado: 0
-  canvasMenuMain: {fileID: 0}
-  dropdown: {fileID: 0}
-  sePuedeTirar: 0
-  avanzarTurno: 0
-  iniciado: 0
-  panelui: {fileID: 0}
-  buttonPrefab: {fileID: 0}
-  parentTransform: {fileID: 0}
-  buttonList: []
-  especialPanel: {fileID: 0}
-  totalCategorias:
-  - HISTORIA
-  - GEOGRAFIA
-  - AMBIENTAL
-  - CULTURA
-  - BIOLOGIA
-  - DEPORTES
-  texturasDados: []
-  dado1UI: {fileID: 0}
-  dado2UI: {fileID: 0}
-  randomizer: 0
-  winPanel: {fileID: 2136431188}
 --- !u!82 &2136431193
 AudioSource:
   m_ObjectHideFlags: 0

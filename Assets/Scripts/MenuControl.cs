@@ -4,6 +4,7 @@ using System.Xml.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuControl : MonoBehaviour
@@ -127,7 +128,7 @@ public class MenuControl : MonoBehaviour
     }
    public void ControlarWin()
     {
-        if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == 4 || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 4)
+        if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == totalCategorias.Count || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 1)
         {
             winPanel.SetActive(true);
         }
@@ -206,6 +207,14 @@ public class MenuControl : MonoBehaviour
             Destroy(button.gameObject);
         }
         buttonList.Clear();
+    }
+    public void ReloadScene()
+    {
+        // Obtener el índice de la escena actual
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // Recargar la escena actual
+        SceneManager.LoadScene(currentSceneIndex);
     }
     void DropdownValueChanged(TMP_Dropdown dropdown)
     {
