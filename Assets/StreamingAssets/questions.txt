@@ -42,7 +42,7 @@ CULTURA;¿En qué mes se celebra la llegada del Karaí?;En Enero;En Septiembre;E
 CULTURA;¿En qué municipio se realiza el Torneo Internacional de la Pesca del Dorado?;Empedrado;Ituzaingó;Esquina;Paso de la Patria;3
 CULTURA;¿En qué región se celebra el Karaí Octubre?;Patagónica;Cuyo;Noreste;Noroeste;2
 CULTURA;¿Quién es el Karaí Octubre?;Es un hombre;Es una deidad;Es un duende;Es un animal;2
-CULTURA;¿Quién es el actual gobernador de Corrientes?;Ricardo Colombi;Eduardo Tassano;Gustavo Valdes;Mariano Hormachea;2
+CULTURA;¿Quién es el actual gobernador de Corrientes?;Ricardo Colombi;Eduardo Tassano;Gustavo Valdés;Mariano Hormachea;2
 CULTURA;¿Qué cereal se produce en mayor cantidad en Corrientes?;Arroz;Trigo;Centeno;Sordo;0
 CULTURA;¿Qué comida preparaban tradicionalmente los guaraníes para satisfacer al Karaí Octubre?;Milanesa;Yopará;Asado;Sopa;1
 CULTURA;¿Qué cítricos produce en mayor cantidad la provincia de Corrientes?;Mandarinas;Naranjas;Limones;Pomelos;1
