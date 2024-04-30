@@ -399,7 +399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Siguiente
+  m_text: JUGAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1442,8 +1442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.04602, y: -303.96994}
-  m_SizeDelta: {x: 362.082, y: 326.0198}
+  m_AnchoredPosition: {x: 156.89508, y: -303.96994}
+  m_SizeDelta: {x: 313.7902, y: 326.0198}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208488522
 MonoBehaviour:
@@ -1994,7 +1994,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 314636652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 496013744}
+        m_TargetAssemblyTypeName: MenuControl, Assembly-CSharp
+        m_MethodName: siguienteTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &314636652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2747,7 +2759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
+  m_IgnoreReversedGraphics: 0
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
@@ -2857,6 +2869,8 @@ MonoBehaviour:
   turno: 0
   actualizado: 0
   canvasMenuMain: {fileID: 1649637489}
+  RulesPanel: {fileID: 9031400}
+  HowToPlayPanel: {fileID: 787666377}
   dropdown: {fileID: 1484440372}
   sePuedeTirar: 0
   avanzarTurno: 0
@@ -2951,7 +2965,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: JUGAR
+  m_text: EMPEZAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6649,7 +6663,7 @@ GameObject:
   - component: {fileID: 1168394321}
   - component: {fileID: 1168394320}
   m_Layer: 5
-  m_Name: ButtonNext
+  m_Name: ButtonNextPLay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6718,7 +6732,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1168394321}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 496013744}
+        m_TargetAssemblyTypeName: MenuControl, Assembly-CSharp
+        m_MethodName: desactivarTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1168394321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9442,10 +9468,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1. Gan\xE1 las 6 categor\xEDas para ganar:\n\nAMBIENTAL, BIOLOGIA, CULTURA,
-    DEPORTES, GEOGRAFIA, HISTORIA.\n\n2. Responde correctamente y ganar\xE1s una
-    categor\xEDa.\n\n3. Si respond\xE9s correctamente avanzas 2 casilleros automaticamenete.\n\n4.
-    LAGUNAS: Si ca\xE9s en una laguna (esquinas del tablero) perd\xE9s un turno.\n\n5.
+  m_text: "1. Responde correctamente preguntas de las 6 categor\xEDas para ganar:\n\nAMBIENTAL,
+    BIOLOGIA, CULTURA, DEPORTES, GEOGRAFIA, HISTORIA.\n\n2. Responde correctamente
+    y ganar\xE1s una categor\xEDa.\n\n3. Si respond\xE9s correctamente avanzas 2
+    casilleros automaticamenete.\n\n4. CASILLAS ESPECIALES: Las casillas blancas
+    te permiten elegir cualquier categor\xEDa que a\xFAn no tengas para responder.\n\n5.
+    LAGUNAS: Si ca\xE9s en una laguna (esquinas del tablero) perd\xE9s un turno.\n\n6.
     Completa una vuelta y perder\xE1s tu progreso. Si pasas por la salida sin haber
     ganado, perder\xE1s todas tus categor\xEDas ganadas. Deber\xE1s volver a empezar."
   m_isRightToLeft: 0
@@ -11805,7 +11833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.799, y: 24.27002}
+  m_AnchoredPosition: {x: 0.000012398, y: 138.18}
   m_SizeDelta: {x: 1863.9851, y: 654.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906279306
@@ -11832,8 +11860,14 @@ MonoBehaviour:
     lanzar los dados.
 
 
-    RESPONDER: Usa el CLICK IZQUIERDO del MOUSE para seleccionar
-    tu respuesta.'
+
+
+
+
+
+
+    RESPONDER: Usa el CLICK IZQUIERDO del MOUSE para
+    seleccionar tu respuesta.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

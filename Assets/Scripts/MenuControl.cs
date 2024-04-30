@@ -19,7 +19,7 @@ public class MenuControl : MonoBehaviour
     public DiceControl dice1;
     public DiceControl dice2;
     public int valorTotalSend;
-    public int cantidadPlayers;//esta variable conrola la cantidad de jugadores
+    public int cantidadPlayers;//esta variable controla la cantidad de jugadores
     public int turno = 0;
     //public ControlTablero _controlTablero;
     public bool actualizado;
@@ -27,6 +27,8 @@ public class MenuControl : MonoBehaviour
     private int valorD2 = 0;//inicializa las variables
     bool InGame = false;
     public GameObject canvasMenuMain;
+    public GameObject RulesPanel;
+    public GameObject HowToPlayPanel;
     public TMP_Dropdown dropdown;
     public bool sePuedeTirar;
     public bool avanzarTurno;
@@ -69,11 +71,11 @@ public class MenuControl : MonoBehaviour
     }
     public IEnumerator ActualizarValor()
     {
-         valorD1 = dice1.valorDado;
-         valorD2 = dice2.valorDado;
+        valorD1 = dice1.valorDado;
+        valorD2 = dice2.valorDado;
         if (InGame)
         {
-            currentPlayer.text = "Jugador actual - P" + (turno+1);
+            currentPlayer.text = "Jugador actual - P" + (turno + 1);
             ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
             InGame = false;
         }
@@ -81,8 +83,8 @@ public class MenuControl : MonoBehaviour
         {
             randomizer = false;
             sePuedeTirar = false;
-            dado1UI.texture = texturasDados[valorD1-1];
-            dado2UI.texture = texturasDados[valorD2-1];
+            dado1UI.texture = texturasDados[valorD1 - 1];
+            dado2UI.texture = texturasDados[valorD2 - 1];
             valorTotalSend = valorD1 + valorD2;
             ControlTablero.instance.dadoCount = valorTotalSend;
             ControlTablero.instance.sePuedeMover = true;
@@ -101,13 +103,13 @@ public class MenuControl : MonoBehaviour
                 ControlarTurno();
                 while (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno)
                 {
-                    int turnoPrevio = turno;                    
+                    int turnoPrevio = turno;
                     ControlTablero.instance.arrayFichas[turnoPrevio].GetComponent<Ficha>().pierdeTurno = false;
                     turno++;
                     ControlarTurno();
                     yield return new WaitForSeconds(1f);
                 }
-                currentPlayer.text = "Jugador actual - P" + (turno+1);
+                currentPlayer.text = "Jugador actual - P" + (turno + 1);
                 ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
             }
         }
@@ -126,7 +128,7 @@ public class MenuControl : MonoBehaviour
             turno = 0;
         }
     }
-   public void ControlarWin()
+    public void ControlarWin()
     {
         if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == totalCategorias.Count || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 1)
         {
@@ -147,12 +149,25 @@ public class MenuControl : MonoBehaviour
             panelui.SetActive(true);
             InGame = true;
             canvasMenuMain.SetActive(false);
+            RulesPanel.SetActive(true);
             cantidadPlayers = int.Parse(dropdown.options[dropdown.value].text) - 1;
             sePuedeTirar = true;
             iniciado = true;
             MostrarFichas();
         }
     }
+
+    public void siguienteTutorial()
+    {
+        RulesPanel.SetActive(false);
+        HowToPlayPanel.SetActive(true);
+    }
+
+    public void desactivarTutorial()
+    {
+        HowToPlayPanel.SetActive(false);
+    }
+
     public void MostrarFichas()
     {
         for (int i = 0; i <= cantidadPlayers; i++)
@@ -160,8 +175,8 @@ public class MenuControl : MonoBehaviour
             ControlTablero.instance.arrayFichas[i].SetActive(true);
         }
     }
-    public IEnumerator RandomSprite(){
-        if (randomizer){
+    public IEnumerator RandomSprite() {
+        if (randomizer) {
             dado1UI.texture = texturasDados[Random.Range(0, texturasDados.Length)];
             dado2UI.texture = texturasDados[Random.Range(0, texturasDados.Length)];
             yield return new WaitForSeconds(0.01f);
@@ -171,16 +186,16 @@ public class MenuControl : MonoBehaviour
     }
     public void Salir()
     {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #else
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
             Application.Quit();
-        #endif
+#endif
     }
     public void CasillaEspecial(Ficha ficha)
     {
         especialPanel.SetActive(true);
-        for (int i = 0;i < totalCategorias.Count; i++)
+        for (int i = 0; i < totalCategorias.Count; i++)
         {
             if (!ficha.categoriasCompletas.Contains(totalCategorias[i]))
             {
@@ -220,4 +235,5 @@ public class MenuControl : MonoBehaviour
     {
         Debug.Log("Opción seleccionada: " + dropdown.options[dropdown.value].text);
     }
+
 }

@@ -1622,8 +1622,6 @@ MonoBehaviour:
   - {fileID: 6769482364079760142}
   - {fileID: 9073239516930912483}
   - {fileID: 7341869589676493357}
-  _controlTablero: {fileID: 0}
-  _menuControl: {fileID: 0}
   valorDado: 0
   espacioPressed: 0
 --- !u!1 &3467766295058272235
