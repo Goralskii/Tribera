@@ -19,13 +19,11 @@ public class DiceControl : MonoBehaviour
     public bool espacioPressed;
     private int ladoOculto;
     int valor;
-    private AudioSource singleDiceSound;
-    [SerializeField] private AudioClip tirarDados;
     void Start()
     {
         posicionInicial = this.transform.position;
         rbdado = this.GetComponent<Rigidbody>();
-        singleDiceSound = GetComponent<AudioSource>();
+
     }
     void Update()
     {
@@ -35,7 +33,6 @@ public class DiceControl : MonoBehaviour
             {
                 PrepararDado();
                 espacioPressed = true;
-                singleDiceSound.PlayOneShot(tirarDados);
                 MenuControl.Instancia.actualizado = false;
                 MenuControl.Instancia.randomizer = true;
                 StartCoroutine(MenuControl.Instancia.RandomSprite());
@@ -53,7 +50,6 @@ public class DiceControl : MonoBehaviour
                 dadoEnMovimiento = true;
             }
         }
-        //Debug.Log("valor actualizado:" + valorDado);//pasa bien los valores
         StartCoroutine(MenuControl.Instancia.ActualizarValor());
     }
     public IEnumerator ThrowAndWait()
