@@ -42,8 +42,11 @@ public class MenuControl : MonoBehaviour
     public Texture2D[] texturasDados;
     public RawImage dado1UI;
     public RawImage dado2UI;
+    public GameObject ObjectUIdado1;
+    public GameObject ObjectUIdado2;
     public bool randomizer = false;
     public GameObject winPanel;
+    public GameObject AmbientSound;
 
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
@@ -53,7 +56,7 @@ public class MenuControl : MonoBehaviour
             Instancia = this;
         }
     }
-    private void Update()
+    private void Update()//cada frame
     {
         if (iniciado)
         {
@@ -130,7 +133,7 @@ public class MenuControl : MonoBehaviour
     }
     public void ControlarWin()
     {
-        if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == totalCategorias.Count || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 1)
+        if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == totalCategorias.Count || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 6)
         {
             winPanel.SetActive(true);
         }
@@ -166,6 +169,10 @@ public class MenuControl : MonoBehaviour
     public void desactivarTutorial()
     {
         HowToPlayPanel.SetActive(false);
+        ObjectUIdado1.SetActive(true);
+        ObjectUIdado2.SetActive(true);
+        AmbientSound.SetActive(true);
+
     }
 
     public void MostrarFichas()

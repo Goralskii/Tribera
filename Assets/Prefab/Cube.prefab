@@ -1624,6 +1624,7 @@ MonoBehaviour:
   - {fileID: 7341869589676493357}
   valorDado: 0
   espacioPressed: 0
+  singleDice: {fileID: 8300000, guid: c157b71faf9b92445a41c12d6b8a01c3, type: 3}
 --- !u!1 &3467766295058272235
 GameObject:
   m_ObjectHideFlags: 0
