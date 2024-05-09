@@ -1,13 +1,11 @@
 AMBIENTAL;¿Como se debe separar la basura?;Papel y vidrio ;Biodegradables y no biodegradables ;Orgánica e inorgánica ;Papel y otros;2
-AMBIENTAL;¿Como se llama el reptil mas grande de corrientes?;Yarará;Pitón;Boa;Yacaré;3
-AMBIENTAL;¿Cuál es el roedor mas conocido de Corrientes?;Cuy;Rata;Carpincho;Conejo;2
 AMBIENTAL;¿Cuál es la mejor forma de evitar los incendios de acuerdo al spot publicitario del gobierno provincial?;Mantener los pastos de la vivienda cortos;Evitar el uso del fuego y la quema de pastizales;No tirar cigarrillos ni fósforos al piso;Regar las plantas y pastizales;1
 AMBIENTAL;¿Cuál es un Residuo Orgánico?;Restos de pizza;Pilas;Botellas de Vidrio;Cartón;0
 AMBIENTAL;¿Cuál es un residuo Peligroso?;Latas de Aluminio;Pilas;Botellas de Vidrio;Cartón;1
 AMBIENTAL;¿Cuándo es el Dia Mundial del reciclaje?;20 de mayo;19 de abril;4 de abril;17 de mayo;3
 AMBIENTAL;¿Cuánto tardan en degradarse las Botellas de Plástico?;800 años ;500 años ;1000 años ;250 años;1
 AMBIENTAL;¿Cuánto tardan en degradarse las Pilas?;De 500 a 1000 años ;De 5 a 30 años ;De 100 a 300 años ;De 1000 a 3000 años;0
-AMBIENTAL;¿Cuánto tardan en degradarse las bolsas de plástico?;Entre 100 y 150 años ;55 años;300 años ;Entre 150 y 300 años;1
+AMBIENTAL;¿Cuánto tardan en degradarse las bolsas de plástico?;Entre 100 y 150 años ;55 años;300 años ;Entre 150 y 300 años;0
 AMBIENTAL;¿Cuánto tardan en degradarse las latas de aluminio?;10 meses;1 año ;10 años ;5 años;2
 AMBIENTAL;¿Cómo se llama la aplicación que lanzó el gobierno provincial para detectar focos de incendio?;Alto al fuego;Corrientes sin fuego;Alerta Incendios;Alertas Corrientes;3
 AMBIENTAL;¿De qué color es el contenedor para reciclar Residuos Orgánicos?;Amarillo;Rojo;Marron;Verde;2
@@ -64,13 +62,13 @@ GEOGRAFIA;¿Con qué provincia nos une el puente General Manuel Belgrano?;Entre 
 GEOGRAFIA;¿En qué departamentos de Corrientes se cosechan Yerba Mate?;Goya y Esquina;Empedrado y San Lorenzo;Ituzaigo y Santo Tomé;Capital e Itati;2
 GEOGRAFIA;¿Con cuantas provincias limita la provincia de Corrientes?;4;2;5;3;0
 GEOGRAFIA;¿Con cuáles de estos países limita la provincia de Corrientes?;Uruguay;Uruguay, Brasil y Paraguay ;Brasil;Brasil y Paraguay;1
-GEOGRAFIA;¿Cuál es el clima Predominante en la Provincia de Corrientes?;Árido;Subtropical;Cálido;Frío Seco;1
+GEOGRAFIA;¿Cuál es el clima Predominante en la Provincia de Corrientes?;Árido;Subtropical sin estación seca;subtropical con estacion seca;Frío Seco;1
 GEOGRAFIA;¿Cuál es la segunda localidad mas grande de la provincia de Corrientes?;Santo Tomé;Ituzaingó;Mercedes;Goya;3
 GEOGRAFIA;¿Cuáles ríos rodean a la provincia de Corrientes?;Rio Bermejo y Rio Paraná;Rio Paraguay y Rio Paraná;Rio de la Plata y Rio Paraná;Rio Uruguay y Rio Paraná;3
 GEOGRAFIA;¿Cuántas puntas tiene la ciudad de Corrientes?;5;7;3;9;1
 GEOGRAFIA;¿Cuántos municipios tiene Corrientes?;56;74;80;42;1
 GEOGRAFIA;¿Cuántos parques industriales provinciales hay activos en la provincia de Corrientes?;Uno;Seis;Ninguno;Cinco;3
-GEOGRAFIA;¿Donde se encuentran Las Marias?;Santa Rosa;Mercedes;Virasoro;Saladas;2
+GEOGRAFIA;¿Donde se encuentra el Establecimiento "Las Marias"?;Santa Rosa;Mercedes;Virasoro;Saladas;2
 GEOGRAFIA;¿Dónde se encuentra la represa Yacyreta en Corrientes?;Esquina;Santo Tome;Goya;Ituzaingó;3
 GEOGRAFIA;¿Paso de los libres con qué localidad Brasilera limita?;Itapema;Uruguayana;Meia Praia;Dionisio Cerqueira;1
 GEOGRAFIA;¿En qué región se encuentra la provincia de Corrientes?;Cuyo;Patagonia;Noroeste;Noreste;3
@@ -108,13 +106,15 @@ DEPORTES;¿Cuántas Ligas Nacionales tiene el Club Regatas Corrientes?;1;2;3;4;0
 DEPORTES;¿En qué año se fundó Regatas corrientes?;1925;1918;1923;1952;2
 DEPORTES;¿Cuál es el apodo del club San Martin?;Yacarés;Gallos;Carpincho;Dorados;1
 DEPORTES;¿Dónde está ubicado el estadio de regatas corrientes?;La Rosada;Costanera sur;Parque Mitre;Libertad;2
-DEPORTES;¿Cómo se llama el estadio del club San Martin también conocido como "El Fortín"?;Raúl Argentino Ortiz;Mariano Moreno;Raul Alfonsín;J. Torres de Vera;0
-DEPORTES;¿En cuál Temporada fue por única vez Campeón de la LNB Regatas Corrientes?;2010-2011;2011-2012;2012-2013;2013-2014;2
+DEPORTES;¿Cómo se llama el estadio del club San Martin también conocido como "El Fortín"?;Raúl Argentino Ortiz;Mariano Moreno;Raul Alfonsín;Juan Torres de Vera;0
+DEPORTES;¿En qué Temporada fue por única vez Campeón de la LNB Regatas Corrientes?;2010-2011;2011-2012;2012-2013;2013-2014;2
 BIOLOGIA;¿Cuál es el felino autóctono más grande de la Provincia de Corrientes?;El Yaguareté;El Ocelote;El Gato montés;El Tirica;0
 BIOLOGIA;¿Qué especie de felino se puede encontrar con mayor frecuencia en la selva de la provincia de Corrientes?;Tigre;León;Yaguareté;Puma;2
-BIOLOGIA;¿Cuál es el nombre de la planta acuática común en los ríos y lagunas de Corrientes?;Mburucuyá;Camalote;Calas;Loto;1
+BIOLOGIA;¿Cuál es el nombre de la planta acuática más común en los ríos y lagunas de Corrientes?;Mburucuyá;Camalote;Calas;Loto;1
 BIOLOGIA;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Oso hormiguero gigante;Todas son correctas;3
 BIOLOGIA;¿Qué tipo de mono se encuentra en la selva de Corrientes y, en algunos casos, en árboles de la ciudad de Corrientes?;Chimpancé;Macaco;Mandril;Carayá;3
 BIOLOGIA;¿Cuál de estas plantas florece una sola vez y muere?;Lapacho;Tacuara;Ceibo;Camalote;1
-BIOLOGIA;¿Cuál de estos nombres de ciudades correntinas coincide con el nombre de una flor?;Mburucuyá;Tatacuá;Itá Baté;Itatí;0
+BIOLOGIA;¿Cuál de estos nombres de ciudades correntinas coincide con el nombre de una flor?;Mburucuyá;Tatacuá;Itá IBaté;Itatí;0
 BIOLOGIA;¿Cuál es el nombre del pez de agua dulce más apreciado en la gastronomía local de Corrientes?;Dorado;Surubí;Pacú;Todas son correctas;3
+BIOLOGIA;¿Como se llama el reptil mas grande de corrientes?; Yarará ; Pitón ; Boa ; Yacaré ;3
+BIOLOGIA;¿Cuál es el roedor mas conocido de Corrientes?;Cuy;Rata;Carpincho;Conejo;2
