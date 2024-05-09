@@ -18,7 +18,7 @@ AMBIENTAL;¿Qué localidades de Corrientes se encargan de producir cítricos?;Pa
 CULTURA;¿Dónde se celebra la Fiesta Nacional del Pacú?;Esquina;Goya;Riachuelo;Itatí;0
 CULTURA;Completá la frase: "Corrientes tiene _______"?;Chamamé;Payé;Tradición;Belleza;1 
 CULTURA;¿Dónde se Celebra la Fiesta de la Yerra Correntina?;Concepción;Ituzaingó;Caá Catí;Esquina;1  
-CULTURA¿En qué localidad nació el Gobernador Gustavo Valdés?;Capital;Goya;Itatí;Ituzaingó;3 
+CULTURA;¿En qué localidad nació el Gobernador Gustavo Valdés?;Capital;Goya;Itatí;Ituzaingó;3 
 CULTURA;Completa la frase: "Tomate una dosis de _______";Energia;Pesca;Mate;Chamamé;3
 CULTURA;El Karaí Octubre castiga con miseria a quienes no cuidaron la comida hasta...;Comienzo de año;Toda la vida;Fin de año;Hasta el próximo Octubre;2
 CULTURA;El Karaí Octubre consiste en que las familias preparen una amplia variedad de platos típicos para alejar la...;La escasez de alimentos;Los malos augurios;El invierno;Escasez de agua;0
