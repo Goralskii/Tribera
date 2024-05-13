@@ -1,20 +1,20 @@
-AMBIENTAL;¿Como se debe separar la basura?;Papel y vidrio ;Biodegradables y no biodegradables ;Orgánica e inorgánica ;Papel y otros;2
-AMBIENTAL;¿Cuál es la mejor forma de evitar los incendios de acuerdo al spot publicitario del gobierno provincial?;Mantener los pastos de la vivienda cortos;Evitar el uso del fuego y la quema de pastizales;No tirar cigarrillos ni fósforos al piso;Regar las plantas y pastizales;1
-AMBIENTAL;¿Cuál es un Residuo Orgánico?;Restos de pizza;Pilas;Botellas de Vidrio;Cartón;0
-AMBIENTAL;¿Cuál es un residuo Peligroso?;Latas de Aluminio;Pilas;Botellas de Vidrio;Cartón;1
-AMBIENTAL;¿Cuándo es el Dia Mundial del reciclaje?;20 de mayo;19 de abril;4 de abril;17 de mayo;3
-AMBIENTAL;¿Cuánto tardan en degradarse las Botellas de Plástico?;800 años ;500 años ;1000 años ;250 años;1
-AMBIENTAL;¿Cuánto tardan en degradarse las Pilas?;De 500 a 1000 años ;De 5 a 30 años ;De 100 a 300 años ;De 1000 a 3000 años;0
-AMBIENTAL;¿Cuánto tardan en degradarse las bolsas de plástico?;Entre 100 y 150 años ;55 años;300 años ;Entre 150 y 300 años;0
-AMBIENTAL;¿Cuánto tardan en degradarse las latas de aluminio?;10 meses;1 año ;10 años ;5 años;2
-AMBIENTAL;¿Cómo se llama la aplicación que lanzó el gobierno provincial para detectar focos de incendio?;Alto al fuego;Corrientes sin fuego;Alerta Incendios;Alertas Corrientes;3
-AMBIENTAL;¿De qué color es el contenedor para reciclar Residuos Orgánicos?;Amarillo;Rojo;Marron;Verde;2
-AMBIENTAL;¿De qué color es el contenedor para reciclar Residuos Peligrosos?;Rojo;Marrón;Amarillo;Negro;0
-AMBIENTAL;¿De qué color es el contenedor para reciclar el Aluminio?;Rojo;Gris;Naranja;Azul;1
-AMBIENTAL;¿De qué color es el contenedor para reciclar el Plástico?;Verde;Gris;Naranja;Amarillo;3
-AMBIENTAL;¿De qué color es el contenedor para reciclar el Vidrio?;Amarillo;Blanco;Azul;Gris;1
-AMBIENTAL;¿De qué color es el contenedor para reciclar el papel y cartón?;Verde;Azul;Marrón;Amarillo;1
-AMBIENTAL;¿Qué localidades de Corrientes se encargan de producir cítricos?;Paso de los Libres y Yapeyú;Monte Caseros y Mocoretá;Mburucuyá y Concepción;Alvear y La Cruz;1
+AMBIENTE;¿Como se debe separar la basura?;Papel y vidrio ;Biodegradables y no biodegradables ;Orgánica e inorgánica ;Papel y otros;2
+AMBIENTE;¿Cuál es la mejor forma de evitar los incendios de acuerdo al spot publicitario del gobierno provincial?;Mantener los pastos de la vivienda cortos;Evitar el uso del fuego y la quema de pastizales;No tirar cigarrillos ni fósforos al piso;Regar las plantas y pastizales;1
+AMBIENTE;¿Cuál es un Residuo Orgánico?;Restos de pizza;Pilas;Botellas de Vidrio;Cartón;0
+AMBIENTE;¿Cuál es un residuo Peligroso?;Latas de Aluminio;Pilas;Botellas de Vidrio;Cartón;1
+AMBIENTE;¿Cuándo es el Dia Mundial del reciclaje?;20 de mayo;19 de abril;4 de abril;17 de mayo;3
+AMBIENTE;¿Cuánto tardan en degradarse las Botellas de Plástico?;800 años ;500 años ;1000 años ;250 años;1
+AMBIENTE;¿Cuánto tardan en degradarse las Pilas?;De 500 a 1000 años ;De 5 a 30 años ;De 100 a 300 años ;De 1000 a 3000 años;0
+AMBIENTE;¿Cuánto tardan en degradarse las bolsas de plástico?;Entre 100 y 150 años ;55 años;300 años ;Entre 150 y 300 años;0
+AMBIENTE;¿Cuánto tardan en degradarse las latas de aluminio?;10 meses;1 año ;10 años ;5 años;2
+AMBIENTE;¿Cómo se llama la aplicación que lanzó el gobierno provincial para detectar focos de incendio?;Alto al fuego;Corrientes sin fuego;Alerta Incendios;Alertas Corrientes;3
+AMBIENTE;¿De qué color es el contenedor para reciclar Residuos Orgánicos?;Amarillo;Rojo;Marron;Verde;2
+AMBIENTE;¿De qué color es el contenedor para reciclar Residuos Peligrosos?;Rojo;Marrón;Amarillo;Negro;0
+AMBIENTE;¿De qué color es el contenedor para reciclar el Aluminio?;Rojo;Gris;Naranja;Azul;1
+AMBIENTE;¿De qué color es el contenedor para reciclar el Plástico?;Verde;Gris;Naranja;Amarillo;3
+AMBIENTE;¿De qué color es el contenedor para reciclar el Vidrio?;Amarillo;Blanco;Azul;Gris;1
+AMBIENTE;¿De qué color es el contenedor para reciclar el papel y cartón?;Verde;Azul;Marrón;Amarillo;1
+AMBIENTE;¿Qué localidades de Corrientes se encargan de producir cítricos?;Paso de los Libres y Yapeyú;Monte Caseros y Mocoretá;Mburucuyá y Concepción;Alvear y La Cruz;1
 CULTURA;¿Dónde se celebra la Fiesta Nacional del Pacú?;Esquina;Goya;Riachuelo;Itatí;0
 CULTURA;Completá la frase: "Corrientes tiene _______"?;Chamamé;Payé;Tradición;Belleza;1 
 CULTURA;¿Dónde se Celebra la Fiesta de la Yerra Correntina?;Concepción;Ituzaingó;Caá Catí;Esquina;1  

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.726
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4404354, g: 0.49089336, b: 0.5400273, a: 0.726}
+  m_IndirectSpecularColor: {r: 0.44045183, g: 0.49090505, b: 0.5400353, a: 0.726}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1186,7 +1186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: CULTURA
+      value: AMBIENTE
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1811,7 +1811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: AMBIENTAL
+      value: ESPECIAL
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1895,7 +1895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: AMBIENTAL
+      value: BIOLOGIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2298,7 +2298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: AMBIENTAL
+      value: CULTURA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2414,7 +2414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: AMBIENTAL
+      value: DEPORTES
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3097,7 +3097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: CULTURA
+      value: HISTORIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3483,7 +3483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: HISTORIA
+      value: CULTURA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4024,7 +4024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: GEOGRAFIA
+      value: ESPECIAL
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4176,7 +4176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: HISTORIA
+      value: GEOGRAFIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4699,7 +4699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: CULTURA
+      value: GEOGRAFIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5069,7 +5069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: ESPECIAL
+      value: AMBIENTE
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5936,7 +5936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: CULTURA
+      value: ESPECIAL
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6543,7 +6543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: AMBIENTAL
+      value: BIOLOGIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6746,7 +6746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: AMBIENTAL
+      value: GEOGRAFIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6820,7 +6820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: GEOGRAFIA
+      value: HISTORIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6965,7 +6965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: HISTORIA
+      value: AMBIENTE
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7488,7 +7488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: GEOGRAFIA
+      value: HISTORIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7802,7 +7802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: CULTURA
+      value: HISTORIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8110,7 +8110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: GEOGRAFIA
+      value: CULTURA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8336,7 +8336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: HISTORIA
+      value: CULTURA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9145,8 +9145,6 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: 5
       m_Image: {fileID: 0}
-    - m_Text: 6
-      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9380,14 +9378,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n1. Re\xFAne 6 categor\xEDas para ganar. Responde preguntas de las siguientes
-    tem\xE1ticas:\n\nAMBIENTAL, BIOLOGIA, CULTURA, DEPORTES, GEOGRAFIA, HISTORIA.\n\n2.
-    Responde correctamente y ganar\xE1s una categor\xEDa.\n\n3. Si respond\xE9s correctamente
-    avanzas 2 casilleros autom\xE1ticamente.\n\n4. CASILLAS ESPECIALES: Las casillas
-    blancas te permiten elegir cualquier categor\xEDa que a\xFAn no tengas para responder.\n\n5.
-    LAGUNAS: Si ca\xE9s en una laguna (esquinas del tablero) perd\xE9s un turno.\n\n6.
-    Completa una vuelta y perder\xE1s tu progreso. Si pasas por la salida sin haber
-    ganado, perder\xE1s todas tus categor\xEDas ganadas. Deber\xE1s volver a empezar."
+  m_text: "\n1. Reun\xED 6 categor\xEDas para ganar. Respond\xE9 preguntas de las
+    siguientes tem\xE1ticas:\n\n-AMBIENTE -BIOLOG\xCDA -CULTURA -DEPORTES -GEOGRAF\xCDA\n-HISTORIA
+    \n\n2. Si respond\xE9s correctamente, ganar\xE1s una categor\xEDa y avanz\xE1s
+    2 casilleros autom\xE1ticamente.\n\n4. CASILLAS ESPECIALES: Las casillas blancas
+    te permiten elegir cualquier categor\xEDa que a\xFAn no tengas para responder.\n\n5.
+    LAGUNAS: Si ca\xE9s en una laguna (esquinas del tablero), perd\xE9s un turno.\n\n6.
+    Si no completas las 6 categor\xEDas en una vuelta, pierdes todas y tienes que
+    volver a empezar desde cero."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9561,7 +9559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: HISTORIA
+      value: DEPORTES
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9874,7 +9872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: HISTORIA
+      value: DEPORTES
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10306,7 +10304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: GEOGRAFIA
+      value: AMBIENTE
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10380,7 +10378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: AMBIENTAL
+      value: DEPORTES
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10988,7 +10986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: CULTURA
+      value: BIOLOGIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11190,7 +11188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: GEOGRAFIA
+      value: DEPORTES
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11430,7 +11428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: HISTORIA
+      value: BIOLOGIA
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11912,7 +11910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597137799802325737, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: categoria
-      value: GEOGRAFIA
+      value: ESPECIAL
       objectReference: {fileID: 0}
     - target: {fileID: 8104662278355608369, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
       propertyPath: m_Materials.Array.data[0]
