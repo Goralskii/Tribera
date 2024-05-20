@@ -42,8 +42,7 @@ public class MenuControl : MonoBehaviour
     public Texture2D[] texturasDados;
     public RawImage dado1UI;
     public RawImage dado2UI;
-    public GameObject ObjectUIdado1;
-    public GameObject ObjectUIdado2;
+    
     public bool randomizer = false;
     public GameObject winPanel;
     public GameObject AmbientSound;
@@ -169,8 +168,8 @@ public class MenuControl : MonoBehaviour
     public void desactivarTutorial()
     {
         HowToPlayPanel.SetActive(false);
-        ObjectUIdado1.SetActive(true);
-        ObjectUIdado2.SetActive(true);
+        dado1UI.gameObject.SetActive(true);
+        dado2UI.gameObject.SetActive(true);
         AmbientSound.SetActive(true);
 
     }
