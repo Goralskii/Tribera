@@ -55,6 +55,7 @@ public class MenuControl : MonoBehaviour
             Instancia = this;
         }
     }
+
     private void Update()//cada frame
     {
         if (iniciado)
@@ -139,10 +140,10 @@ public class MenuControl : MonoBehaviour
     }
     public void ActualizarUI()
     {
-        vueltas.text = "Vueltas completas: " + ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas.ToString();
+        vueltas.text = " " + ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas.ToString();
         string textoLista = string.Join("\n -", ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas);
         // Asigna el texto generado al componente de texto UI
-        categorias.text = "Categorias Completadas: \n -" + textoLista;
+        categorias.text = textoLista;
     }
     public void Jugar()
     {
