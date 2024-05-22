@@ -1073,17 +1073,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
   m_PrefabInstance: {fileID: 758794798}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &185323269 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1170156346340396109, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-  m_PrefabInstance: {fileID: 1476205114}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309295647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a32a02cf8e3f454a976146f722f3695, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &186490480 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
@@ -2717,49 +2706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3141457627af7724d9e7eeeb8107b15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dado1: {fileID: 0}
-  Dado2: {fileID: 0}
-  ValorTotal: {fileID: 0}
-  categorias: {fileID: 690190091}
-  currentPlayer: {fileID: 1983271057}
-  vueltas: {fileID: 1662250241}
-  dice1: {fileID: 1394409589}
-  dice2: {fileID: 185323269}
-  valorTotalSend: 0
-  cantidadPlayers: 0
-  turno: 0
-  actualizado: 0
-  canvasMenuMain: {fileID: 1649637489}
-  RulesPanel: {fileID: 9031400}
-  HowToPlayPanel: {fileID: 787666377}
-  dropdown: {fileID: 1484440372}
-  sePuedeTirar: 0
-  avanzarTurno: 0
-  iniciado: 0
-  panelui: {fileID: 208488520}
-  buttonPrefab: {fileID: 6453931568128899606, guid: 44f3901c2430d824cb3ad2374547a950, type: 3}
-  parentTransform: {fileID: 1084160502}
-  buttonList: []
-  especialPanel: {fileID: 2060789268}
-  totalCategorias:
-  - HISTORIA
-  - GEOGRAFIA
-  - AMBIENTE
-  - CULTURA
-  - BIOLOGIA
-  - DEPORTES
-  texturasDados:
-  - {fileID: 2800000, guid: f683c23859886b3469f371ec54f4bd30, type: 3}
-  - {fileID: 2800000, guid: 142c0351c59e2074897d27fd83931ad0, type: 3}
-  - {fileID: 2800000, guid: d0e6a2f096c03c5409f651394c0520b7, type: 3}
-  - {fileID: 2800000, guid: 5609ce7182c92fb48aa11530e2d74838, type: 3}
-  - {fileID: 2800000, guid: 85ffcd029572d1e4cbdd14037aaa38e3, type: 3}
-  - {fileID: 2800000, guid: 966f3788424d57948a7012de934e1e6a, type: 3}
-  dado1UI: {fileID: 1411800428}
-  dado2UI: {fileID: 1293022552}
-  randomizer: 0
-  winPanel: {fileID: 2136431188}
-  AmbientSound: {fileID: 871729122}
 --- !u!1 &526971590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
@@ -3489,7 +3435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11800001, y: 0.23856416}
   m_AnchorMax: {x: 0.41389784, y: 0.7781793}
-  m_AnchoredPosition: {x: -3.575657, y: 0.16850281}
+  m_AnchoredPosition: {x: -3.5756607, y: 0.16851807}
   m_SizeDelta: {x: 3.546692, y: 3.3574066}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &677972193
@@ -7898,17 +7844,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 330328719444333884, guid: 7d316d18d868beb4bba7f815db87b6ed, type: 3}
   m_PrefabInstance: {fileID: 1401776518}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1394409589 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1170156346340396109, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-  m_PrefabInstance: {fileID: 822836355}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717867468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a32a02cf8e3f454a976146f722f3695, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1401776518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9559,7 +9494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7942045, y: 0.37569243}
   m_AnchorMax: {x: 0.98229927, y: 0.62423027}
-  m_AnchoredPosition: {x: 0.7107544, y: -0.29570007}
+  m_AnchoredPosition: {x: 0.71069336, y: -0.29570007}
   m_SizeDelta: {x: 0.021003723, y: 4.3760986}
   m_Pivot: {x: 0.5, y: 0.49999994}
 --- !u!114 &1662250241
