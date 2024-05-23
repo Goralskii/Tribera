@@ -38,7 +38,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AO: 0
-    - _BaseLight: 1
+    - _BaseLight: 0.623
     - _Shininess: 0.030000003
     - _SquashAmount: 1
     m_Colors:

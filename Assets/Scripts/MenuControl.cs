@@ -47,6 +47,8 @@ public class MenuControl : MonoBehaviour
     public GameObject winPanel;
     public GameObject AmbientSound;
 
+    public Emblemas[] emblemas = new Emblemas[6];
+
 
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
@@ -142,6 +144,19 @@ public class MenuControl : MonoBehaviour
     {
         vueltas.text = " " + ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas.ToString();
         string textoLista = string.Join("\n -", ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas);
+        foreach (Emblemas emblema in emblemas)
+        {
+            emblema.ResetTexture();
+        }
+        foreach (string categ in ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas)
+        {
+            for (int i = 0; i < emblemas.Length; i++) { 
+                if (emblemas[i].gameObject.name == categ) {
+                    emblemas[i].ChangeState(true);
+                }
+            
+            }
+        }
         // Asigna el texto generado al componente de texto UI
         categorias.text = textoLista;
     }
