@@ -6,6 +6,8 @@ public class Casillero : MonoBehaviour
 {
     [SerializeField] GameObject[] arraySlots;
     [SerializeField] bool isOcupado;
+    public Sprite[] insignias;
+    public SpriteRenderer show;
     public ControlTablero _controlTablero;
     public string categoria;
     void Awake()
@@ -13,6 +15,13 @@ public class Casillero : MonoBehaviour
         _controlTablero = GameObject.Find("Tablero").GetComponent<ControlTablero>();
         categoria = GetComponent<MeshRenderer>().material.name;
         categoria = categoria.Substring(0, categoria.Length - 11);
+        for (int i = 0; i<insignias.Length; i++)
+        {
+            if (insignias[i].name == categoria)
+            {
+                show.sprite = insignias[i];
+            }
+        }
     }
     public void AcomodarFicha(int ficha)
     {
