@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.726
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44045183, g: 0.49090505, b: 0.5400353, a: 0.726}
+  m_IndirectSpecularColor: {r: 0.44046897, g: 0.49091434, b: 0.54004157, a: 0.726}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4532,24 +4532,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3093466922496789388, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1717867474}
-    - targetCorrespondingSourceObject: {fileID: 3092816116188524536, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816116665787803, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816117341236800, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816118120921488, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816117879863085, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816116731009246, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
 --- !u!1 &831649099 stripped
 GameObject:
@@ -8959,24 +8941,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3093466922496789388, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1309295653}
-    - targetCorrespondingSourceObject: {fileID: 3092816116188524536, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816116665787803, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816117341236800, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816118120921488, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816117879863085, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3092816116731009246, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 855d5409336cf91478c5a03ad95c2e9f, type: 3}
 --- !u!1 &1484440370
 GameObject:
@@ -9205,7 +9169,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.45
+  m_fontSize: 23.5
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10463,7 +10427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7784792, y: 0.03158949}
   m_AnchorMax: {x: 0.97800004, y: 0.12063158}
-  m_AnchoredPosition: {x: 1.5, y: 1.1079712}
+  m_AnchoredPosition: {x: 1.5, y: 1.1079102}
   m_SizeDelta: {x: 4.200012, y: 0.21640015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761397883
