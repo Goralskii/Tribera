@@ -89,4 +89,21 @@ public class DiceControl : MonoBehaviour
         }
         return valor;
     }
+
+    public void SetearDados()//utilizamos para el boton "lanzar dados"
+    {
+        if (MenuControl.Instancia.sePuedeTirar)
+        {
+            PrepararDado();
+            espacioPressed = true;
+            if (!diceSound.isPlaying)
+            {
+                diceSound.Play();
+            }
+            MenuControl.Instancia.actualizado = false;
+            MenuControl.Instancia.randomizer = true;
+            StartCoroutine(MenuControl.Instancia.RandomSprite());
+            ControlTablero.instance.sePuedeMover = false;
+        }
+    }   
 }

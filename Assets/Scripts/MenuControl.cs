@@ -258,4 +258,9 @@ public class MenuControl : MonoBehaviour
         Debug.Log("Opción seleccionada: " + dropdown.options[dropdown.value].text);
     }
 
+    public void lanzarDados()//boton lanzar dados
+    {
+        dice1.SetearDados();
+        dice2.SetearDados();
+    }
 }
