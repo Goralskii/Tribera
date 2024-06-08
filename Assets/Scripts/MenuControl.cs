@@ -10,9 +10,6 @@ using UnityEngine.UI;
 public class MenuControl : MonoBehaviour
 {
     public static MenuControl Instancia;
-    [SerializeField] private TMP_Text Dado1;
-    [SerializeField] private TMP_Text Dado2;
-    [SerializeField] private TMP_Text ValorTotal; //es el valor total de la suma de los lados
     public Text categorias;
     public Text currentPlayer;
     public Text vueltas;
@@ -42,14 +39,89 @@ public class MenuControl : MonoBehaviour
     public Texture2D[] texturasDados;
     public RawImage dado1UI;
     public RawImage dado2UI;
-    
+    public ControlTablero controlTablero;
+    public int jugadorIndex = 0;
+    public GameObject MenuSeleccion;
     public bool randomizer = false;
     public GameObject winPanel;
     public GameObject AmbientSound;
 
     public Emblemas[] emblemas = new Emblemas[6];
 
+    [Header("                                                    FICHAS")]
+    public List<GameObject> listaFichasPrefabs;
 
+    public void yacareButton()
+    {
+        Instantiate(listaFichasPrefabs[0], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform);
+        if (jugadorIndex == cantidadPlayers)
+        {
+            MenuSeleccion.SetActive(false);
+            iniciado = true; //mover para luego de seleccion de fichas
+            sePuedeTirar = true; //tambien llevar
+            MostrarFichas(); // tambien
+        }
+        jugadorIndex += 1;
+    }
+    public void doradoButton()
+    {
+        Instantiate(listaFichasPrefabs[1], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform);
+        if (jugadorIndex == cantidadPlayers)
+        {
+            MenuSeleccion.SetActive(false);
+            iniciado = true; //mover para luego de seleccion de fichas
+            sePuedeTirar = true; //tambien llevar
+            MostrarFichas(); // tambien
+        }
+        jugadorIndex += 1;
+    }
+    public void surubiButton()
+    {
+        Instantiate(listaFichasPrefabs[2], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform);
+        if (jugadorIndex == cantidadPlayers)
+        {
+            MenuSeleccion.SetActive(false);
+            iniciado = true; //mover para luego de seleccion de fichas
+            sePuedeTirar = true; //tambien llevar
+            MostrarFichas(); // tambien
+        }
+        jugadorIndex += 1;
+    }
+    public void carpinchoButton()
+    {
+        Instantiate(listaFichasPrefabs[3], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform);
+        if (jugadorIndex == cantidadPlayers)
+        {
+            MenuSeleccion.SetActive(false);
+            iniciado = true; //mover para luego de seleccion de fichas
+            sePuedeTirar = true; //tambien llevar
+            MostrarFichas(); // tambien
+        }
+        jugadorIndex += 1;
+    }
+
+    public void pacuButton()
+    {
+        Instantiate(listaFichasPrefabs[4], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
+                    ControlTablero.instance.arrayFichas[jugadorIndex].transform);
+        if (jugadorIndex == cantidadPlayers)
+        {
+            MenuSeleccion.SetActive(false);
+            iniciado = true; //mover para luego de seleccion de fichas
+            sePuedeTirar = true; //tambien llevar
+            MostrarFichas(); // tambien
+        }
+        jugadorIndex += 1;
+    }
     private void OnEnable()//Se ejecuta cuando el objeto esta activo y es llamado
     {
         if (Instancia == null)//compruebo que esta accion no se realizó con anterioridad
@@ -169,9 +241,7 @@ public class MenuControl : MonoBehaviour
             canvasMenuMain.SetActive(false);
             RulesPanel.SetActive(true);
             cantidadPlayers = int.Parse(dropdown.options[dropdown.value].text) - 1;
-            sePuedeTirar = true;
-            iniciado = true;
-            MostrarFichas();
+
         }
     }
 
@@ -184,17 +254,24 @@ public class MenuControl : MonoBehaviour
     public void desactivarTutorial()
     {
         HowToPlayPanel.SetActive(false);
+        MenuSeleccion.SetActive(true);
         dado1UI.gameObject.SetActive(true);
         dado2UI.gameObject.SetActive(true);
         AmbientSound.SetActive(true);
-
     }
 
-    public void MostrarFichas()
+    public void MostrarFichas()//para mostrar las fichas, en cada boton en vez de cambiar el id, cambiamos la posicion en el array del objeto
     {
-        for (int i = 0; i <= cantidadPlayers; i++)
+
+        for (int i = 0; i <= 4; i++)//ficha
         {
-            ControlTablero.instance.arrayFichas[i].SetActive(true);
+            for (int j = 0; j <= cantidadPlayers; j++)//jugador
+            {
+                if (j == ControlTablero.instance.arrayFichas[i].GetComponent<Ficha>().ID)
+                {
+                    ControlTablero.instance.arrayFichas[i].SetActive(true);
+                }
+            }
         }
     }
     public IEnumerator RandomSprite() {

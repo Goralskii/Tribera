@@ -26,10 +26,12 @@ public class ControlTablero : MonoBehaviour
     {
         _movementAnimation = GameObject.Find("Script").GetComponent<MovementAnimation>();
     }
-    public void AsignarFichas()
-    {
-        arrayFichas = GameObject.FindGameObjectsWithTag("Ficha");
-    }
+    //public void AsignarFichas()
+    //{
+    //    arrayFichas = GameObject.FindGameObjectsWithTag("Ficha");
+    //}
+
+
     public IEnumerator MoverFicha(int count, int Ficha)
     {        
         arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().LiberarFicha(Ficha);
