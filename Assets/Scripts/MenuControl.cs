@@ -45,6 +45,7 @@ public class MenuControl : MonoBehaviour
     public bool randomizer = false;
     public GameObject winPanel;
     public GameObject AmbientSound;
+    public GameObject HUD;
 
     public Emblemas[] emblemas = new Emblemas[6];
 
@@ -59,6 +60,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
             MostrarFichas(); // tambien
@@ -73,6 +75,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
             MostrarFichas(); // tambien
@@ -87,6 +90,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
             MostrarFichas(); // tambien
@@ -101,6 +105,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
             MostrarFichas(); // tambien
@@ -116,6 +121,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
             MostrarFichas(); // tambien
