@@ -17,8 +17,8 @@ public class Ficha : MonoBehaviour
     public bool pierdeTurno;
 
     public List<GameObject> listaFichasUI;
-    int indexFichaUI;
-    
+    public int indexFichaUI = -1; // Declarar indexFichaUI con un valor inicial adecuado
+
     void Update()
     {
         if (fichaActiva)
@@ -33,56 +33,70 @@ public class Ficha : MonoBehaviour
                 // Convertir a rango 0.0 a 1.0
                 activeArrow.SetActive(true);
                 string nombreFicha = transform.GetChild(1).name;
+
+                // Desactivar todos los elementos en listaFichasUI antes de activar el correspondiente
+                foreach (var fichaUI in listaFichasUI)
+                {
+                    fichaUI.gameObject.SetActive(false);
+                }
+
                 switch (nombreFicha)
                 {
                     case "Yacare(Clone)":
-                        listaFichasUI[0].gameObject.SetActive(true);
+                        //listaFichasUI[0].gameObject.SetActive(true);
+                        //Debug.Log("Se activo el UI de :" + listaFichasUI[0].gameObject.name);
                         indexFichaUI = 0;
                         red = 57;
                         green = 100;
                         blue = 72;
                         color = new Color(red / 255f, green / 255f, blue / 255f);
                         activeArrow.GetComponent<SpriteRenderer>().color = color;
+                        Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
                     case "Dorado(Clone)":
-                        listaFichasUI[1].gameObject.SetActive(true);
+                        //listaFichasUI[1].gameObject.SetActive(true);
                         indexFichaUI = 1;
                         red = 172;
                         green = 162;
                         blue = 53;
                         color = new Color(red / 255f, green / 255f, blue / 255f);
                         activeArrow.GetComponent<SpriteRenderer>().color = color;
+                        Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
                     case "Surubi(Clone)":
-                        listaFichasUI[2].gameObject.SetActive(true);
+                        //listaFichasUI[2].gameObject.SetActive(true);
                         indexFichaUI = 2;
                         red = 107;
                         green = 119;
                         blue = 140;
                         color = new Color(red / 255f, green / 255f, blue / 255f);
                         activeArrow.GetComponent<SpriteRenderer>().color = color;
+                        Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
                     case "Carpincho2(Clone)":
-                        listaFichasUI[3].gameObject.SetActive(true);
+                        //listaFichasUI[3].gameObject.SetActive(true);
                         indexFichaUI = 3;
                         red = 149;
                         green = 113;
                         blue = 37;
                         color = new Color(red / 255f, green / 255f, blue / 255f);
                         activeArrow.GetComponent<SpriteRenderer>().color = color;
+                        Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
                     case "Pacu(Clone)":
-                        listaFichasUI[4].gameObject.SetActive(true);
+                        //listaFichasUI[4].gameObject.SetActive(true);
                         indexFichaUI = 4;
                         red = 204;
                         green = 182;
                         blue = 141;
                         color = new Color(red / 255f, green / 255f, blue / 255f);
                         activeArrow.GetComponent<SpriteRenderer>().color = color;
+                        Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
                     default:
                         break;
                 }
+
             }
         }
         else
