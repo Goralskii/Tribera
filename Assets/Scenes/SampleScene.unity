@@ -12372,17 +12372,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'TIRAR LOS DADOS: Presiona ESPACIO cada vez que comience tu turno para
-    lanzar los dados.
-
-
-
-
-
-
-
-    RESPONDER: Usa el CLICK IZQUIERDO del MOUSE para
-    seleccionar tu respuesta.'
+  m_text: "TIRAR LOS DADOS: Presiona el BOT\xD3N con el s\xEDmbolo de los dados o
+    ESPACIO cada vez que comience tu turno para lanzar los dados.\n\n\n\n\n\n\nRESPONDER:
+    PULSA sobre las respuestas o usa el CLICK IZQUIERDO del MOUSE para seleccionar
+    tu respuesta."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc00cae817951ae47bc47600f709667b, type: 2}
   m_sharedMaterial: {fileID: 5815138236148199019, guid: fc00cae817951ae47bc47600f709667b, type: 2}
