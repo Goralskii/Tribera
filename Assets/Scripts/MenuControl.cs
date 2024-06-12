@@ -25,6 +25,7 @@ public class MenuControl : MonoBehaviour
     bool InGame = false;
     public GameObject canvasMenuMain;
     public GameObject RulesPanel;
+    public GameObject RulesPanel2;
     public GameObject HowToPlayPanel;
     public TMP_Dropdown dropdown;
     public bool sePuedeTirar;
@@ -251,13 +252,19 @@ public class MenuControl : MonoBehaviour
         }
     }
 
-    public void siguienteTutorial()
+    public void siguienteTutorial()//boton del primer panel de reglas
     {
         RulesPanel.SetActive(false);
+        RulesPanel2.SetActive(true);
+    }
+
+    public void siguenteTutorial2()//boton del 2do panel de reglas
+    {
+        RulesPanel2.SetActive(false);
         HowToPlayPanel.SetActive(true);
     }
 
-    public void desactivarTutorial()
+    public void desactivarTutorial()//boton del panel como jugar
     {
         HowToPlayPanel.SetActive(false);
         MenuSeleccion.SetActive(true);
