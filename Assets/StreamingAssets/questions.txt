@@ -89,7 +89,7 @@ HISTORIA;¿En qué localidad nació San Martin?;Curuzú Cuatiá;Paso de los Libr
 HISTORIA;¿Quién fundó la Ciudad de Corrientes?;José Hernández;Fernando Saavedra;Juan Torres de Vera y Aragón;Juan José Cabral;2
 HISTORIA;¿Qué día se celebra Karaí Octubre?;30 de Septiembre;10 de Octubre;1 de Octubre;30 de Octubre;2
 HISTORIA;¿Qué presidente de la Nación nació en Paso de los Libres, Corrientes?;Alfonsín;Hipólito;Menem;Frondizi;3
-DEPORTES;¿Cuál es el apodo del jugador de basket correntino Federico Kammerichs?;El Carpincho;El Yaguareté;El Yacaré;El Tero;2
+DEPORTES;¿Cuál es el apodo del jugador de basquet correntino Federico Kammerichs?;El Carpincho;El Yaguareté;El Yacaré;El Tero;2
 DEPORTES;¿En qué Club se formó el jugador Federico Kammmerichs?;Club Unión (Goya);Regatas (Capital);San Martin (Capital);Juventud Unida (Goya);0
 DEPORTES;¿En qué año dirigió Diego Armando Maradona al Club Deportivo Mandiyú?;1993;1994;1995;1996;1
 DEPORTES;¿De qué ciudad es oriundo el medallista olímpico Federico Kammerichs?;Esquina;Corrientes;Goya;Ituziangó;2
@@ -115,4 +115,3 @@ BIOLOGIA;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguaret�
 BIOLOGIA;¿Qué tipo de mono se encuentra en la selva de Corrientes y, en algunos casos, en árboles de la ciudad de Corrientes?;Chimpancé;Macaco;Mandril;Carayá;3
 BIOLOGIA;¿Cuál de estas plantas florece una sola vez en su vida?;Lapacho;Tacuara;Ceibo;Camalote;1
 BIOLOGIA;¿Cuál de estos nombres de ciudades correntinas coincide con el nombre de una flor?;Mburucuyá;Tatacuá;Itá Baté;Itatí;0
-BIOLOGIA;¿Cuál es el nombre del pez de agua dulce más apreciado en la gastronomía local de Corrientes?;Dorado;Surubí;Pacú;Todas son correctas;3
