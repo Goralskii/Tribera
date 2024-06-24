@@ -1,2 +1,2 @@
-# Carrera_Ibera
- Juego de mesa sobre los esteros del iberá
+# Triberá
+ Juego de mesa tipo trivia + temática Esteros del Iberá
