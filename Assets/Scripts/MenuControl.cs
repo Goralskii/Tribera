@@ -1,9 +1,13 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Xml.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.PostProcessing;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -47,8 +51,21 @@ public class MenuControl : MonoBehaviour
     public GameObject winPanel;
     public GameObject AmbientSound;
     public GameObject HUD;
+    public GameObject mainCamera;
+    public GameObject VirtualCamera;
+    public Ficha Ficha;
+
+
 
     public Emblemas[] emblemas = new Emblemas[6];
+    // Corrutina que introduce un delay
+    IEnumerator DelayCoroutine()
+    {
+        Debug.Log("Inicio del delay");
+        // Espera 3 segundos
+        yield return new WaitForSeconds(1080);
+        Debug.Log("Fin del delay");
+    }
 
     [Header("                                                    FICHAS")]
     public List<GameObject> listaFichasPrefabs;
@@ -61,6 +78,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
             HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
@@ -76,6 +94,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
             HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
@@ -91,6 +110,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
             HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
@@ -106,6 +126,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
             HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
@@ -122,6 +143,7 @@ public class MenuControl : MonoBehaviour
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
+            VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
             HUD.SetActive(true);
             iniciado = true; //mover para luego de seleccion de fichas
             sePuedeTirar = true; //tambien llevar
@@ -214,9 +236,13 @@ public class MenuControl : MonoBehaviour
     }
     public void ControlarWin()
     {
+        int ganador;
         if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == totalCategorias.Count || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 6)
         {
             winPanel.SetActive(true);
+            ganador = jugadorIndex;
+            Ficha.indexFichaUI = ganador;
+            ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
         }
     }
     public void ActualizarUI()

@@ -59,6 +59,7 @@ public class ControlTablero : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual].GetComponent<Casillero>().AcomodarFicha(Ficha);
         arrayFichas[Ficha].GetComponent<Ficha>().casillaActual = arrayTablero[arrayFichas[Ficha].GetComponent<Ficha>().posActual];
+
         if (arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Laguna" && arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.name != "Salida")
         {
             if (!(arrayFichas[Ficha].GetComponent<Ficha>().categoriasCompletas.Contains(arrayFichas[Ficha].GetComponent<Ficha>().casillaActual.GetComponent<Casillero>().categoria)))
