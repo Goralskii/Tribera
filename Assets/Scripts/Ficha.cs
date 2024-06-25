@@ -35,15 +35,15 @@ public class Ficha : MonoBehaviour
                 string nombreFicha = transform.GetChild(1).name;
 
                 //// Desactivar todos los elementos en listaFichasUI antes de activar el correspondiente
-                //foreach (var fichaUI in listaFichasUI)
-                //{
-                //    fichaUI.gameObject.SetActive(false);
-                //}
+                foreach (var fichaUI in listaFichasUI)
+                {
+                    fichaUI.gameObject.SetActive(false);
+                }
 
                 switch (nombreFicha)
                 {
                     case "Yacare(Clone)":
-                        listaFichasUI[0].gameObject.SetActive(true);
+                        listaFichasUI[0].SetActive(true);
                         //Debug.Log("Se activo el UI de :" + listaFichasUI[0].gameObject.name);
                         indexFichaUI = 0;
                         red = 57;
@@ -54,7 +54,7 @@ public class Ficha : MonoBehaviour
                         Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
                     case "Dorado(Clone)":
-                        listaFichasUI[1].gameObject.SetActive(true);
+                        listaFichasUI[1].SetActive(true);
                         indexFichaUI = 1;
                         red = 172;
                         green = 162;
@@ -64,7 +64,7 @@ public class Ficha : MonoBehaviour
                         Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
                     case "Surubi(Clone)":
-                        listaFichasUI[2].gameObject.SetActive(true);
+                        listaFichasUI[2].SetActive(true);
                         indexFichaUI = 2;
                         red = 107;
                         green = 119;
@@ -74,7 +74,7 @@ public class Ficha : MonoBehaviour
                         Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
                     case "Carpincho2(Clone)":
-                        listaFichasUI[3].gameObject.SetActive(true);
+                        listaFichasUI[3].SetActive(true);
                         indexFichaUI = 3;
                         red = 149;
                         green = 113;
@@ -84,7 +84,7 @@ public class Ficha : MonoBehaviour
                         Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
                     case "Pacu(Clone)":
-                        listaFichasUI[4].gameObject.SetActive(true);
+                        listaFichasUI[4].SetActive(true);
                         indexFichaUI = 4;
                         red = 204;
                         green = 182;
@@ -102,7 +102,7 @@ public class Ficha : MonoBehaviour
         else
         {
             activeArrow.SetActive(false);
-            listaFichasUI[indexFichaUI].gameObject.SetActive(false);
+            //listaFichasUI[indexFichaUI].gameObject.SetActive(false);
         }
         if (posActual == 0)
         {
