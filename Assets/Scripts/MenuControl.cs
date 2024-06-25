@@ -163,9 +163,10 @@ public class MenuControl : MonoBehaviour
     {
         if (iniciado)
         {
-            ActualizarUI();
+            ActualizarUI();//actualiza los emblemas
         }
         ControlarWin();
+
         ControlarTurno();
     }
     void Start()
@@ -181,7 +182,7 @@ public class MenuControl : MonoBehaviour
         valorD2 = dice2.valorDado;
         if (InGame)
         {
-            currentPlayer.text = "Jugador actual - P" + (turno + 1);
+            //currentPlayer.text = "Jugador actual - P" + (turno + 1);
             ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
             InGame = false;
         }
@@ -236,13 +237,10 @@ public class MenuControl : MonoBehaviour
     }
     public void ControlarWin()
     {
-        int ganador;
         if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == totalCategorias.Count || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 6)
         {
             winPanel.SetActive(true);
-            ganador = jugadorIndex;
-            Ficha.indexFichaUI = ganador;
-            ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
+            avanzarTurno = false;
         }
     }
     public void ActualizarUI()
