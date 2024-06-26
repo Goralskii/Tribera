@@ -42,7 +42,7 @@ public class Ficha : MonoBehaviour
 
                 switch (nombreFicha)
                 {
-                    case "Yacare(Clone)":
+                    case "Yacare2(Clone)":
                         listaFichasUI[0].gameObject.SetActive(true);
                         //Debug.Log("Se activo el UI de :" + listaFichasUI[0].gameObject.name);
                         indexFichaUI = 0;
@@ -73,7 +73,7 @@ public class Ficha : MonoBehaviour
                         activeArrow.GetComponent<SpriteRenderer>().color = color;
                         Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
-                    case "Carpincho2(Clone)":
+                    case "Carpincho1(Clone)":
                         listaFichasUI[3].gameObject.SetActive(true);
                         indexFichaUI = 3;
                         red = 149;
@@ -83,7 +83,7 @@ public class Ficha : MonoBehaviour
                         activeArrow.GetComponent<SpriteRenderer>().color = color;
                         Debug.Log("el nombre de la ficha es: " + indexFichaUI);
                         break;
-                    case "Pacu(Clone)":
+                    case "Yaguarete(Clone)":
                         listaFichasUI[4].gameObject.SetActive(true);
                         indexFichaUI = 4;
                         red = 204;
