@@ -55,6 +55,8 @@ public class MenuControl : MonoBehaviour
     public GameObject VirtualCamera;
     public Ficha Ficha;
 
+    public Button[] selectionButtons = new Button[5];
+
 
 
     public Emblemas[] emblemas = new Emblemas[6];
@@ -70,75 +72,11 @@ public class MenuControl : MonoBehaviour
     [Header("                                                    FICHAS")]
     public List<GameObject> listaFichasPrefabs;
 
-    public void yacareButton()
+    public void ButtonSelectionOnClick(Button btn, int idBtn)
     {
-        Instantiate(listaFichasPrefabs[0], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
-                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
-                    ControlTablero.instance.arrayFichas[jugadorIndex].transform);
-        if (jugadorIndex == cantidadPlayers)
-        {
-            MenuSeleccion.SetActive(false);
-            VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
-            HUD.SetActive(true);
-            iniciado = true; //mover para luego de seleccion de fichas
-            sePuedeTirar = true; //tambien llevar
-            MostrarFichas(); // tambien
-        }
-        jugadorIndex += 1;
-    }
-    public void doradoButton()
-    {
-        Instantiate(listaFichasPrefabs[1], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
-                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
-                    ControlTablero.instance.arrayFichas[jugadorIndex].transform);
-        if (jugadorIndex == cantidadPlayers)
-        {
-            MenuSeleccion.SetActive(false);
-            VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
-            HUD.SetActive(true);
-            iniciado = true; //mover para luego de seleccion de fichas
-            sePuedeTirar = true; //tambien llevar
-            MostrarFichas(); // tambien
-        }
-        jugadorIndex += 1;
-    }
-    public void surubiButton()
-    {
-        Instantiate(listaFichasPrefabs[2], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
-                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
-                    ControlTablero.instance.arrayFichas[jugadorIndex].transform);
-        if (jugadorIndex == cantidadPlayers)
-        {
-            MenuSeleccion.SetActive(false);
-            VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
-            HUD.SetActive(true);
-            iniciado = true; //mover para luego de seleccion de fichas
-            sePuedeTirar = true; //tambien llevar
-            MostrarFichas(); // tambien
-        }
-        jugadorIndex += 1;
-    }
-    public void carpinchoButton()
-    {
-        Instantiate(listaFichasPrefabs[3], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
-                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
-                    ControlTablero.instance.arrayFichas[jugadorIndex].transform);
-        if (jugadorIndex == cantidadPlayers)
-        {
-            MenuSeleccion.SetActive(false);
-            VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
-            HUD.SetActive(true);
-            iniciado = true; //mover para luego de seleccion de fichas
-            sePuedeTirar = true; //tambien llevar
-            MostrarFichas(); // tambien
-        }
-        jugadorIndex += 1;
-    }
-
-    public void YaguareteButton()
-    {
-        Instantiate(listaFichasPrefabs[4], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
-                    ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
+        Debug.LogWarning("Entrando al listener del boton");
+        Instantiate(listaFichasPrefabs[idBtn], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
+                    listaFichasPrefabs[idBtn].transform.rotation,
                     ControlTablero.instance.arrayFichas[jugadorIndex].transform);
         if (jugadorIndex == cantidadPlayers)
         {
@@ -171,10 +109,18 @@ public class MenuControl : MonoBehaviour
     }
     void Start()
     {
+        //listener para botones de fichas
+        for (int i = 0; i < selectionButtons.Length; i++)
+        {
+            int tempIndex = i;
+            Debug.Log("Asignando listener a boton " + selectionButtons[tempIndex].gameObject.name);
+            selectionButtons[i].onClick.AddListener(() => ButtonSelectionOnClick(selectionButtons[tempIndex], tempIndex));
+        }
         // Suscribirse al evento onValueChanged
         dropdown.onValueChanged.AddListener(delegate {
             DropdownValueChanged(dropdown);
         });
+        
     }
     public IEnumerator ActualizarValor()
     {
