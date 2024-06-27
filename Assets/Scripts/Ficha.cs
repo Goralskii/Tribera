@@ -44,6 +44,8 @@ public class Ficha : MonoBehaviour
                 {
                     case "Yacare(Clone)":
                         listaFichasUI[0].SetActive(true);
+                    case "Yacare2(Clone)":
+                        listaFichasUI[0].SetActive(true);
                         //Debug.Log("Se activo el UI de :" + listaFichasUI[0].gameObject.name);
                         indexFichaUI = 0;
                         red = 57;
@@ -75,6 +77,8 @@ public class Ficha : MonoBehaviour
                         break;
                     case "Carpincho2(Clone)":
                         listaFichasUI[3].SetActive(true);
+                    case "Carpincho1(Clone)":
+                        listaFichasUI[3].gameObject.SetActive(true);
                         indexFichaUI = 3;
                         red = 149;
                         green = 113;
@@ -85,6 +89,8 @@ public class Ficha : MonoBehaviour
                         break;
                     case "Pacu(Clone)":
                         listaFichasUI[4].SetActive(true);
+                    case "Yaguarete(Clone)":
+                        listaFichasUI[4].gameObject.SetActive(true);
                         indexFichaUI = 4;
                         red = 204;
                         green = 182;

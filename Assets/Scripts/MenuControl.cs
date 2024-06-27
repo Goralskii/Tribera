@@ -135,7 +135,7 @@ public class MenuControl : MonoBehaviour
         jugadorIndex += 1;
     }
 
-    public void pacuButton()
+    public void YaguareteButton()
     {
         Instantiate(listaFichasPrefabs[4], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
                     ControlTablero.instance.arrayFichas[jugadorIndex].transform.rotation,
