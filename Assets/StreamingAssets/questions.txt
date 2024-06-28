@@ -1,6 +1,4 @@
 AMBIENTE;¿Cómo se debe separar la basura?;Papel y vidrio ;Biodegradables y no biodegradables ;Orgánica e inorgánica ;Papel y otros;2
-AMBIENTE;¿Cómo se llama el reptil mas grande de corrientes?;Yarará;Pitón;Boa;Yacaré;3
-AMBIENTE;¿Cuál es el roedor mas conocido de Corrientes?;Cuy;Rata;Carpincho;Conejo;2
 AMBIENTE;¿Cuál es la mejor forma de evitar los incendios de acuerdo al spot publicitario del gobierno provincial?;Mantener los pastos de la vivienda cortos;Evitar el uso del fuego y la quema de pastizales;No tirar cigarrillos ni fósforos al piso;Regar las plantas y pastizales;1
 AMBIENTE;¿Cuál es un Residuo Orgánico?;Restos de pizza;Pilas;Botellas de Vidrio;Cartón;0
 AMBIENTE;¿Cuál es un residuo Peligroso?;Latas de Aluminio;Pilas;Botellas de Vidrio;Cartón;1
@@ -15,8 +13,8 @@ AMBIENTE;¿De qué color es el contenedor para reciclar Residuos Peligrosos?;Roj
 AMBIENTE;¿De qué color es el contenedor para reciclar el Aluminio?;Rojo;Gris;Naranja;Azul;1
 AMBIENTE;¿De qué color es el contenedor para reciclar el Plástico?;Verde;Gris;Naranja;Amarillo;3
 AMBIENTE;¿De qué color es el contenedor para reciclar el Vidrio?;Amarillo;Blanco;Azul;Gris;1
+AMBIENTE;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Oso hormiguero gigante;Todas son correctas;3
 AMBIENTE;¿De qué color es el contenedor para reciclar el papel y cartón?;Verde;Azul;Marrón;Amarillo;1
-AMBIENTE;¿Qué localidades de Corrientes se encargan de producir cítricos?;Paso de los Libres y Yapeyú;Monte Caseros y Mocoretá;Mburucuyá y Concepción;Alvear y La Cruz;1
 CULTURA;¿Dónde se celebra la Fiesta Nacional del Pacú?;Esquina;Goya;Riachuelo;Itatí;0
 CULTURA;Completá la frase: "Corrientes tiene _______"?;Chamamé;Payé;Tradición;Belleza;1 
 CULTURA;¿Dónde se Celebra la Fiesta de la Yerra Correntina?;Concepción;Ituzaingó;Caá Catí;Esquina;1  
@@ -34,7 +32,6 @@ CULTURA;¿Cómo se llama el Surubi de Susti?;Raul;Rauw;Suru;Gerard;0
 CULTURA;¿Cómo se llama el carpincho de Susti?;Molina;Pincho;Chana;Andrés;1
 CULTURA;¿Cuál es el emblema del Parque Nacional del Iberá?;Carancho;Capuchino Ibera;Inambú común;Yetapá de collar;3
 CULTURA;¿Cuál es la atracción más famosa de Karaí Octubre?;La gran abundancia de comida;Todas son correctas;El duende maléfico;El gran festejo;1
-CULTURA;¿Cuántos correntinos somos (Censo 2022)?;1.197.553 habitantes;1.500.963 habitantes;1.000.050 habitantes;1.260.184 habitantes;0
 CULTURA;¿Cuántos portales de acceso tiene el Parque Nacional Ibera?;2;5;4;9;2
 CULTURA;¿Cómo es físicamente el Karaí Octubre según la leyenda?;Pequeño, robusto y peludo;Alto, delgado y lampiño;Pequeño, delgado y peludo;Alto, robusto y lampiño;0
 CULTURA;¿Cómo se espanta al Karaí Octubre?;Con un ritual;Con un baile;Con una oración;Con abundancia de comida;3
@@ -42,33 +39,37 @@ CULTURA;¿Cómo se llama la empresa de telecomunicaciones de Corrientes?;Telco;T
 CULTURA;¿De qué idioma proviene el término "Karaí"?;Español;Latín;Guaraní;Mandarín;2
 CULTURA;¿Dónde se realiza el Festival Nacional del Autentico Chamamé Tradicional?;Mburucuyá;Mercedes;Esquina;Goya;0
 CULTURA;¿En cuántos países se celebra el Karaí Octubre?;3;1;4;2;0
-CULTURA;¿En qué localidad nació el Sargento Cabral?;Saladas;Itatí;Esquina;Empedrado;0
 CULTURA;¿En qué mes se celebra la llegada del Karaí?;En Enero;En Septiembre;En Agosto;En Octubre;3
 CULTURA;¿En qué municipio se realiza el Torneo Internacional de la Pesca del Dorado?;Empedrado;Ituzaingó;Esquina;Paso de la Patria;3
 CULTURA;¿En qué región se celebra el Karaí Octubre?;Patagónica;Cuyo;Noreste;Noroeste;2
 CULTURA;¿Quién es el Karaí Octubre?;Es un hombre;Es una deidad;Es un duende;Es un animal;2
-CULTURA;¿Quién es el actual gobernador de Corrientes?;Ricardo Colombi;Eduardo Tassano;Gustavo Valdés;Mariano Hormachea;2
 CULTURA;¿Qué cereal se produce en mayor cantidad en Corrientes?;Arroz;Trigo;Centeno;Sordo;0
 CULTURA;¿Qué comida preparaban tradicionalmente los guaraníes para satisfacer al Karaí Octubre?;Milanesa;Yopará;Asado;Sopa;1
-CULTURA;¿Qué cítricos produce en mayor cantidad la provincia de Corrientes?;Mandarinas;Naranjas;Limones;Pomelos;1
 CULTURA;¿Qué es el Karaí Octubre?;Es una tradición;Es un evento ;Un día festivo  ;Un Cumpleaños;0
+CULTURA;¿Qué día se celebra Karaí Octubre?;30 de Septiembre;10 de Octubre;1 de Octubre;30 de Octubre;2
 CULTURA;¿Qué es lo que busca en las casas el karaí Octubre?;Abundancia de cultivos;Abundancia de bebidas;Abundancia de alimentos;Abundancia de ganado;2
 CULTURA;¿Qué fiesta se realiza en Bella Vista?;Fiesta Nacional de la Naranja;Fiesta Nacional de la Chacarera;Fiesta Nacional de la Frutilla;Fiesta Nacional de los Pescadores;0
 CULTURA;¿Qué quiere decir la palabra IBERA?;Tierra Sin Mal;Aguas Brillantes;Bella Vista;Buen Terreno;1
 CULTURA;¿Qué se come en el Karaí Octubre?;Yopará;Polenta mbaipy;Todas son correctas;Hortalizas;2
 CULTURA;¿Qué significa Mandiyu?;Vino;Algodón;Mate;Pez;1
+CULTURA;¿En qué año se inició el carnaval correntino?;1961;1981;1971;1991;0
+CULTURA;¿Dónde se celebra la Fiesta nacional del Surubí?;Paso de la Patria;Esquina;Goya;Ituzaingó;2
 CULTURA;¿Qué significa la palabra Karaí en guaraní?;Persona;Comida;Señor;Pájaro;2
+CULTURA;¿En qué año fue la primera fiesta del Surubí?;1980;1969;2000;1997;1
 CULTURA;¿Qué significan las siglas SUSTI?;Subsecretaria de Transporte e Infraestructura;Subsecretaria de Sistemas y Tecnologías de la Información;Subsecretaria de Sistemas tecnológicos;Subsecretaria de Turismo internacional;1
 GEOGRAFIA;¿Qué departamentos abarcan los Esteros del Iberá?;Capital, Itatí, Caá Catí y Goya;Empedrado, San Cosme, San Luis del Palmar y Santo Tomé;Ituzaingó, Mercedes, San Miguel y Concepción;Paso de los Libres, Monte Caseros, Beron de Astrada y Sauce;2
 GEOGRAFIA;¿Con qué provincia nos une el puente General Manuel Belgrano?;Entre Rios;Misiones;Chaco;Santa Fé;2
 GEOGRAFIA;¿En qué departamentos de Corrientes se cosechan Yerba Mate?;Goya y Esquina;Empedrado y San Lorenzo;Ituzaigo y Santo Tomé;Capital e Itati;2
 GEOGRAFIA;¿Con cuántas provincias limita la provincia de Corrientes?;4;2;5;3;0
+GEOGRAFIA;¿Qué cítricos produce en mayor cantidad la provincia de Corrientes?;Mandarinas;Naranjas;Limones;Pomelos;1
 GEOGRAFIA;¿Con cuáles de estos países limita la provincia de Corrientes?;Uruguay;Uruguay, Brasil y Paraguay ;Brasil;Brasil y Paraguay;1
 GEOGRAFIA;¿Cuál es el clima Predominante en la Provincia de Corrientes?;Árido;Subtropical;Cálido;Frío Seco;1
-GEOGRAFIA;¿Cuál es la segunda localidad mas grande de la provincia de Corrientes?;Santo Tomé;Ituzaingó;Mercedes;Goya;3
+GEOGRAFIA;¿Cuál es la segunda localidad mas grande de la provincia de Corrientes según su cantidad de habitantes?;Santo Tomé;Ituzaingó;Mercedes;Goya;3
 GEOGRAFIA;¿Cuáles ríos rodean a la provincia de Corrientes?;Rio Bermejo y Rio Paraná;Rio Paraguay y Rio Paraná;Rio de la Plata y Rio Paraná;Rio Uruguay y Rio Paraná;3
 GEOGRAFIA;¿Cuántas puntas tiene la ciudad de Corrientes?;5;7;3;9;1
 GEOGRAFIA;¿Cuántos municipios tiene Corrientes?;56;76;80;42;1
+GEOGRAFIA;¿Qué localidades de Corrientes se encargan de producir cítricos?;Paso de los Libres y Yapeyú;Monte Caseros y Mocoretá;Mburucuyá y Concepción;Alvear y La Cruz;1
+GEOGRAFIA;¿Cuántos correntinos somos (Censo 2022)?;1.197.553 habitantes;1.500.963 habitantes;1.000.050 habitantes;1.260.184 habitantes;0
 GEOGRAFIA;¿Dónde se encuentran Las Marias?;Santa Rosa;Mercedes;Virasoro;Saladas;2
 GEOGRAFIA;¿Dónde se encuentra la represa Yacyreta en Corrientes?;Esquina;Santo Tome;Goya;Ituzaingó;3
 GEOGRAFIA;¿Paso de los libres con qué localidad Brasilera limita?;Itapema;Uruguayana;Meia Praia;Dionisio Cerqueira;1
@@ -76,29 +77,26 @@ GEOGRAFIA;¿En qué región se encuentra la provincia de Corrientes?;Cuyo;Patago
 HISTORIA;¿Cuándo se celebra el día del Chamamé en Argentina?;10 de junio;20 de febrero;19 de septiembre;15 de enero;2
 HISTORIA;¿Cuándo se celebra el día del niño correntino?;7 de agosto;20 de marzo;9 de marzo;20 de agosto;2
 HISTORIA;¿Cuándo se inauguró el Puente Interprovincial Gral. Manuel Belgrano (Chaco-Ctes)?;1970;1973;1968;1982;1
-HISTORIA;¿Dónde se celebra la Fiesta nacional del Surubí?;Paso de la Patria;Esquina;Goya;Ituzaingó;2
 HISTORIA;¿En honor a quién se celebra el día del niño correntino?;Pedro Ríos;Federico Ojeda;Miguel Molina;Gerardo Romero;0
 HISTORIA;¿En qué año fue declarado, el parque Nacional Ibera, humedal internacional?;2015;1998;2021;2002;3
 HISTORIA;¿En qué año fue fundada la ciudad de Corrientes?;1640;1580;1690;1588;3
-HISTORIA;¿En qué año fue la primera fiesta del Surubí?;1980;1969;2000;1997;1
+HISTORIA;¿En qué localidad nació el Sargento Cabral?;Saladas;Itatí;Esquina;Empedrado;0
+HISTORIA;¿Quién es el actual gobernador de Corrientes?;Ricardo Colombi;Eduardo Tassano;Gustavo Valdés;Mariano Hormachea;2
 HISTORIA;¿En qué año fueron declarados reserva natural los Esteros del Iberá?;2001;1983;2011;1993;1
 HISTORIA;¿En qué año la UNESCO declaró patrimonio cultural inmaterial de la humanidad al Chamamé?;2005;2020;2022;1997;1
 HISTORIA;¿En qué año se inauguró el Corsódromo Provincial “Nolo Alias”?;2008;2010;2013;2016;2
-HISTORIA;¿En qué año se inició el carnaval correntino?;1961;1981;1971;1991;0
 HISTORIA;¿En qué localidad nació San Martin?;Curuzú Cuatiá;Paso de los Libres;Goya;Yapeyú;3
 HISTORIA;¿Quién fundó la Ciudad de Corrientes?;José Hernández;Fernando Saavedra;Juan Torres de Vera y Aragón;Juan José Cabral;2
-HISTORIA;¿Qué día se celebra Karaí Octubre?;30 de Septiembre;10 de Octubre;1 de Octubre;30 de Octubre;2
 HISTORIA;¿Qué presidente de la Nación nació en Paso de los Libres, Corrientes?;Alfonsín;Hipólito;Menem;Frondizi;3
 DEPORTES;¿Cuál es el apodo del jugador de basquet correntino Federico Kammerichs?;El Carpincho;El Yaguareté;El Yacaré;El Tero;2
-DEPORTES;¿En qué Club se formó el jugador Federico Kammmerichs?;Club Unión (Goya);Regatas (Capital);San Martin (Capital);Juventud Unida (Goya);0
+DEPORTES;¿En qué Club se formó el jugador de Básquet Federico Kammmerichs?;Club Unión (Goya);Regatas (Capital);San Martin (Capital);Juventud Unida (Goya);0
 DEPORTES;¿En qué año dirigió Diego Armando Maradona al Club Deportivo Mandiyú?;1993;1994;1995;1996;1
 DEPORTES;¿De qué ciudad es oriundo el medallista olímpico Federico Kammerichs?;Esquina;Corrientes;Goya;Ituziangó;2
-DEPORTES;¿Qué 2 equipos correntinos fueron los únicos en llegar a la Primera Division del fútbol argentino?;Huracán Corrientes y Boca Unidos;Boca Unidos y Mandiyú;Mandiyú y Huracán Corrientes;Talleres y Ferroviario;2
+DEPORTES;¿Qué 2 Clubes correntinos fueron los únicos en llegar a la Primera Division del Fútbol Argentino?;Huracán Corrientes y Boca Unidos;Boca Unidos y Mandiyú;Mandiyú y Huracán Corrientes;Talleres y Ferroviario;2
 DEPORTES;¿Dónde debutó deportivamente Francisco "Pancho" Sá?;Boca Unidos;Deportivo Mandiyu;Huracán Corrientes;Sarmiento(Rcia);2
 DEPORTES;¿Cuál es el apodo del Club Deportivo Mandiyu?;Gauchos;Albo;Textiles;Guaraníes;1
 DEPORTES;¿Cuál es el apodo del Club Atletico Huracán Corrientes?;Carpinchos;Canalla;Globo;Yaguaretes;2
 DEPORTES;¿Cuál es el apodo de Boca Unidos?;El club de la Ribera;Rojos;El club de la Costa;El Club del puente;0
-DEPORTES;¿Cuál es considerado el mayor Clásico de la Region?;Huracan Corrientes vs Mandiyú;Mandiyú vs Boca Unidos;Mandiyú vs Chaco for ever;Sarmiento(Rcia) vs Boca Unidos;2
 DEPORTES;¿Cuál es club de futbol más antigüo de Corrientes?;Boca Unidos;Deportivo Mandiyu;Huracan FC(Goya);Huracan de Corrientes;3
 DEPORTES;¿En qué año se fundó Huracán Corrientes?;1925;1918;1923;1952;1
 DEPORTES;¿En qué año se fundó el Club Deportivo Mandiyú?;1925;1918;1923;1952;3
@@ -111,7 +109,8 @@ DEPORTES;¿Cómo se llama el estadio del club San Martin también conocido como 
 DEPORTES;¿En cuál Temporada fue por única vez Campeón de la LNB Regatas Corrientes?;2010-2011;2011-2012;2012-2013;2013-2014;2
 BIOLOGIA;¿Cuál es el felino autóctono más grande de la Provincia de Corrientes?;El Yaguareté;El Ocelote;El Gato montés;El Tirica;0
 BIOLOGIA;¿Cuál es el nombre de la planta acuática común en los ríos y lagunas de Corrientes?;Mburucuyá;Camalote;Calas;Loto;1
-BIOLOGIA;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Oso hormiguero gigante;Todas son correctas;3
-BIOLOGIA;¿Qué tipo de mono se encuentra en la selva de Corrientes y, en algunos casos, en árboles de la ciudad de Corrientes?;Chimpancé;Macaco;Mandril;Carayá;3
+BIOLOGIA;¿Qué tipo de mono se encuentra en la selva de Corrientes y, en algunos casos, en árboles de la ciudad de Corrientes?;Chimpancé;Capuchino;Mandril;Carayá;3
 BIOLOGIA;¿Cuál de estas plantas florece una sola vez en su vida?;Lapacho;Tacuara;Ceibo;Camalote;1
 BIOLOGIA;¿Cuál de estos nombres de ciudades correntinas coincide con el nombre de una flor?;Mburucuyá;Tatacuá;Itá Baté;Itatí;0
+BIOLOGIA;¿Cuál es el roedor mas conocido de Corrientes?;Cuy;Rata;Carpincho;Conejo;2
+BIOLOGIA;¿Cómo se llama el reptil mas grande de corrientes?;Yarará;Pitón;Boa;Yacaré;3
