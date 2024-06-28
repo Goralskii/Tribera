@@ -75,9 +75,14 @@ public class MenuControl : MonoBehaviour
     public void ButtonSelectionOnClick(Button btn, int idBtn)
     {
         Debug.LogWarning("Entrando al listener del boton");
-        Instantiate(listaFichasPrefabs[idBtn], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
+        GameObject temp = Instantiate(listaFichasPrefabs[idBtn], ControlTablero.instance.arrayFichas[jugadorIndex].transform.position,
                     listaFichasPrefabs[idBtn].transform.rotation,
                     ControlTablero.instance.arrayFichas[jugadorIndex].transform);
+        if (idBtn == 3)
+        {
+            Vector3 tempPos = temp.transform.position;
+            temp.transform.position = new Vector3(tempPos.x, tempPos.y-0.03f, tempPos.z);
+        }
         if (jugadorIndex == cantidadPlayers)
         {
             MenuSeleccion.SetActive(false);
