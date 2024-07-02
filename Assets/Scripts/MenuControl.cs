@@ -55,12 +55,7 @@ public class MenuControl : MonoBehaviour
     public GameObject VirtualCamera;
     public Ficha Ficha;
     public Button[] selectionButtons = new Button[5];
-
-    //// Array para almacenar las posiciones y rotaciones de cada distribución del HUD
-    //public RectTransform[][] hudDistributions;
-    //// Array para almacenar las referencias a los elementos del HUD
-    //public RectTransform[] hudElements;
-
+    public GameObject[] ArrayBotonDado;
 
 
     public Emblemas[] emblemas = new Emblemas[6];
@@ -130,28 +125,8 @@ public class MenuControl : MonoBehaviour
             DropdownValueChanged(dropdown);
         });
 
-        //// Inicializar el array de distribuciones (5 turnos, 7 elementos por turno)
-        //hudDistributions = new RectTransform[5][];
-        //for (int i = 0; i < hudDistributions.Length; i++)
-        //{
-        //    hudDistributions[i] = new RectTransform[7];
-        //}
-
-        //// Inicializar las posiciones del HUD para el turno inicial
-        //UpdateHUD();
-
     }
 
-    //void UpdateHUD()
-    //{
-    //    // Actualiza las posiciones y rotaciones de los elementos del HUD según el turno
-    //    RectTransform[] currentDistribution = hudDistributions[turno - 1];
-    //    for (int i = 0; i < hudElements.Length; i++)
-    //    {
-    //        hudElements[i].anchoredPosition = currentDistribution[i].anchoredPosition;
-    //        hudElements[i].rotation = currentDistribution[i].rotation;
-    //    }
-    //}
 
     public IEnumerator ActualizarValor()
     {
@@ -183,7 +158,9 @@ public class MenuControl : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 yield return new WaitUntil(() => avanzarTurno);
                 ControlarWin();
+                ArrayBotonDado[turno].SetActive(false);//desactiva boton de dado correspondiente a turno de jugador
                 turno++;
+                ArrayBotonDado[turno].SetActive(true);//activa boton de dado correspondiente a turno de jugador
                 ControlarTurno();
                 while (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno)
                 {
@@ -193,7 +170,7 @@ public class MenuControl : MonoBehaviour
                     ControlarTurno();
                     yield return new WaitForSeconds(1f);
                 }
-                currentPlayer.text = "Jugador actual - P" + (turno + 1);
+                //currentPlayer.text = "Jugador actual - P" + (turno + 1);
                 ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().fichaActiva = true;
             }
         }
@@ -205,7 +182,7 @@ public class MenuControl : MonoBehaviour
         dado1UI.texture = texturasDados[0];
         dado2UI.texture = texturasDados[0];
     }
-    public void ControlarTurno()
+    public void ControlarTurno()//resetea turnos
     {
         if (turno > cantidadPlayers)
         {
