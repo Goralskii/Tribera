@@ -54,8 +54,12 @@ public class MenuControl : MonoBehaviour
     public GameObject mainCamera;
     public GameObject VirtualCamera;
     public Ficha Ficha;
-
     public Button[] selectionButtons = new Button[5];
+
+    // Array para almacenar las posiciones y rotaciones de cada distribución del HUD
+    public RectTransform[][] hudDistributions;
+    // Array para almacenar las referencias a los elementos del HUD
+    public RectTransform[] hudElements;
 
 
 
@@ -125,8 +129,30 @@ public class MenuControl : MonoBehaviour
         dropdown.onValueChanged.AddListener(delegate {
             DropdownValueChanged(dropdown);
         });
-        
+
+        // Inicializar el array de distribuciones (5 turnos, 7 elementos por turno)
+        hudDistributions = new RectTransform[5][];
+        for (int i = 0; i < hudDistributions.Length; i++)
+        {
+            hudDistributions[i] = new RectTransform[7];
+        }
+
+        // Inicializar las posiciones del HUD para el turno inicial
+        UpdateHUD();
+
     }
+
+    void UpdateHUD()
+    {
+        // Actualiza las posiciones y rotaciones de los elementos del HUD según el turno
+        RectTransform[] currentDistribution = hudDistributions[turno - 1];
+        for (int i = 0; i < hudElements.Length; i++)
+        {
+            hudElements[i].anchoredPosition = currentDistribution[i].anchoredPosition;
+            hudElements[i].rotation = currentDistribution[i].rotation;
+        }
+    }
+
     public IEnumerator ActualizarValor()
     {
         valorD1 = dice1.valorDado;
@@ -328,4 +354,6 @@ public class MenuControl : MonoBehaviour
         dice1.SetearDados();
         dice2.SetearDados();
     }
+
+
 }
