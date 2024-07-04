@@ -56,17 +56,8 @@ public class MenuControl : MonoBehaviour
     public Ficha Ficha;
     public Button[] selectionButtons = new Button[5];
     public GameObject[] ArrayBotonDado;
-
-
+    public GameObject Paisaje;
     public Emblemas[] emblemas = new Emblemas[6];
-    // Corrutina que introduce un delay
-    IEnumerator DelayCoroutine()
-    {
-        Debug.Log("Inicio del delay");
-        // Espera 3 segundos
-        yield return new WaitForSeconds(1080);
-        Debug.Log("Fin del delay");
-    }
 
     [Header("                                                    FICHAS")]
     public List<GameObject> listaFichasPrefabs;
@@ -87,9 +78,9 @@ public class MenuControl : MonoBehaviour
             MenuSeleccion.SetActive(false);
             VirtualCamera.GetComponent<PlayableDirector>().enabled = true;
             HUD.SetActive(true);
-            iniciado = true; //mover para luego de seleccion de fichas
-            sePuedeTirar = true; //tambien llevar
-            MostrarFichas(); // tambien
+            iniciado = true; 
+            sePuedeTirar = true; 
+            MostrarFichas(); 
         }
         jugadorIndex += 1;
     }
