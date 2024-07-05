@@ -13,7 +13,7 @@ AMBIENTE;¿De qué color es el contenedor para reciclar Residuos Peligrosos?;Roj
 AMBIENTE;¿De qué color es el contenedor para reciclar el Aluminio?;Rojo;Gris;Naranja;Azul;1
 AMBIENTE;¿De qué color es el contenedor para reciclar el Plástico?;Verde;Gris;Naranja;Amarillo;3
 AMBIENTE;¿De qué color es el contenedor para reciclar el Vidrio?;Amarillo;Blanco;Azul;Gris;1
-AMBIENTE;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Oso hormiguero gigante;Todas son correctas;3
+AMBIENTE;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Aguará Guazú;Todas son correctas;3
 AMBIENTE;¿De qué color es el contenedor para reciclar el papel y cartón?;Verde;Azul;Marrón;Amarillo;1
 CULTURA;¿Dónde se celebra la Fiesta Nacional del Pacú?;Esquina;Goya;Riachuelo;Itatí;0
 CULTURA;Completá la frase: "Corrientes tiene _______"?;Chamamé;Payé;Tradición;Belleza;1 
@@ -32,7 +32,7 @@ CULTURA;¿Cómo se llama el Surubi de Susti?;Raul;Rauw;Suru;Gerard;0
 CULTURA;¿Cómo se llama el carpincho de Susti?;Molina;Pincho;Chana;Andrés;1
 CULTURA;¿Cuál es el emblema del Parque Nacional del Iberá?;Carancho;Capuchino Ibera;Inambú común;Yetapá de collar;3
 CULTURA;¿Cuál es la atracción más famosa de Karaí Octubre?;La gran abundancia de comida;Todas son correctas;El duende maléfico;El gran festejo;1
-CULTURA;¿Cuántos portales de acceso tiene el Parque Nacional Ibera?;2;5;4;9;2
+CULTURA;¿Cuántos portales de acceso tiene el Parque Nacional Ibera?;2;5;4;9;3
 CULTURA;¿Cómo es físicamente el Karaí Octubre según la leyenda?;Pequeño, robusto y peludo;Alto, delgado y lampiño;Pequeño, delgado y peludo;Alto, robusto y lampiño;0
 CULTURA;¿Cómo se espanta al Karaí Octubre?;Con un ritual;Con un baile;Con una oración;Con abundancia de comida;3
 CULTURA;¿Cómo se llama la empresa de telecomunicaciones de Corrientes?;Telco;Telecom;Telecentro;Netco;0
@@ -111,6 +111,17 @@ BIOLOGIA;¿Cuál es el felino autóctono más grande de la Provincia de Corrient
 BIOLOGIA;¿Cuál es el nombre de la planta acuática común en los ríos y lagunas de Corrientes?;Mburucuyá;Camalote;Calas;Loto;1
 BIOLOGIA;¿Qué tipo de mono se encuentra en la selva de Corrientes y, en algunos casos, en árboles de la ciudad de Corrientes?;Chimpancé;Capuchino;Mandril;Carayá;3
 BIOLOGIA;¿Cuál de estas plantas florece una sola vez en su vida?;Lapacho;Tacuara;Ceibo;Camalote;1
-BIOLOGIA;¿Cuál de estos nombres de ciudades correntinas coincide con el nombre de una flor?;Mburucuyá;Tatacuá;Itá Baté;Itatí;0
+BIOLOGIA;¿Cuál de estos nombres de flores coincide con el nombre de una ciudad correntina?;Mburucuyá;Tatacuá;Itá Baté;Itatí;0
 BIOLOGIA;¿Cuál es el roedor mas conocido de Corrientes?;Cuy;Rata;Carpincho;Conejo;2
-BIOLOGIA;¿Cómo se llama el reptil mas grande de corrientes?;Yarará;Pitón;Boa;Yacaré;3
+BIOLOGIA;¿Cómo se llama el reptil de hábitos anfibios más grande del Iberá?;Yarará;Pitón;Boa;Yacaré;3
+BIOLOGIA;¿Cuántos huevos pone una hermbra Yacaré?;Entre 10 y 20;Entre 20 y 40;Entre 0 y 10;Entre 40 y 50;1
+BIOLOGIA;Si la temperatura del nido de los Yacarés se encuentra entre 29°C y 31°C todas las crias nacerán...;Solo Machos;Machos y Hembras por igual;Solo Hembras;70% machos y 30% hembras;2
+BIOLOGIA;¿Durante cuánto tiempo las madres Yacaré cuidan a sus crias antes de que se independicen?;6 Meses;1 Año; 8 Meses;3 Meses;1
+BIOLOGIA;La Nutria Gigante es la especie de nutria más grande del mundo pudiendo alcanzar una longitud de hasta: ;1 metro; 5 metros; 1,5 metros; 1,8 metros;3
+BIOLOGIA;¿Cuántas hormigas por día puede comer un Oso hormiguero?;10 mil;20 mil;35 mil;5 mil;2
+BIOLOGIA;¿El ciervo de los pantanos es el más grande de sudamérica, ¿Cuánto puede llegar a medir desde la cabeza hasta la cola?;2 metros;1,8 metros;3 metros;1 metros;0
+BIOLOGIA;El Aguará Guazú es un animal...;Carnívoro;Omnívoro;Herbívoros;Piscívoro;1
+BIOLOGIA;¿Cuántos metros puede llegar a medir una Boa Curiyú?;2 metros;3 metros;4 metros;5 metros;2
+BIOLOGIA;La Boa Curiyú es una excelente...;Nadadora;Cazadora;Trepadora;Constrictora;0
+BIOLOGIA;El Venado de las Pampas puede subsistir sin grandes cuerpos de agua ya que obtiene ésta de...;Hierbas y rocíos matutinos;Lagunas;excavando pozos;Rios;0
+BIOLOGIA;¿Cuál es la gran habilidad que posee el Jacana gracias a sus largos dedos entre los que reparte su peso?;Correr más rápido;Caminar sobre la vegetación flotante;Cazar con más sutileza;Nadar mejor;1
