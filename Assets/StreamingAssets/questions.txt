@@ -3,15 +3,18 @@ AMBIENTE;¿Cuál es la mejor forma de evitar los incendios de acuerdo al spot pu
 AMBIENTE;¿Cuál es un Residuo Orgánico?;Restos de pizza;Pilas;Botellas de Vidrio;Cartón;0
 AMBIENTE;¿Cuál es un residuo Peligroso?;Latas de Aluminio;Pilas;Botellas de Vidrio;Cartón;1
 AMBIENTE;¿Cuándo es el Dia Mundial del reciclaje?;20 de mayo;19 de abril;4 de abril;17 de mayo;3
+AMBIENTE;¿Qué proyecto se está iniciando actualmente para el muitú?;Proyecto de conservación genética;Proyecto de reintroducción en el Parque Iberá;Proyecto de estudio del comportamiento;Proyecto de erradicación de especies invasoras;1
 AMBIENTE;¿Cuánto tardan en degradarse las Botellas de Plástico?;800 años ;500 años ;1000 años ;250 años;1
 AMBIENTE;¿Cuánto tardan en degradarse las Pilas?;De 500 a 1000 años ;De 5 a 30 años ;De 100 a 300 años ;De 1000 a 3000 años;0
 AMBIENTE;¿Cuánto tardan en degradarse las bolsas de plástico?;Entre 100 y 150 años ;55 años;300 años ;Entre 150 y 300 años;1
 AMBIENTE;¿Cuánto tardan en degradarse las latas de aluminio?;10 meses;1 año ;10 años ;5 años;2
 AMBIENTE;¿Cómo se llama la aplicación que lanzó el gobierno provincial para detectar focos de incendio?;Alto al fuego;Corrientes sin fuego;Alerta Incendios;Alertas Corrientes;3
+AMBIENTE;¿Cuál es el estatus de conservación del ocelote?;En peligro crítico;Vulnerable;Extinto en estado silvestre;Preocupación menor;1
 AMBIENTE;¿De qué color es el contenedor para reciclar Residuos Orgánicos?;Amarillo;Rojo;Marron;Verde;2
 AMBIENTE;¿De qué color es el contenedor para reciclar Residuos Peligrosos?;Rojo;Marrón;Amarillo;Negro;0
 AMBIENTE;¿De qué color es el contenedor para reciclar el Aluminio?;Rojo;Gris;Naranja;Azul;1
 AMBIENTE;¿De qué color es el contenedor para reciclar el Plástico?;Verde;Gris;Naranja;Amarillo;3
+AMBIENTE;¿Cuál es una de las principales razones de la disminución del número de venados de las Pampas?;Cambio climático;Caza y destrucción del ambiente;Falta de agua;Competencia con otras especies;1
 AMBIENTE;¿De qué color es el contenedor para reciclar el Vidrio?;Amarillo;Blanco;Azul;Gris;1
 AMBIENTE;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Aguará Guazú;Todas son correctas;3
 AMBIENTE;¿De qué color es el contenedor para reciclar el papel y cartón?;Verde;Azul;Marrón;Amarillo;1
@@ -63,7 +66,7 @@ GEOGRAFIA;¿En qué departamentos de Corrientes se cosechan Yerba Mate?;Goya y E
 GEOGRAFIA;¿Con cuántas provincias limita la provincia de Corrientes?;4;2;5;3;0
 GEOGRAFIA;¿Qué cítricos produce en mayor cantidad la provincia de Corrientes?;Mandarinas;Naranjas;Limones;Pomelos;1
 GEOGRAFIA;¿Con cuáles de estos países limita la provincia de Corrientes?;Uruguay;Uruguay, Brasil y Paraguay ;Brasil;Brasil y Paraguay;1
-GEOGRAFIA;¿Cuál es el clima Predominante en la Provincia de Corrientes?;Árido;Subtropical;Cálido;Frío Seco;1
+GEOGRAFIA;¿Cuál es el clima Predominante en la Provincia de Corrientes?;Árido;Subtropical sin estacion seca;Cálido;Frío Seco;1
 GEOGRAFIA;¿Cuál es la segunda localidad mas grande de la provincia de Corrientes según su cantidad de habitantes?;Santo Tomé;Ituzaingó;Mercedes;Goya;3
 GEOGRAFIA;¿Cuáles ríos rodean a la provincia de Corrientes?;Rio Bermejo y Rio Paraná;Rio Paraguay y Rio Paraná;Rio de la Plata y Rio Paraná;Rio Uruguay y Rio Paraná;3
 GEOGRAFIA;¿Cuántas puntas tiene la ciudad de Corrientes?;5;7;3;9;1
@@ -74,6 +77,19 @@ GEOGRAFIA;¿Dónde se encuentran Las Marias?;Santa Rosa;Mercedes;Virasoro;Salada
 GEOGRAFIA;¿Dónde se encuentra la represa Yacyreta en Corrientes?;Esquina;Santo Tome;Goya;Ituzaingó;3
 GEOGRAFIA;¿Paso de los libres con qué localidad Brasilera limita?;Itapema;Uruguayana;Meia Praia;Dionisio Cerqueira;1
 GEOGRAFIA;¿En qué región se encuentra la provincia de Corrientes?;Cuyo;Patagonia;Noroeste;Noreste;3
+GEOGRAFIA;¿Cuál es una de las principales actividades económicas de Corrientes?;Minería;Agricultura y ganadería;Industria automotriz;Pesca marítima;1
+GEOGRAFIA;¿Qué ecorregión se encuentra en Corrientes?;Selva Paranaense;Chaco Seco;Pampa;Esteros del Iberá;3
+GEOGRAFIA;¿Qué río forma el límite este de Corrientes?;Río Paraná;Río Uruguay;Río Iguazú;Río Salado;1
+GEOGRAFIA;¿Cuál de estas es una reserva natural importante en Corrientes?;Parque Nacional Iguazú;Parque Nacional El Impenetrable;Parque Nacional Mburucuyá;Parque Nacional Los Alerces;2
+GEOGRAFIA;¿Cuál es el principal recurso natural explotado en Corrientes?;Petróleo;Gas natural;Madera;Oro;2
+GEOGRAFIA;¿Qué departamento de Corrientes es conocido por su producción de arroz?;Goya;Ituzaingó;Mercedes;Bella Vista;0
+GEOGRAFIA;¿En qué lugar de Corrientes se encuentra la mayor concentración de bosques de palmeras yatay?;Parque Nacional Quebrada del Condorito;Parque Nacional Mburucuyá;Reserva Natural Iberá;Parque Nacional El Palmar;3
+GEOGRAFIA;¿Qué ciudad de Corrientes está ubicada en la confluencia del río Corrientes con el río Paraná?;Goya;Ituzaingó;Bella Vista;Corrientes;3
+GEOGRAFIA;¿Qué formación geológica predomina en el suroeste de Corrientes?;Sierras de San Luis;Pampas;Llanura Chaco-Pampeana;Sistema de la Cuenca del Paraná;2
+GEOGRAFIA;¿Qué río desemboca en el estuario del río Paraná, cerca de la ciudad de Paso de la Patria?;Río Salado;Río Miriñay;Río Paraguay;Río Pilcomayo;2
+GEOGRAFIA;¿Cuál es la altitud promedio de la Ciudad de Corrientes sobre el nivel del mar?;56 metros;30 metros;150 metros;300 metros;0
+GEOGRAFIA;¿Cuál es el punto más alto de Corrientes, ubicado en el Departamento de Ituzaingó?;Cerro de la Cruz;Cerro Yaguarí;Cerro de los Patos;Cerro Paraná;1
+GEOGRAFIA;¿Cuál es la principal actividad económica en el Departamento de Mercedes?;Turismo;Agricultura;Ganadería;Pesca;2
 HISTORIA;¿Cuándo se celebra el día del Chamamé en Argentina?;10 de junio;20 de febrero;19 de septiembre;15 de enero;2
 HISTORIA;¿Cuándo se celebra el día del niño correntino?;7 de agosto;20 de marzo;9 de marzo;20 de agosto;2
 HISTORIA;¿Cuándo se inauguró el Puente Interprovincial Gral. Manuel Belgrano (Chaco-Ctes)?;1970;1973;1968;1982;1
@@ -88,6 +104,10 @@ HISTORIA;¿En qué año se inauguró el Corsódromo Provincial “Nolo Alias”?
 HISTORIA;¿En qué localidad nació San Martin?;Curuzú Cuatiá;Paso de los Libres;Goya;Yapeyú;3
 HISTORIA;¿Quién fundó la Ciudad de Corrientes?;José Hernández;Fernando Saavedra;Juan Torres de Vera y Aragón;Juan José Cabral;2
 HISTORIA;¿Qué presidente de la Nación nació en Paso de los Libres, Corrientes?;Alfonsín;Hipólito;Menem;Frondizi;3
+HISTORIA;¿Qué localidad de Corrientes fue el sitio de una de las mayores batallas durante la Guerra de la Triple Alianza?;Ituzaingó;Bella Vista;Goya;Paso de los Libres;0
+HISTORIA;¿Qué figura histórica fue un destacado líder político y militar de Corrientes durante la primera mitad del siglo XIX?;Pedro Ferré;Andrés Guacurarí;Juan Esteban Pedernera;Juan Bautista Alberdi;0
+HISTORIA;¿En las inmediaciones de qué ciudad tuvo lugar la batalla de Ñaembé?;Mercedes;Carolina;Goya;Corrientes;1
+HISTORIA;¿A quién se lo conocía como "Tamborcito de Tacuarí?;José de San Martín;Juan torres de Vera;Pedro Ríos;Manuel Belgrano;2
 DEPORTES;¿Cuál es el apodo del jugador de basquet correntino Federico Kammerichs?;El Carpincho;El Yaguareté;El Yacaré;El Tero;2
 DEPORTES;¿En qué Club se formó el jugador de Básquet Federico Kammmerichs?;Club Unión (Goya);Regatas (Capital);San Martin (Capital);Juventud Unida (Goya);0
 DEPORTES;¿En qué año dirigió Diego Armando Maradona al Club Deportivo Mandiyú?;1993;1994;1995;1996;1
@@ -125,3 +145,16 @@ BIOLOGIA;¿Cuántos metros puede llegar a medir una Boa Curiyú?;2 metros;3 metr
 BIOLOGIA;La Boa Curiyú es una excelente...;Nadadora;Cazadora;Trepadora;Constrictora;0
 BIOLOGIA;El Venado de las Pampas puede subsistir sin grandes cuerpos de agua ya que obtiene ésta de...;Hierbas y rocíos matutinos;Lagunas;excavando pozos;Rios;0
 BIOLOGIA;¿Cuál es la gran habilidad que posee el Jacana gracias a sus largos dedos entre los que reparte su peso?;Correr más rápido;Caminar sobre la vegetación flotante;Cazar con más sutileza;Nadar mejor;1
+BIOLOGIA;¿Qué hace el "Chajá" cuando percibe algo inusual en su entorno?;Se esconde entre la vegetación;Emite un estridente grito;Vuela rápidamente hacia un lugar seguro;Busca comida en el suelo;1
+BIOLOGIA;¿De qué material está hecho el nido del "Chajá"?;Hojas secas;Ramas de árboles;Una planta acuática;Barro y piedras;2
+BIOLOGIA;¿Cuántos huevos deposita la hembra del "Chajá" en su nido?;De 1 a 2 huevos; De 3 a 4 huevos;De 5 a 6 huevos;De 7 a 8 huevos;2
+BIOLOGIA;¿Cuánto tiempo tarda en nacer un pichón de "Chajá" después de que la hembra pone los huevos?;30 días;35 días;40 días;45 días;3
+BIOLOGIA;¿Cuál es el tercer felino más grande del continente americano después del yaguareté y el puma?;El jaguar;El ocelote;El lince;El margay;1
+BIOLOGIA;¿Cuál es el nombre científico del venado de las Pampas?;Cervus elaphus;Odocoileus virginianus;Ozotoceros bezoarticus;Alces alces;2
+BIOLOGIA;¿Qué tipo de dieta tiene el venado de las Pampas?;Carnívoro;Omnívoro;Herbívoro;Insectívoro;2
+BIOLOGIA;¿Cuál de estas reservas forma parte del Parque Iberá donde se ha reintroducido el pecarí de collar?;Reserva Auca Mahuida;Reserva Punta Tombo;Reserva San Nicolás;Reserva La Payunia;2
+BIOLOGIA;¿Qué rol importante cumple el pecarí de collar en su ecosistema?;Controlar la población de insectos;Dispersar frutos y semillas de plantas nativas;Construir madrigueras para otras especies;Ser un depredador tope;1
+BIOLOGIA;¿Qué color predominante tiene el plumaje del guacamayo rojo?;Azul;Verde;Rojo;Amarillo;2
+BIOLOGIA;¿Cuál era el hábitat natural del guacamayo rojo en Argentina?;Desiertos del norte;Selvas del noreste de Argentina;Montañas del sur;Llanuras del centro;1
+BIOLOGIA;¿Cuál es el nombre científico de la chuña de patas rojas?;Cariama cristata;Seriema cristata;Tinamus solitarius;Rhea americana;1
+BIOLOGIA;¿Qué tipo de dieta tiene la chuña de patas rojas?;Herbívora;Frugívora;Insectívora y carnívora;Granívora;2
