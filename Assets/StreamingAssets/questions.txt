@@ -25,6 +25,7 @@ AMBIENTE;¿Qué ley nacional protege los bosques nativos en Argentina?;Ley de Bo
 AMBIENTE;¿Cuál es la principal fuente de energía renovable en Argentina?;Energía solar;Energía eólica;Energía hidroeléctrica;Biomasa;0
 AMBIENTE;¿Qué organización internacional trabaja para la conservación del medio ambiente en Argentina?;The Nature Conservancy;World Wildlife Fund (WWF);BirdLife International;International Union for Conservation of Nature (IUCN);1
 AMBIENTE;¿Qué es el "Plan Nacional de Adaptación y Mitigación al cambioclimático"?;
+AMBIENTE;¿Cuál es el problema ambiental más importante que enfrenta la provincia de Corrientes?;La contaminación del aire;La contaminación del agua;Deforestación;Desertificación;2
 CULTURA;¿Dónde se celebra la Fiesta Nacional del Pacú?;Esquina;Goya;Riachuelo;Itatí;0
 CULTURA;Completá la frase: "Corrientes tiene _______"?;Chamamé;Payé;Tradición;Belleza;1 
 CULTURA;¿Dónde se Celebra la Fiesta de la Yerra Correntina?;Concepción;Ituzaingó;Caá Catí;Esquina;1  
@@ -115,6 +116,9 @@ HISTORIA;¿Qué localidad de Corrientes fue el sitio de una de las mayores batal
 HISTORIA;¿Qué figura histórica fue un destacado líder político y militar de Corrientes durante la primera mitad del siglo XIX?;Pedro Ferré;Andrés Guacurarí;Juan Esteban Pedernera;Juan Bautista Alberdi;0
 HISTORIA;¿En las inmediaciones de qué ciudad tuvo lugar la batalla de Ñaembé?;Mercedes;Carolina;Goya;Corrientes;1
 HISTORIA;¿A quién se lo conoce como "Tamborcito de Tacuarí?;José de San Martín;Juan torres de Vera;Pedro Ríos;Manuel Belgrano;2
+HISTORIA;¿En qué año fue fundada la ciudad de Goya?;1807;1852;1810;1817;0
+HISTORIA;¿En qué año se fundó la ciudad de Mercedes?;1807;1810;1832;1829;2
+HISTORIA;¿Quién de estos gobernadores fue 4 veces gobernador de la provincia de Corrientes?;Gustavo Valdés;Brigadier Pedro Ferré;Agustín Pedro Justo;Juan Ramón Vidal;1
 DEPORTES;¿Cuál es el apodo del jugador de basquet correntino Federico Kammerichs?;El Carpincho;El Yaguareté;El Yacaré;El Tero;2
 DEPORTES;¿En qué Club se formó el jugador de Básquet Federico Kammmerichs?;Club Unión (Goya);Regatas (Capital);San Martin (Capital);Juventud Unida (Goya);0
 DEPORTES;¿En qué año dirigió Diego Armando Maradona al Club Deportivo Mandiyú?;1993;1994;1995;1996;1
