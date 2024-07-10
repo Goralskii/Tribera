@@ -55,9 +55,12 @@ public class MenuControl : MonoBehaviour
     public GameObject VirtualCamera;
     public Ficha Ficha;
     public Button[] selectionButtons = new Button[5];
-    public GameObject[] ArrayBotonDado;
+    //public GameObject[] ArrayBotonDado;
+    public Image CartelJugador;
+    public Sprite[] CartelTurnoJugador;
     public GameObject Paisaje;
     public Emblemas[] emblemas = new Emblemas[6];
+
 
     [Header("                                                    FICHAS")]
     public List<GameObject> listaFichasPrefabs;
@@ -149,9 +152,10 @@ public class MenuControl : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 yield return new WaitUntil(() => avanzarTurno);
                 ControlarWin();
-                ArrayBotonDado[turno].SetActive(false);//desactiva boton de dado correspondiente a turno de jugador
+                //ArrayBotonDado[turno].SetActive(false);//desactiva boton de dado correspondiente a turno de jugador
                 turno++;
-                ArrayBotonDado[turno].SetActive(true);//activa boton de dado correspondiente a turno de jugador
+                CartelJugador.sprite = CartelTurnoJugador[turno];
+                // ArrayBotonDado[turno].SetActive(true);//activa boton de dado correspondiente a turno de jugador
                 ControlarTurno();
                 while (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno)
                 {
