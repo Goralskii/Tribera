@@ -104,6 +104,8 @@ public class MenuControl : MonoBehaviour
         ControlarWin();
 
         ControlarTurno();
+        CartelJugador.sprite = CartelTurnoJugador[turno];
+
     }
     void Start()
     {
@@ -152,10 +154,7 @@ public class MenuControl : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 yield return new WaitUntil(() => avanzarTurno);
                 ControlarWin();
-                //ArrayBotonDado[turno].SetActive(false);//desactiva boton de dado correspondiente a turno de jugador
                 turno++;
-                CartelJugador.sprite = CartelTurnoJugador[turno];
-                // ArrayBotonDado[turno].SetActive(true);//activa boton de dado correspondiente a turno de jugador
                 ControlarTurno();
                 while (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().pierdeTurno)
                 {
