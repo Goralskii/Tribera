@@ -18,6 +18,13 @@ AMBIENTE;¿Cuál es una de las principales razones de la disminución del númer
 AMBIENTE;¿De qué color es el contenedor para reciclar el Vidrio?;Amarillo;Blanco;Azul;Gris;1
 AMBIENTE;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Aguará Guazú;Todas son correctas;3
 AMBIENTE;¿De qué color es el contenedor para reciclar el papel y cartón?;Verde;Azul;Marrón;Amarillo;1
+AMBIENTE;¿Cuál de estas es una práctica agrícola sostenible?;Monocultivo con uso intensivo de pesticidas;Rotación de cultivos y agricultura orgánica;Deforestación para crear nuevas tierras de cultivo;Uso excesivo de agua para riego;1
+AMBIENTE;¿Cuál es la principal causa de los incendios forestales?;Quema de pastizales para la ganadería;Actividad volcánica;Caída de rayos;Sequía extrema;0
+AMBIENTE;¿Qué porcentaje de la superficie de la provincia de Corrientes está ocupada por humedales?;10%;20%;30%;40%;3
+AMBIENTE;¿Qué ley nacional protege los bosques nativos en Argentina?;Ley de Bosques (Ley 26.331);Ley de Parques Nacionales (Ley 23.509);Ley de Glaciares y Aguas de Deshielo (Ley 25.665);Ley de Recursos Hídricos (Ley 25.667);0
+AMBIENTE;¿Cuál es la principal fuente de energía renovable en Argentina?;Energía solar;Energía eólica;Energía hidroeléctrica;Biomasa;0
+AMBIENTE;¿Qué organización internacional trabaja para la conservación del medio ambiente en Argentina?;The Nature Conservancy;World Wildlife Fund (WWF);BirdLife International;International Union for Conservation of Nature (IUCN);1
+AMBIENTE;¿Qué es el "Plan Nacional de Adaptación y Mitigación al cambioclimático"?;
 CULTURA;¿Dónde se celebra la Fiesta Nacional del Pacú?;Esquina;Goya;Riachuelo;Itatí;0
 CULTURA;Completá la frase: "Corrientes tiene _______"?;Chamamé;Payé;Tradición;Belleza;1 
 CULTURA;¿Dónde se Celebra la Fiesta de la Yerra Correntina?;Concepción;Ituzaingó;Caá Catí;Esquina;1  
@@ -107,7 +114,7 @@ HISTORIA;¿Qué presidente de la Nación nació en Paso de los Libres, Corriente
 HISTORIA;¿Qué localidad de Corrientes fue el sitio de una de las mayores batallas durante la Guerra de la Triple Alianza?;Ituzaingó;Bella Vista;Goya;Paso de los Libres;0
 HISTORIA;¿Qué figura histórica fue un destacado líder político y militar de Corrientes durante la primera mitad del siglo XIX?;Pedro Ferré;Andrés Guacurarí;Juan Esteban Pedernera;Juan Bautista Alberdi;0
 HISTORIA;¿En las inmediaciones de qué ciudad tuvo lugar la batalla de Ñaembé?;Mercedes;Carolina;Goya;Corrientes;1
-HISTORIA;¿A quién se lo conocía como "Tamborcito de Tacuarí?;José de San Martín;Juan torres de Vera;Pedro Ríos;Manuel Belgrano;2
+HISTORIA;¿A quién se lo conoce como "Tamborcito de Tacuarí?;José de San Martín;Juan torres de Vera;Pedro Ríos;Manuel Belgrano;2
 DEPORTES;¿Cuál es el apodo del jugador de basquet correntino Federico Kammerichs?;El Carpincho;El Yaguareté;El Yacaré;El Tero;2
 DEPORTES;¿En qué Club se formó el jugador de Básquet Federico Kammmerichs?;Club Unión (Goya);Regatas (Capital);San Martin (Capital);Juventud Unida (Goya);0
 DEPORTES;¿En qué año dirigió Diego Armando Maradona al Club Deportivo Mandiyú?;1993;1994;1995;1996;1
