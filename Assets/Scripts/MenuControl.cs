@@ -185,7 +185,7 @@ public class MenuControl : MonoBehaviour
     }
     public void ControlarWin()
     {
-        if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == totalCategorias.Count || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 6)
+        if (ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().categoriasCompletas.Count == totalCategorias.Count || ControlTablero.instance.arrayFichas[turno].GetComponent<Ficha>().vueltasCompletas == 3)
         {
             winPanel.SetActive(true);
             avanzarTurno = false;
