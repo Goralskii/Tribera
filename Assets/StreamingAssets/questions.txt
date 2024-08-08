@@ -146,7 +146,13 @@ HISTORIA;¿En las inmediaciones de qué ciudad tuvo lugar la batalla de Ñaembé
 HISTORIA;¿A quién se lo conoce como "Tamborcito de Tacuarí?;José de San Martín;Juan torres de Vera;Pedro Ríos;Manuel Belgrano;2
 HISTORIA;¿En qué año fue fundada la ciudad de Goya?;1807;1852;1810;1817;0
 HISTORIA;¿En qué año se fundó la ciudad de Mercedes?;1807;1810;1832;1829;2
-HISTORIA;¿Quién de estos gobernadores fue 4 veces gobernador de la provincia de Corrientes?;Gustavo Valdés;Brigadier Pedro Ferré;Agustín Pedro Justo;Juan Ramón Vidal;1
+HISTORIA;¿Que futuro Presidente argentino participó de la batalla de Ñaembe, librada en 1871 en cercanias de Goya, hoy Cnia. Carolina?;Bartolome Mitre;Domingo Faustino Sarmiento;Julio Argentino Roca;Roque Saenz Peña;2
+HISTORIA;¿Cuándo nació José de San Martín?; 25 de Febrero 1778 ; 17 de Agosto 1850 ; 25 de Mayo 1810 ; 9 de Julio 1816 ;0
+HISTORIA;¿En qué año se inauguró la Costanera de la ciudad de Corrientes?;1931;1941;1951;1961;2
+HISTORIA;El cabildo de la ciudad de Corrientes se encontraba antigüamente donde ahora es...; Casa de Gobierno ; La Jefatura de Polcía ; El Rectorado de la UNNE ; La Cámara de Senadores ;1
+HISTORIA;Como institución, el cabildo nace con la ciudad, aquel 3 de abril de 1588, y tras varias construcciones demolidas, el último se levanta en...;1800;1810;1815;1816;2
+HISTORIA;El cabildo estaba ubicado frente a la Plaza 25 de mayo, ¿Sobre qué calle?;Salta;25 de Mayo;Buenos Aires;Fray José de la Quintana;3
+HISTORIA;¿Cómo se llama el queso artesanal que preparaban doña Gregoria Morales y su esposo, Bernardo de Olivera y dio nombre a una ciudad?; Queso Azul ; Queso Goya ; Queso Gouda ; Queso Gruyere ;1
 DEPORTES;¿Cuál es el apodo del jugador de basquet correntino Federico Kammerichs?;El Carpincho;El Yaguareté;El Yacaré;El Tero;2
 DEPORTES;¿En qué Club se formó el jugador de Básquet Federico Kammmerichs?;Club Unión (Goya);Regatas (Capital);San Martin (Capital);Juventud Unida (Goya);0
 DEPORTES;¿En qué año dirigió Diego Armando Maradona al Club Deportivo Mandiyú?;1993;1994;1995;1996;1
