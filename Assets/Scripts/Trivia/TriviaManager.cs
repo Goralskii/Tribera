@@ -6,6 +6,9 @@ using TMPro;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using System.Collections;
+using UnityEngine.Networking;
+
 public class TriviaManager : MonoBehaviour
 {
     public TMP_Text questionText;    
@@ -43,11 +46,18 @@ public class TriviaManager : MonoBehaviour
         questionIndexes = new List<int>();
         currentQuestionIndex = -1;
         totalQuestions = 0;
-        LoadQuestionsFromFile("questions.txt", selectedCategories);
+#if UNITY_WEBGL && !UNITY_EDITOR
+        Debug.Log("Entrando por webgl");
+        StartCoroutine(LoadQuestionsFromFileWebGL("questions.txt", selectedCategories));
+#else
+        Debug.Log("Entrando por Desktop");
+        LoadQuestionsFromFileDesktop("questions.txt", selectedCategories);
         ShuffleQuestions();
         ShowNextQuestion();
+#endif
+
     }
-    void LoadQuestionsFromFile(string fileName, string selectedCategories)
+    void LoadQuestionsFromFileDesktop(string fileName, string selectedCategories)
     {
         string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
         if (File.Exists(filePath))
@@ -71,9 +81,6 @@ public class TriviaManager : MonoBehaviour
                         questions.Add(question);
                     }
                 }
-                else
-                {
-                }
             }
         }
         else
@@ -81,15 +88,66 @@ public class TriviaManager : MonoBehaviour
             Debug.LogError("Questions file not found: " + filePath);
         }
     }
+
+    IEnumerator LoadQuestionsFromFileWebGL(string fileName, string selectedCategories)
+    {
+        string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
+        UnityWebRequest request = UnityWebRequest.Get(filePath);
+
+        // Enviar la solicitud y esperar la respuesta
+        yield return request.SendWebRequest();
+
+        // Verificar errores de conexión
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+            Debug.LogError("Error al cargar el archivo: " + request.error);
+            yield break;
+        }
+
+        // Leer el contenido del archivo
+        Debug.Log($"Request {request} {request.downloadHandler.text}");
+        string[] lines = request.downloadHandler.text.Split('\n');
+
+        // Procesar cada línea del archivo
+        foreach (string line in lines)
+        {
+            totalQuestions++;
+            string[] parts = line.Split(';');
+            if (parts.Length == 7)
+            {
+                string category = parts[0];
+                if (selectedCategories == category)
+                {
+                    Question question = new Question();
+                    question.question = parts[1];
+                    question.answers = new string[4];
+                    Array.Copy(parts, 2, question.answers, 0, 4);
+                    question.correctAnswerIndex = int.Parse(parts[6]);
+                    question.catName = category;
+                    questions.Add(question);
+                    Debug.Log($"Pregunta cargada con exito {question.question}");
+                }
+            }
+            
+        }
+        Debug.Log("Entrando por webgl shuffle");
+        ShuffleQuestions();
+    }
     void ShuffleQuestions()
     {
         // Genera una lista de índices de preguntas mezclada
         questionIndexes.Clear();
+        Debug.Log($"Questions count {questions.Count} ");
         for (int i = 0; i < questions.Count; i++)
         {
             questionIndexes.Add(i);
         }
         questionIndexes.Shuffle();
+        Debug.Log($"Questions indexes {questionIndexes.Count} ");
+#if UNITY_WEBGL && !UNITY_EDITOR
+        Debug.Log("Entrando por webgl nextQuestion");
+        ShowNextQuestion();
+#endif
     }
     public void ShowNextQuestion()
     {
@@ -131,7 +189,7 @@ public class TriviaManager : MonoBehaviour
             }
             else
             {
-                Debug.LogError("No questions available");
+                Debug.LogError($"No questions available {questionIndexes.Count} {questions.Count} {questions[0]}");
             }
         }
         
