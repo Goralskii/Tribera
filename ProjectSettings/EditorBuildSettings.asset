@@ -8,7 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tribera.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/Tribera_Mesa.unity
-    guid: 03d17f208aedb94468cab4026f67c8ff
   m_configObjects: {}
