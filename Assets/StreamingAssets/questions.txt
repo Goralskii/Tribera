@@ -91,7 +91,6 @@ GEOGRAFIA;¿Qué río forma el límite este de Corrientes?;Río Paraná;Río Uru
 GEOGRAFIA;¿Cuál de estas es una reserva natural importante en Corrientes?;Parque Nacional Iguazú;Parque Nacional El Impenetrable;Parque Nacional Mburucuyá;Parque Nacional Los Alerces;2
 GEOGRAFIA;¿Cuál es el principal recurso natural explotado en Corrientes?;Petróleo;Gas natural;Madera;Oro;2
 GEOGRAFIA;¿Qué departamento de Corrientes es conocido por su producción de arroz?;Goya;Ituzaingó;Mercedes;Bella Vista;0
-GEOGRAFIA;¿En qué lugar de Corrientes se encuentra la mayor concentración de bosques de palmeras yatay?;Parque Nacional Quebrada del Condorito;Parque Nacional Mburucuyá;Reserva Natural Iberá;Parque Nacional El Palmar;3
 GEOGRAFIA;¿Qué ciudad de Corrientes está ubicada en la confluencia del río Corrientes con el río Paraná?;Goya;Ituzaingó;Bella Vista;Corrientes;3
 GEOGRAFIA;¿Qué formación geológica predomina en el suroeste de Corrientes?;Sierras de San Luis;Pampas;Llanura Chaco-Pampeana;Sistema de la Cuenca del Paraná;2
 GEOGRAFIA;¿Qué río desemboca en el estuario del río Paraná, cerca de la ciudad de Paso de la Patria?;Río Salado;Río Miriñay;Río Paraguay;Río Pilcomayo;2
