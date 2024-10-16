@@ -11,57 +11,74 @@ using UnityEngine.UI;
 
 public class MenuControl : MonoBehaviour
 {
+    
+    public TMP_Dropdown dropdown;
+    public Transform parentTransform;
+
+    [Header("Referencias")]
     public static MenuControl Instancia;
-    public Text categorias;
-    public Text currentPlayer;
-    public Text vueltas;
     public DiceControl dice1;
     public DiceControl dice2;
-    public int valorTotalSend;
-    public int cantidadPlayers;//esta variable controla la cantidad de jugadores
-    public int turno = 0;
-    //public ControlTablero _controlTablero;
-    public bool actualizado;
-    private int valorD1 = 0;
-    private int valorD2 = 0;//inicializa las variables
-    bool InGame = false;
+    public Ficha Ficha;
+    public ControlTablero controlTablero;
+
+    [Header("PANELES")]
     public GameObject canvasMenuMain;
     public GameObject RulesPanel;
     public GameObject RulesPanel2;
     public GameObject HowToPlayPanel;
-    public TMP_Dropdown dropdown;
+    public GameObject winPanel;
+    public GameObject panelui;
+    public GameObject MenuSeleccion;
+    public Button[] selectionButtons = new Button[5];
+
+    [Header("PANELES PREGUNTAS")]
+    public GameObject especialPanel;
+    public List<Button> buttonList;
+
+    [Header("HUD")]
+    public GameObject HUD;
+    public Sprite[] CartelTurnoJugador;
+    public Image CartelJugador;
+    public RawImage dado1UI;
+    public RawImage dado2UI;
+    public Emblemas[] emblemas = new Emblemas[6];
+
+    [Header("Estados")]
+    public int turno = 0;
+    public bool randomizer = false;
     public bool sePuedeTirar;
     public bool avanzarTurno;
     public bool iniciado = false;
-    public GameObject panelui;
-    public GameObject buttonPrefab;
-    public Transform parentTransform;
-    public List<Button> buttonList;
-    public GameObject especialPanel;
-    public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTE", "CULTURA", "BIOLOGIA", "DEPORTES" };
-    public Texture2D[] texturasDados;
-    public RawImage dado1UI;
-    public RawImage dado2UI;
-    public ControlTablero controlTablero;
-    public int jugadorIndex = 0;
-    public GameObject MenuSeleccion;
-    public bool randomizer = false;
-    public GameObject winPanel;
+    public bool InGame = false;
+    public bool actualizado;
+
+    [Header("Objetos")]
+    public GameObject Paisaje;
     public GameObject AmbientSound;
-    public GameObject HUD;
     public GameObject mainCamera;
     public GameObject VirtualCamera;
-    public Ficha Ficha;
-    public Button[] selectionButtons = new Button[5];
-    //public GameObject[] ArrayBotonDado;
-    public Image CartelJugador;
-    public Sprite[] CartelTurnoJugador;
-    public GameObject Paisaje;
-    public Emblemas[] emblemas = new Emblemas[6];
+    public GameObject buttonPrefab;
 
+    [Header("DADOS")]
+    private int valorD1 = 0;
+    private int valorD2 = 0;//inicializa las variables
+    public Texture2D[] texturasDados;
+    public int valorTotalSend;
 
-    [Header("                                                    FICHAS")]
+    [Header("Strings")]
+    public Text categorias;
+    public Text currentPlayer;
+    public Text vueltas;
+    public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTE", "CULTURA", "BIOLOGIA", "DEPORTES" };
+
+    [Header("FICHAS")]
     public List<GameObject> listaFichasPrefabs;
+
+    [Header("Jugador")]
+    public int cantidadPlayers;//esta variable controla la cantidad de jugadores
+    public int jugadorIndex = 0;
+
 
     public void ButtonSelectionOnClick(Button btn, int idBtn)
     {
