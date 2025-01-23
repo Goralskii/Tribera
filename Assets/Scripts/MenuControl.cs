@@ -40,7 +40,7 @@ public class MenuControl : MonoBehaviour
     public Transform parentTransform;
     public List<Button> buttonList;
     public GameObject especialPanel;
-    public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTE", "CULTURA", "BIOLOGIA", "DEPORTES" };
+    public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTAL", "CULTURA", "BIOLOGIA", "DEPORTES" };
     public Texture2D[] texturasDados;
     public RawImage dado1UI;
     public RawImage dado2UI;

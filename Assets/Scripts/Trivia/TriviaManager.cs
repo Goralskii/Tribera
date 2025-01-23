@@ -16,6 +16,11 @@ public class TriviaManager : MonoBehaviour
     private List<Question> questions = new List<Question>();
     private List<int> questionIndexes = new List<int>(); // Índices de las preguntas que se han mostrado
     private int currentQuestionIndex = -1; // Índice de la pregunta actual
+    [System.Serializable]
+    public class QuestionListWrapper
+    {
+        public Question[] questions;  // Lista de preguntas
+    }
     private int totalQuestions = 0;
     private List<string> usedQuestions = new List<string>();    
     [SerializeField] private AnsManager m_gameManager = null; // Referencia al GameManager
@@ -46,17 +51,19 @@ public class TriviaManager : MonoBehaviour
         questionIndexes = new List<int>();
         currentQuestionIndex = -1;
         totalQuestions = 0;
-#if UNITY_WEBGL && !UNITY_EDITOR
-        Debug.Log("Entrando por webgl");
-        StartCoroutine(LoadQuestionsFromFileWebGL("questions.txt", selectedCategories));
-#else
+#if UNITY_EDITOR
         Debug.Log("Entrando por Desktop");
         LoadQuestionsFromFileDesktop("questions.txt", selectedCategories);
         ShuffleQuestions();
         ShowNextQuestion();
+#else
+        Debug.Log("Entrando por webgl");
+        StartCoroutine(FetchQuestionsFromAPI(selectedCategories));
+        
 #endif
 
     }
+    
     void LoadQuestionsFromFileDesktop(string fileName, string selectedCategories)
     {
         string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
@@ -86,6 +93,37 @@ public class TriviaManager : MonoBehaviour
         else
         {
             Debug.LogError("Questions file not found: " + filePath);
+        }
+    }
+    public IEnumerator FetchQuestionsFromAPI(string selectedCategories)
+    {
+        string apiUrl = "https://dashboard-gamecenter.corrientes.gob.ar/api/questions/";
+        UnityWebRequest request = UnityWebRequest.Get(apiUrl);
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+            Debug.LogError("Error fetching questions: " + request.error);
+        }
+        else
+        {
+            string jsonResponse = request.downloadHandler.text;
+            Debug.Log(jsonResponse);
+            jsonResponse = "{\"questions\":" + jsonResponse + "}";
+            Debug.Log(jsonResponse);
+            QuestionListWrapper fetchedQuestionsWrapper = JsonUtility.FromJson<QuestionListWrapper>(jsonResponse);
+
+            List<Question> filteredQuestions = new List<Question>();
+            foreach (Question q in fetchedQuestionsWrapper.questions)
+            {
+                totalQuestions++;
+                if (selectedCategories == q.catName)
+                {
+                    filteredQuestions.Add(q);
+                }
+            }
+            questions = filteredQuestions; // Carga las preguntas en la lista
+            ShuffleQuestions();
         }
     }
 
@@ -144,7 +182,7 @@ public class TriviaManager : MonoBehaviour
         }
         questionIndexes.Shuffle();
         Debug.Log($"Questions indexes {questionIndexes.Count} ");
-#if UNITY_WEBGL && !UNITY_EDITOR
+#if !UNITY_EDITOR
         Debug.Log("Entrando por webgl nextQuestion");
         ShowNextQuestion();
 #endif
