@@ -70,7 +70,7 @@ public class MenuControl : MonoBehaviour
     public Text categorias;
     public Text currentPlayer;
     public Text vueltas;
-    public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTE", "CULTURA", "BIOLOGIA", "DEPORTES" };
+    public List<string> totalCategorias = new List<string>() { "HISTORIA", "GEOGRAFIA", "AMBIENTAL", "CULTURA", "BIOLOGIA", "DEPORTES" };
 
     [Header("FICHAS")]
     public List<GameObject> listaFichasPrefabs;
