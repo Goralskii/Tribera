@@ -1,31 +1,31 @@
-AMBIENTE;¿Cómo se debe separar la basura?;Papel y vidrio ;Biodegradables y no biodegradables ;Orgánica e inorgánica ;Papel y otros;2
-AMBIENTE;¿Cuál es la mejor forma de evitar los incendios de acuerdo al spot publicitario del gobierno provincial?;Mantener los pastos de la vivienda cortos;Evitar el uso del fuego y la quema de pastizales;No tirar cigarrillos ni fósforos al piso;Regar las plantas y pastizales;1
-AMBIENTE;¿Cuál es un Residuo Orgánico?;Restos de pizza;Pilas;Botellas de Vidrio;Cartón;0
-AMBIENTE;¿Cuál es un residuo Peligroso?;Latas de Aluminio;Pilas;Botellas de Vidrio;Cartón;1
-AMBIENTE;¿Cuándo es el Dia Mundial del reciclaje?;20 de mayo;19 de abril;4 de abril;17 de mayo;3
-AMBIENTE;¿Qué proyecto se está iniciando actualmente para el muitú?;Proyecto de conservación genética;Proyecto de reintroducción en el Parque Iberá;Proyecto de estudio del comportamiento;Proyecto de erradicación de especies invasoras;1
-AMBIENTE;¿Cuánto tardan en degradarse las Botellas de Plástico?;800 años ;500 años ;1000 años ;250 años;1
-AMBIENTE;¿Cuánto tardan en degradarse las Pilas?;De 500 a 1000 años ;De 5 a 30 años ;De 100 a 300 años ;De 1000 a 3000 años;0
-AMBIENTE;¿Cuánto tardan en degradarse las bolsas de plástico?;Entre 100 y 150 años ;55 años;300 años ;Entre 150 y 300 años;1
-AMBIENTE;¿Cuánto tardan en degradarse las latas de aluminio?;10 meses;1 año ;10 años ;5 años;2
-AMBIENTE;¿Cómo se llama la aplicación que lanzó el gobierno provincial para detectar focos de incendio?;Alto al fuego;Corrientes sin fuego;Alerta Incendios;Alertas Corrientes;3
-AMBIENTE;¿Cuál es el estatus de conservación del ocelote?;En peligro crítico;Vulnerable;Extinto en estado silvestre;Preocupación menor;1
-AMBIENTE;¿De qué color es el contenedor para reciclar Residuos Orgánicos?;Amarillo;Rojo;Marron;Verde;2
-AMBIENTE;¿De qué color es el contenedor para reciclar Residuos Peligrosos?;Rojo;Marrón;Amarillo;Negro;0
-AMBIENTE;¿De qué color es el contenedor para reciclar el Aluminio?;Rojo;Gris;Naranja;Azul;1
-AMBIENTE;¿De qué color es el contenedor para reciclar el Plástico?;Verde;Gris;Naranja;Amarillo;3
-AMBIENTE;¿Cuál es una de las principales razones de la disminución del número de venados de las Pampas?;Cambio climático;Caza y destrucción del ambiente;Falta de agua;Competencia con otras especies;1
-AMBIENTE;¿De qué color es el contenedor para reciclar el Vidrio?;Amarillo;Blanco;Azul;Gris;1
-AMBIENTE;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Aguará Guazú;Todas son correctas;3
-AMBIENTE;¿De qué color es el contenedor para reciclar el papel y cartón?;Verde;Azul;Marrón;Amarillo;1
-AMBIENTE;¿Cuál de estas es una práctica agrícola sostenible?;Monocultivo con uso intensivo de pesticidas;Rotación de cultivos y agricultura orgánica;Deforestación para crear nuevas tierras de cultivo;Uso excesivo de agua para riego;1
-AMBIENTE;¿Cuál es la principal causa de los incendios forestales?;Quema de pastizales para la ganadería;Actividad volcánica;Caída de rayos;Sequía extrema;0
-AMBIENTE;¿Qué porcentaje de la superficie de la provincia de Corrientes está ocupada por humedales?;10%;20%;30%;40%;3
-AMBIENTE;¿Qué ley nacional protege los bosques nativos en Argentina?;Ley de Bosques (Ley 26.331);Ley de Parques Nacionales (Ley 23.509);Ley de Glaciares y Aguas de Deshielo (Ley 25.665);Ley de Recursos Hídricos (Ley 25.667);0
-AMBIENTE;¿Cuál es la principal fuente de energía renovable en Argentina?;Energía solar;Energía eólica;Energía hidroeléctrica;Biomasa;0
-AMBIENTE;¿Qué organización internacional trabaja para la conservación del medio ambiente en Argentina?;The Nature Conservancy;World Wildlife Fund (WWF);BirdLife International;International Union for Conservation of Nature (IUCN);1
-AMBIENTE;¿Qué es el "Plan Nacional de Adaptación y Mitigación al cambioclimático"?;
-AMBIENTE;¿Cuál es el problema ambiental más importante que enfrenta la provincia de Corrientes?;La contaminación del aire;La contaminación del agua;Deforestación;Desertificación;2
+AMBIENTAL;¿Cómo se debe separar la basura?;Papel y vidrio ;Biodegradables y no biodegradables ;Orgánica e inorgánica ;Papel y otros;2
+AMBIENTAL;¿Cuál es la mejor forma de evitar los incendios de acuerdo al spot publicitario del gobierno provincial?;Mantener los pastos de la vivienda cortos;Evitar el uso del fuego y la quema de pastizales;No tirar cigarrillos ni fósforos al piso;Regar las plantas y pastizales;1
+AMBIENTAL;¿Cuál es un Residuo Orgánico?;Restos de pizza;Pilas;Botellas de Vidrio;Cartón;0
+AMBIENTAL;¿Cuál es un residuo Peligroso?;Latas de Aluminio;Pilas;Botellas de Vidrio;Cartón;1
+AMBIENTAL;¿Cuándo es el Dia Mundial del reciclaje?;20 de mayo;19 de abril;4 de abril;17 de mayo;3
+AMBIENTAL;¿Qué proyecto se está iniciando actualmente para el muitú?;Proyecto de conservación genética;Proyecto de reintroducción en el Parque Iberá;Proyecto de estudio del comportamiento;Proyecto de erradicación de especies invasoras;1
+AMBIENTAL;¿Cuánto tardan en degradarse las Botellas de Plástico?;800 años ;500 años ;1000 años ;250 años;1
+AMBIENTAL;¿Cuánto tardan en degradarse las Pilas?;De 500 a 1000 años ;De 5 a 30 años ;De 100 a 300 años ;De 1000 a 3000 años;0
+AMBIENTAL;¿Cuánto tardan en degradarse las bolsas de plástico?;Entre 100 y 150 años ;55 años;300 años ;Entre 150 y 300 años;1
+AMBIENTAL;¿Cuánto tardan en degradarse las latas de aluminio?;10 meses;1 año ;10 años ;5 años;2
+AMBIENTAL;¿Cómo se llama la aplicación que lanzó el gobierno provincial para detectar focos de incendio?;Alto al fuego;Corrientes sin fuego;Alerta Incendios;Alertas Corrientes;3
+AMBIENTAL;¿Cuál es el estatus de conservación del ocelote?;En peligro crítico;Vulnerable;Extinto en estado silvestre;Preocupación menor;1
+AMBIENTAL;¿De qué color es el contenedor para reciclar Residuos Orgánicos?;Amarillo;Rojo;Marron;Verde;2
+AMBIENTAL;¿De qué color es el contenedor para reciclar Residuos Peligrosos?;Rojo;Marrón;Amarillo;Negro;0
+AMBIENTAL;¿De qué color es el contenedor para reciclar el Aluminio?;Rojo;Gris;Naranja;Azul;1
+AMBIENTAL;¿De qué color es el contenedor para reciclar el Plástico?;Verde;Gris;Naranja;Amarillo;3
+AMBIENTAL;¿Cuál es una de las principales razones de la disminución del número de venados de las Pampas?;Cambio climático;Caza y destrucción del ambiente;Falta de agua;Competencia con otras especies;1
+AMBIENTAL;¿De qué color es el contenedor para reciclar el Vidrio?;Amarillo;Blanco;Azul;Gris;1
+AMBIENTAL;¿Qué animal se considera Fauna Amenazada del Parque Iberá?;Yaguareté;Nutria gigante;Aguará Guazú;Todas son correctas;3
+AMBIENTAL;¿De qué color es el contenedor para reciclar el papel y cartón?;Verde;Azul;Marrón;Amarillo;1
+AMBIENTAL;¿Cuál de estas es una práctica agrícola sostenible?;Monocultivo con uso intensivo de pesticidas;Rotación de cultivos y agricultura orgánica;Deforestación para crear nuevas tierras de cultivo;Uso excesivo de agua para riego;1
+AMBIENTAL;¿Cuál es la principal causa de los incendios forestales?;Quema de pastizales para la ganadería;Actividad volcánica;Caída de rayos;Sequía extrema;0
+AMBIENTAL;¿Qué porcentaje de la superficie de la provincia de Corrientes está ocupada por humedales?;10%;20%;30%;40%;3
+AMBIENTAL;¿Qué ley nacional protege los bosques nativos en Argentina?;Ley de Bosques (Ley 26.331);Ley de Parques Nacionales (Ley 23.509);Ley de Glaciares y Aguas de Deshielo (Ley 25.665);Ley de Recursos Hídricos (Ley 25.667);0
+AMBIENTAL;¿Cuál es la principal fuente de energía renovable en Argentina?;Energía solar;Energía eólica;Energía hidroeléctrica;Biomasa;0
+AMBIENTAL;¿Qué organización internacional trabaja para la conservación del medio ambiente en Argentina?;The Nature Conservancy;World Wildlife Fund (WWF);BirdLife International;International Union for Conservation of Nature (IUCN);1
+AMBIENTAL;¿Qué es el "Plan Nacional de Adaptación y Mitigación al cambioclimático"?;
+AMBIENTAL;¿Cuál es el problema ambiental más importante que enfrenta la provincia de Corrientes?;La contaminación del aire;La contaminación del agua;Deforestación;Desertificación;2
 CULTURA;¿Dónde se celebra la Fiesta Nacional del Pacú?;Esquina;Goya;Riachuelo;Itatí;0
 CULTURA;Completá la frase: "Corrientes tiene _______"?;Chamamé;Payé;Tradición;Belleza;1 
 CULTURA;¿Dónde se Celebra la Fiesta de la Yerra Correntina?;Concepción;Ituzaingó;Caá Catí;Esquina;1  
